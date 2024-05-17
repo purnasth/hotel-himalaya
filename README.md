@@ -5,7 +5,7 @@ The stay at **Hotel Himalaya** means enjoying every moment. Relax. Find inspirat
 ## Contact
 
 - **Address**: [Kupondol Height, Lalitpur, Nepal](https://maps.app.goo.gl/z21PjniKuqXbC3PN6)
-- **Phone**: [++977015423900](tel:+977 01-5423900)
+- **Phone**: [+977015423900](tel:+97701-5423900)
 - **Email**: [info@hotelhimalaya.com](mailto:info@hotelhimalaya.com)
 
 ## About Us
