@@ -1,0 +1,58 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap'); */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Sedan:ital@0;1&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    /* font-family: "Sedan", serif; */
+    /* font-family: "Noto Serif", serif; */
+    @apply font-notoSerif;
+  }
+
+  main {
+    @apply py-20 px-4 sm:py-36 md:px-12 md:pt-[10rem] md:pb-[7.5rem] lg:pt-[12rem] lg:pb-[9rem] relative z-10;
+  }
+
+  .hero-slider-button {
+    @apply absolute top-1/2 -translate-y-1/2 rounded-full p-3 border bg-black/20 text-white cursor-pointer group-hover:scale-100 scale-0 transition-all duration-1000;
+  }
+
+  .room-slider-button {
+    @apply absolute bottom-5 rounded-full py-1 px-6 bg-black/5 group-hover:bg-black/30 backdrop-blur-sm border  text-white cursor-pointer transition-all duration-1000;
+  }
+
+  .bg-gradient {
+    background: linear-gradient(
+      107.61deg,
+      #c79d4f 21.89%,
+      #fad694 52.79%,
+      #e9c279 78.73%
+    );
+  }
+
+  .text-gradient {
+    /* background: radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #fdb931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    text-shadow: 0 0 1px #b399309e; */
+
+    background: radial-gradient(
+      circle at 50% 50%,
+      #ffd700 0%,
+      #ffac33 50%,
+      #ff8000 100%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 0 0 1px #ffd90043;
+  }
+}
