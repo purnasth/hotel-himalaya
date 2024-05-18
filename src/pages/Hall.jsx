@@ -1,7 +1,7 @@
 import React from "react";
 import RoomCard from "../components/ui/RoomCard";
 
-const Hall = () => {
+const OgHall = () => {
   const hallData = [
     {
       name: "Grand Hall",
@@ -48,4 +48,4 @@ const Hall = () => {
   );
 };
 
-export default Hall;
+export default OgHall;

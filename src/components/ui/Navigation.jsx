@@ -165,14 +165,14 @@ const Navigation = ({ mainClassName, isFooter }) => {
         {isFooter && (
           <>
             {/* <hr className="my-8 border-gray-300" /> */}
-            <div className="text-sm flex items-center justify-between">
+            <div className="text-sm flex items-center justify-between gap-16 -translate-y-8">
               <p>
                 &copy; {year} {data.copyright?.owner}. All Rights Reserved.
               </p>
               <p>
                 Developed by:
                 <a
-                  className="ml-2 font-bold"
+                  className="ml-2 font-semibold"
                   href={data.copyright?.developerLink}
                 >
                   {data.copyright?.developer}

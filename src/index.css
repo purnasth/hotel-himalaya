@@ -1,20 +1,24 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap'); */
-
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Sedan:ital@0;1&display=swap");
-
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap'); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #cd9c31 #fffbf3;
+  }
+
+  html {
+    @apply overflow-x-hidden;
+  }
+
   body {
-    /* font-family: "Sedan", serif; */
-    /* font-family: "Noto Serif", serif; */
     @apply font-notoSerif;
   }
 
   main {
-    @apply py-20 px-4 sm:py-36 md:px-12 md:pt-[10rem] md:pb-[7.5rem] lg:pt-[12rem] lg:pb-[9rem] relative z-10;
+    @apply py-20 px-4 sm:py-28 md:px-12 md:py-[7.5rem] lg:py-[9rem] relative z-10;
   }
 
   .hero-slider-button {
@@ -24,6 +28,12 @@
   .room-slider-button {
     @apply absolute bottom-5 rounded-full py-1 px-6 bg-black/5 group-hover:bg-black/30 backdrop-blur-sm border text-white cursor-pointer transition-all duration-1000;
   }
+
+  .hall-slider-button {
+    @apply absolute bottom-10 rounded-full py-1 px-6 bg-gradient outline outline-2 outline-black/10 group-hover:animate-pulse group-hover:outline-black/40 text-black cursor-pointer transition-all duration-1000;
+  }
+
+
 
   .bg-gradient {
     background: linear-gradient(121.21deg,

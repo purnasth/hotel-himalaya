@@ -43,10 +43,10 @@ const Facilities = () => {
               <h3 className="text-3xl font-medium mb-24 group-hover:mb-0 transition-all duration-300">
                 {title}
               </h3>
-              <p className="text-ivory my-4">{description}</p>
+              <p className="text-ivory mt-4 mb-12">{description}</p>
               <a
                 href={router}
-                className="text-ivory bg-transparent border border-solid border-white px-4 py-2 mt-2 hover:bg-white hover:text-black transition duration-300 ease-in-out"
+                className="text-black bg-gradient px-6 py-2 rounded-full"
               >
                 View More
               </a>

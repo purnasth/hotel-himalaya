@@ -42,7 +42,7 @@ const Slider = ({
         <HiOutlineArrowLongLeft className="text-2xl" />
       </button>
       <button onClick={nextSlide} className={`right-5 ${buttonClassName}`}>
-        <HiOutlineArrowLongRight className="text-2xl rotate-" />
+        <HiOutlineArrowLongRight className="text-2xl" />
       </button>
     </div>
   );

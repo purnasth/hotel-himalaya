@@ -49,11 +49,9 @@
   "intro": {
     "address": "Kupondol Height, Lalitpur, Nepal",
     "googleMapsUrl": "https://www.google.com/maps/place/Hotel+Himalaya",
-    "phones": ["+977 01-5423900", "+977 01-5423901"],
+    "phones": ["+977 01-5423900"],
     "emails": [
-      "banquetsales@hotelhimalaya.com",
-      "info@hotelhimalaya.com",
-      "reservation@hotelhimalaya.com"
+      "info@hotelhimalaya.com"
     ],
     "socialLinks": [
       {

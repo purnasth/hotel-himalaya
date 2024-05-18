@@ -22,11 +22,11 @@ const Navbar = () => {
               <img src={logo} alt="Logo" className="w-40 h-36 object-contain" />
             </h1>
           </a>
-          <div className="fixed h-28 inset-0 p-8 z-50">
+          <div className="fixed h-28 inset-0 p-8 z-50 pointer-events-none">
             <div className="flex items-center justify-between">
               <button
                 onClick={toggleMenu}
-                className="py-2 px-5 rounded-full flex items-center gap-2 bg-goldDark text-goldLight outline outline-2 outline-goldLight"
+                className="py-2 px-5 rounded-full flex items-center gap-2 bg-goldDark text-goldLight outline outline-2 outline-goldLight pointer-events-auto"
               >
                 {isMenuOpen ? (
                   <IoIosCloseCircleOutline className="text-xl" />
@@ -35,7 +35,7 @@ const Navbar = () => {
                 )}
                 Menu
               </button>
-              <button className="py-2 px-5 rounded-full flex items-center gap-2 bg-goldDark text-goldLight outline outline-2 outline-goldLight">
+              <button className="py-2 px-5 rounded-full flex items-center gap-2 bg-goldDark text-goldLight outline outline-2 outline-goldLight pointer-events-auto">
                 Book <FaRegClipboard className="text-base" />
               </button>
             </div>
