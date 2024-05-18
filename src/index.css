@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+@layer base {
   * {
     scrollbar-width: thin;
     scrollbar-color: #cd9c31 #fffbf3;
@@ -21,8 +21,12 @@
     @apply py-20 px-4 sm:py-28 md:px-12 md:py-[7.5rem] lg:py-[9rem] relative z-10;
   }
 
+}
+
+@layer components {
   .hero-slider-button {
-    @apply absolute top-1/2 -translate-y-1/2 rounded-full p-3 border bg-black/20 text-white cursor-pointer group-hover:scale-100 scale-0 transition-all duration-1000;
+    /* @apply absolute top-1/2 -translate-y-1/2 rounded-full p-3 border bg-black/20 text-white cursor-pointer group-hover:scale-100 scale-0 transition-all duration-1000; */
+    @apply absolute top-1/2 -translate-y-1/2 text-xl p-3 rounded-full outline outline-2 outline-offset-0 outline-gold text-gold hover:text-black bg-black/30 hover:bg-gold group-hover:scale-100 scale-0 hover:outline-gold hover:outline-offset-2 transition-all duration-500 ease-linear;
   }
 
   .room-slider-button {
@@ -30,20 +34,11 @@
   }
 
   .hall-slider-button {
-    @apply absolute bottom-1/2 rounded-full py-0 px-4 bg-gradient outline outline-2 outline-offset-2 outline-black/50 group-hover:outline-offset-0 text-black cursor-pointer transition-all duration-1000;
+    @apply absolute bottom-1/2 bg-gradient py-1 px-5 rounded-full hover-outline cursor-pointer text-lg transition-all duration-200 ease-linear;
   }
 
   .hover-outline {
     @apply outline outline-2 outline-offset-0 outline-gold/0 hover:outline-gold hover:outline-offset-2 transition-all duration-200 ease-linear;
-  }
-
-
-
-  .bg-gradient {
-    background: linear-gradient(121.21deg,
-        #c79d4f 13.03%,
-        #fad694 48.04%,
-        #e9c279 81.98%);
   }
 
   .text-gradient {
@@ -53,16 +48,6 @@
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     text-shadow: 0 0 1px #b399309e; */
-
-    background: radial-gradient(circle at 50% 50%,
-        #ffd700 0%,
-        #ffac33 50%,
-        #ff8000 100%);
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    text-shadow: 0 0 1px #ffd90043;
+    @apply bg-gradient-to-b from-[#cfc09f] from-[27%] via-[#ffecb3] via-[40%] to-[#3a2c0f] to-[78%] text-transparent bg-clip-text;
   }
 }

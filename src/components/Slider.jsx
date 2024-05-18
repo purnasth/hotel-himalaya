@@ -39,10 +39,10 @@ const Slider = ({
         />
       ))}
       <button onClick={prevSlide} className={`left-5 ${buttonClassName}`}>
-        <HiOutlineArrowLongLeft className="text-2xl" />
+        <HiOutlineArrowLongLeft />
       </button>
       <button onClick={nextSlide} className={`right-5 ${buttonClassName}`}>
-        <HiOutlineArrowLongRight className="text-2xl" />
+        <HiOutlineArrowLongRight />
       </button>
     </div>
   );

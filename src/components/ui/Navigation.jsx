@@ -26,7 +26,7 @@ const Navigation = ({ mainClassName, isFooter }) => {
   const year = new Date().getFullYear();
 
   return (
-    <main className={`${mainClassName} p-6 md:px-12 md:pt-24 bg-gradient z-40`}>
+    <main className={`${mainClassName} p-6 md:px-12 md:pt-24 2xl:py-32 bg-gradient z-40`}>
       <div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="main-link">
@@ -165,11 +165,11 @@ const Navigation = ({ mainClassName, isFooter }) => {
         {isFooter && (
           <>
             {/* <hr className="my-8 border-gray-300" /> */}
-            <div className="text-sm flex items-center justify- gap-16 -translate-y-8">
+            <div className="text-sm flex items-center justify-between gap-16 -translate-y-6">
               <p>
                 &copy; {year} {data.copyright?.owner}. All Rights Reserved.
               </p>
-              <p>
+              <p className="mr-12">
                 Developed by:
                 <a
                   className="ml-2 font-semibold"

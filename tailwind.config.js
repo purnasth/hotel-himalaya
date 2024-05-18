@@ -18,6 +18,10 @@ module.exports = {
         goldDark: "#815f16",
         gold: "#cd9c31",
       },
+      backgroundImage: {
+        gradient:
+          "linear-gradient(121.21deg, #c79d4f 13.03%, #fad694 48.04%, #e9c279 81.98%)",
+      },
       container: {
         screens: {
           sm: "100%",

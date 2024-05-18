@@ -50,8 +50,8 @@ const Hall = () => {
           containerClassName="w-full h-[95vh]"
           buttonClassName="hall-slider-button"
           imgClassName="w-full h-full object-cover absolute inset-0 transition-all duration-[2s]"
-          trueClassName="opacity-100"
-          falseClassName="opacity-0"
+          trueClassName="opacity-100 translate-y-0"
+          falseClassName="opacity-0 translate-y-16 -z-10"
         />
       </main>
     </>
