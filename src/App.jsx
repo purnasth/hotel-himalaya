@@ -9,6 +9,9 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
 import Hall from "./components/Hall";
+import BackToTop from "./components/ui/BackToTop";
+import WhatsApp from "./components/ui/WhatsApp";
+import Awards from "./components/ui/Awards";
 
 const App = () => {
   const slides = [
@@ -60,6 +63,10 @@ const App = () => {
       /> */}
       {/* <Hall /> */}
       <Footer />
+
+      <BackToTop />
+      <WhatsApp />
+      <Awards />
     </>
   );
 };

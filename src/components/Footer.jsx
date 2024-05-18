@@ -4,7 +4,7 @@ import Navigation from "./ui/Navigation";
 const Footer = () => {
   return (
     <>
-      <Navigation mainClassName="min-h-screen" isFooter={true} />
+      <Navigation mainClassName="h-screen" isFooter={true} />
     </>
   );
 };

@@ -1,0 +1,40 @@
+{
+    "title": "Auspicious Events Center",
+    "subtitle": "Trusted by 10,000+ happy faces",
+    "description": "Our conference and meeting halls have seen and hosted many international conventions, workshops and special banquets. Our clienteles include many NGO's and INGO's like the UN, corporate houses and prominent families seeking special venue / menu for their celebration. Whether a corporate conference, convention or a lavish banquet, our team is on hand to help you create a uniquely tailored event to suit your needs.",
+    "categories": [
+        {
+            "title": "For Corporates",
+            "description": "Engage in professional gatherings that redefine ambiance, offering exquisite venues, superior accommodations, and gourmet cuisine."
+        },
+        {
+            "title": "For Weddings",
+            "description": "Experience the epitome of luxury and romance at Hotel Himalaya, where every detail is crafted to perfection for your unforgettable wedding day amidst stunning grandeur."
+        },
+        {
+            "title": "For Personal Events",
+            "description": "Elevate your milestones with unparalleled luxury at Hotel Himalaya, where every event is a treasured memory in the making, meticulously crafted for perfection."
+        }
+    ],
+    "buttonText": "View More",
+    "hallImages": [
+        {
+            "url": "https://mayurstay.com/hotelhimalaya/images/package/galleryimages/KN2OQ-event01.jpg"
+        },
+        {
+            "url": "https://mayurstay.com/hotelhimalaya/images/package/galleryimages/OB5Aq-skyline2.jpg"
+        },
+        {
+            "url": "https://mayurstay.com/hotelhimalaya/images/package/galleryimages/C0Ne4-rato.jpg"
+        },
+        {
+            "url": "https://mayurstay.com/hotelhimalaya/images/package/galleryimages/R3YEn-regent4.jpg"
+        },
+        {
+            "url": "https://mayurstay.com/hotelhimalaya/images/package/galleryimages/SFYSu-pdr4.jpg"
+        },
+        {
+            "url": "https://mayurstay.com/hotelhimalaya/images/package/galleryimages/VyxO5-green4.jpg"
+        }
+    ]
+}
