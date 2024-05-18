@@ -13,6 +13,7 @@ import BackToTop from "./components/ui/BackToTop";
 import WhatsApp from "./components/ui/WhatsApp";
 import Awards from "./components/ui/Awards";
 import Stay from "./components/Stay";
+import Testimonials from "./components/Testimonials";
 
 const App = () => {
   const slides = [
@@ -51,6 +52,7 @@ const App = () => {
       <Stay />
       <Facilities />
       <Hall />
+      <Testimonials />
       {/* <Gallery /> */}
       {/* <FilterButton /> */}
       {/* <Accommodation /> */}

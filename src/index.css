@@ -38,7 +38,7 @@
   }
 
   .hover-outline {
-    @apply outline outline-2 outline-offset-0 outline-gold/0 hover:outline-gold hover:outline-offset-2 transition-all duration-200 ease-linear;
+    @apply outline outline-2 outline-offset-0 outline-gold/0 hover:outline-gold hover:outline-offset-2 focus:outline-offset-2 focus:outline-gold transition-all duration-200 ease-linear;
   }
 
   .text-gradient {
