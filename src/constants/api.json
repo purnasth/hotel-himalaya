@@ -1,0 +1,69 @@
+{
+  "mainLinks": ["Stay", "Fine Dine", "Recreation", "Events"],
+  "secondaryLinks": [
+    "About the Hotel",
+    "Gallery",
+    "Nearby Attractions",
+    "Download Brochure",
+    "Contact Us",
+    "Inquiry",
+    "Privacy Policy",
+    "Terms & Conditions"
+  ],
+  "bookingInfo": {
+    "roomBooking": {
+      "title": "Room Booking",
+      "phone": "+977-9851139592",
+      "email": "reservation@hotelhimalaya.com"
+    },
+    "eventBooking": {
+      "title": "Event Booking",
+      "phones": ["+977 9761693040", "+977 9801810708"],
+      "email": "banquetsales@hotelhimalaya.com"
+    },
+    "dineRecreationBooking": {
+      "title": "Dine & Recreation Booking",
+      "phones": ["+977-9851339602", "+977-9801810708"],
+      "email": "info@hotelhimalaya.com"
+    },
+    "patanMuseumCafeBooking": {
+      "title": "Patan Museum Cafe Booking",
+      "phone": "+977-9851339602",
+      "email": "pmc@hotelhimalaya.com"
+    }
+  },
+  "intro": {
+    "address": "Kupondol Height, Lalitpur, Nepal",
+    "phones": ["+977 01-5423900", "+977 01-5423901"],
+    "emails": [
+      "banquetsales@hotelhimalaya.com",
+      "info@hotelhimalaya.com",
+      "reservation@hotelhimalaya.com"
+    ],
+    "socialLinks": {
+      "facebook": "#",
+      "instagram": "#",
+      "tripAdvisor": "#"
+    }
+  },
+  "hospitalityPartners": [
+    {
+      "name": "Miss World",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Miss_World_logo.png"
+    },
+    {
+      "name": "Miss Earth",
+      "logo": "../assets/hospitality/miss-world.png"
+    },
+    {
+      "name": "Miss International",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/7/71/Miss.International.logo.png"
+    }
+  ],
+  "copyright": {
+    "year": "2024",
+    "owner": "Hotel Himalaya",
+    "designer": "Purna Shrestha",
+    "designerLink": "#"
+  }
+}

@@ -7,6 +7,7 @@ import Hall from "./pages/Hall";
 import FilterButton from "./components/FilterButton";
 import Gallery from "./components/Gallery";
 import About from "./components/About";
+import Footer from "./components/Footer";
 
 const App = () => {
   const slides = [
@@ -53,7 +54,7 @@ const App = () => {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
       <Slider
         slides={slides}
         containerClassName="w-full h-screen"
@@ -74,7 +75,7 @@ const App = () => {
         imgClassName="w-full h-full object-cover absolute inset-0 transition-all duration-[1s]"
         trueClassName="opacity-100 scale-100"
         falseClassName="opacity-0 rotate-3 scale-80"
-      />
+      /> */}
       {/* <Slider
         slides={roomImages}
         containerClassName="w-1/3 h-96 overflow-hidden relative mx-auto mt-10 group"
@@ -83,7 +84,8 @@ const App = () => {
         trueClassName="opacity-100 scale-100 translate-y-0"
         falseClassName="opacity-0 scale-90 -translate-y-4 -z-10"
       /> */}
-      <Hall />
+      {/* <Hall /> */}
+      <Footer />
     </>
   );
 };

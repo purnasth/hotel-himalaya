@@ -1,14 +1,6 @@
-import React, { useRef } from "react";
+import React from "react";
 
 const About = () => {
-  const videoRef = useRef(null);
-
-  function startVideo() {
-    if (videoRef.current) {
-      videoRef.current.play();
-    }
-  }
-
   return (
     <main>
       <div className="container">
@@ -33,14 +25,12 @@ const About = () => {
         </div>
 
         <video
-          ref={videoRef}
           className="w-full h-full object-cover mt-24"
           autoPlay
           loop
-          //   muted
+          muted
           playsInline
           poster="https://mayurstay.com/hotelhimalaya/images/slideshow/m9TAT-1.jpg"
-          onClick={startVideo}
           preload="auto"
         >
           <source
