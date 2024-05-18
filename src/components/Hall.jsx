@@ -16,7 +16,8 @@ const Hall = () => {
     return <Loader />;
   }
 
-  const { title, subtitle, description, categories, buttonText, hallImages } = hallData;
+  const { title, subtitle, description, categories, buttonText, hallImages } =
+    hallData;
 
   return (
     <>
@@ -31,12 +32,14 @@ const Hall = () => {
             {categories.map((category, index) => (
               <div key={index} className="space-y-6">
                 <h4 className="text-2xl font-medium">{category.title}</h4>
-                <p className="text-pretty line-clamp-4">{category.description}</p>
+                <p className="text-pretty line-clamp-4">
+                  {category.description}
+                </p>
               </div>
             ))}
           </div>
           <div className="text-center">
-            <button className="bg-gradient px-6 py-2 rounded-full">
+            <button className="bg-gradient px-6 py-2 rounded-full hover-outline">
               {buttonText}
             </button>
           </div>

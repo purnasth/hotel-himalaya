@@ -12,6 +12,7 @@ import Hall from "./components/Hall";
 import BackToTop from "./components/ui/BackToTop";
 import WhatsApp from "./components/ui/WhatsApp";
 import Awards from "./components/ui/Awards";
+import Stay from "./components/Stay";
 
 const App = () => {
   const slides = [
@@ -47,6 +48,7 @@ const App = () => {
         falseClassName="opacity-0"
       />
       <About />
+      <Stay />
       <Facilities />
       <Hall />
       {/* <Gallery /> */}

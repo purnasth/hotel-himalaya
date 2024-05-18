@@ -26,7 +26,7 @@ const Navbar = () => {
             <div className="flex items-center justify-between">
               <button
                 onClick={toggleMenu}
-                className="py-2 px-5 rounded-full flex items-center gap-2 bg-goldDark text-goldLight outline outline-2 outline-goldLight pointer-events-auto"
+                className="py-2 px-5 rounded-full flex items-center gap-2 bg-goldDark text-goldLight outline outline-2 outline-goldLight pointer-events-auto hover-outline"
               >
                 {isMenuOpen ? (
                   <IoIosCloseCircleOutline className="text-xl" />
@@ -35,9 +35,13 @@ const Navbar = () => {
                 )}
                 Menu
               </button>
-              <button className="py-2 px-5 rounded-full flex items-center gap-2 bg-goldDark text-goldLight outline outline-2 outline-goldLight pointer-events-auto">
+              <a
+                href="https://hotelhimalaya.com//result.php?hotel_code=q7x6fU"
+                target="_blank"
+                className="py-2 px-5 rounded-full flex items-center gap-2 bg-goldDark text-goldLight outline outline-2 outline-goldLight pointer-events-auto hover-outline"
+              >
                 Book <FaRegClipboard className="text-base" />
-              </button>
+              </a>
             </div>
           </div>
         </header>

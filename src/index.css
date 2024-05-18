@@ -30,7 +30,11 @@
   }
 
   .hall-slider-button {
-    @apply absolute bottom-10 rounded-full py-1 px-6 bg-gradient outline outline-2 outline-black/10 group-hover:animate-pulse group-hover:outline-black/40 text-black cursor-pointer transition-all duration-1000;
+    @apply absolute bottom-1/2 rounded-full py-0 px-4 bg-gradient outline outline-2 outline-offset-2 outline-black/50 group-hover:outline-offset-0 text-black cursor-pointer transition-all duration-1000;
+  }
+
+  .hover-outline {
+    @apply outline outline-2 outline-offset-0 outline-gold/0 hover:outline-gold hover:outline-offset-2 transition-all duration-200 ease-linear;
   }
 
 
