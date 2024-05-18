@@ -14,6 +14,9 @@ module.exports = {
         "custom-blue": "#070a0f",
         "custom-gray": "#1f2937",
         "custom-white": "#f9f9f9",
+        goldLight: "#ffde96",
+        goldDark: "#815f16",
+        gold: "#cd9c31",
       },
       container: {
         screens: {

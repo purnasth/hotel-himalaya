@@ -22,16 +22,14 @@
   }
 
   .room-slider-button {
-    @apply absolute bottom-5 rounded-full py-1 px-6 bg-black/5 group-hover:bg-black/30 backdrop-blur-sm border  text-white cursor-pointer transition-all duration-1000;
+    @apply absolute bottom-5 rounded-full py-1 px-6 bg-black/5 group-hover:bg-black/30 backdrop-blur-sm border text-white cursor-pointer transition-all duration-1000;
   }
 
   .bg-gradient {
-    background: linear-gradient(
-      121.21deg,
-      #c79d4f 13.03%,
-      #fad694 48.04%,
-      #e9c279 81.98%
-    );
+    background: linear-gradient(121.21deg,
+        #c79d4f 13.03%,
+        #fad694 48.04%,
+        #e9c279 81.98%);
   }
 
   .text-gradient {
@@ -42,12 +40,10 @@
     text-fill-color: transparent;
     text-shadow: 0 0 1px #b399309e; */
 
-    background: radial-gradient(
-      circle at 50% 50%,
-      #ffd700 0%,
-      #ffac33 50%,
-      #ff8000 100%
-    );
+    background: radial-gradient(circle at 50% 50%,
+        #ffd700 0%,
+        #ffac33 50%,
+        #ff8000 100%);
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
