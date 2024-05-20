@@ -15,6 +15,7 @@ import Awards from "./components/ui/Awards";
 import Stay from "./components/Stay";
 import Testimonials from "./components/Testimonials";
 import GalleryPage from "./pages/GalleryPage";
+import Banner from "./components/Banner";
 
 const App = () => {
   const slides = [
@@ -41,7 +42,8 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <GalleryPage />
+      <Banner />
+      {/* <GalleryPage /> */}
       <Slider
         slides={slides}
         containerClassName="w-full h-screen"

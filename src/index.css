@@ -48,6 +48,6 @@
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     text-shadow: 0 0 1px #b399309e; */
-    @apply bg-gradient-to-b from-[#cfc09f] from-[27%] via-[#ffecb3] via-[40%] to-[#3a2c0f] to-[78%] text-transparent bg-clip-text;
+    @apply bg-gradient-to-b from-[#f3bf58] from-[27%] via-[#ffecb3] via-[40%] to-[#9a6700] to-[98%] text-transparent bg-clip-text;
   }
 }

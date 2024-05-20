@@ -26,7 +26,7 @@ const Navigation = ({ mainClassName, isFooter }) => {
   const year = new Date().getFullYear();
 
   return (
-    <main className={`${mainClassName} p-6 md:px-12 md:pt-24 2xl:py-32 bg-gradient z-40`}>
+    <main className={`${mainClassName} p-6 md:px-12 md:pt-24 2xl:py-32 bg-gradient`}>
       <div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="main-link">
