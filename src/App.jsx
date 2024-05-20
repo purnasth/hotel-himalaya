@@ -4,7 +4,7 @@ import Slider from "./components/Slider";
 import Facilities from "./components/Facilities";
 import Accommodation from "./pages/Accommodation";
 import FilterButton from "./components/FilterButton";
-import Gallery from "./components/Gallery";
+import Gallery from "./components/GalleryComponent";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
@@ -14,6 +14,7 @@ import WhatsApp from "./components/ui/WhatsApp";
 import Awards from "./components/ui/Awards";
 import Stay from "./components/Stay";
 import Testimonials from "./components/Testimonials";
+import GalleryPage from "./pages/GalleryPage";
 
 const App = () => {
   const slides = [
@@ -40,6 +41,7 @@ const App = () => {
   return (
     <>
       <Navbar />
+      <GalleryPage />
       <Slider
         slides={slides}
         containerClassName="w-full h-screen"
