@@ -16,6 +16,9 @@ import Stay from "./components/Stay";
 import Testimonials from "./components/Testimonials";
 import GalleryPage from "./pages/GalleryPage";
 import Banner from "./components/Banner";
+import Offers from "./components/Offers";
+import SocialOffers from "./components/SocialOffers";
+import OffersContainer from "./components/OffersContainer";
 
 const App = () => {
   const slides = [
@@ -42,6 +45,9 @@ const App = () => {
   return (
     <>
       <Navbar />
+      <Offers />
+      <SocialOffers />
+      <OffersContainer />
       <Banner />
       {/* <GalleryPage /> */}
       <Slider
