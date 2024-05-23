@@ -1,7 +1,7 @@
 import React from "react";
 import RoomCard from "../components/ui/RoomCard";
 
-const OgHall = () => {
+const HallPage = () => {
   const hallData = [
     {
       name: "Grand Hall",
@@ -41,11 +41,9 @@ const OgHall = () => {
 
   return (
     <>
-      {hallData.map((hall, index) => (
-        <RoomCard key={index} room={hall} packageImages={hallImages} />
-      ))}
+    
     </>
   );
 };
 
-export default OgHall;
+export default HallPage;
