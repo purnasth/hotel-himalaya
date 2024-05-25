@@ -1,17 +1,27 @@
 import React from "react";
 import Banner from "../components/Banner";
-import aboutData from "../data/aboutData";
+import useFetchData from "../hooks/useFetchData";
+import Loader from "../components/Loader";
 
 const AboutPage = () => {
-  const { banner, title, description } = bannerData.about;
+  const { data, loading, error } = useFetchData("/api/aboutData.json");
+
+  if (loading) {
+    return <Loader />;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
   return (
     <>
-      <Banner
-        banner={banner}
-        title={title}
-        description={description}
-        page="About"
-      />
+        <Banner
+          banner={data.banner}
+          title={data.title}
+          description={data.description}
+          page="About"
+        />
     </>
   );
 };

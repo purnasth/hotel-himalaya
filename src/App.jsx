@@ -19,6 +19,7 @@ import Banner from "./components/Banner";
 import Offers from "./components/Offers";
 import SocialOffers from "./components/SocialOffers";
 import OffersContainer from "./components/OffersContainer";
+import AboutPage from "./pages/AboutPage";
 
 const App = () => {
   const slides = [
@@ -45,10 +46,10 @@ const App = () => {
   return (
     <>
       <Navbar />
+      <AboutPage />
       <Offers />
       <SocialOffers />
       <OffersContainer />
-      <Banner />
       {/* <GalleryPage /> */}
       <Slider
         slides={slides}
@@ -58,7 +59,6 @@ const App = () => {
         trueClassName="opacity-100"
         falseClassName="opacity-0"
       />
-      <About />
       <Stay />
       <Facilities />
       <Hall />
