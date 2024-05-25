@@ -1,32 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { IoMailUnreadOutline } from "react-icons/io5";
 import logo from "../../assets/logo.svg";
 import { getIconComponent } from "../../utils/iconLoader.js";
 import Loader from "../Loader.jsx";
+import useFetchData from "../../hooks/useFetchData";
 
 const Navigation = ({ mainClassName, isFooter }) => {
-  const [data, setData] = useState(null);
+  const { data, loading, error } = useFetchData("/api/footerData.json");
 
-  useEffect(() => {
-    fetch("/api/footerData.json")
-      .then((response) => response.json())
-      .then((data) => setData(data))
-      .catch((error) => console.error("Error fetching footer data:", error));
-  }, []);
+  if (loading) {
+    return <Loader />;
+  }
 
-  if (!data) {
-    return (
-      <>
-        <Loader />
-      </>
-    );
+  if (error) {
+    return <div>Error: {error}</div>;
   }
 
   const year = new Date().getFullYear();
 
   return (
-    <main className={`${mainClassName} p-6 md:px-12 md:pt-24 2xl:py-32 bg-gradient`}>
+    <main
+      className={`${mainClassName} p-6 md:px-12 md:pt-24 2xl:py-32 bg-gradient`}
+    >
       <div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="main-link">
