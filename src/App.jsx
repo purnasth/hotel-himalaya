@@ -11,7 +11,7 @@ import Loader from "./components/Loader";
 import Hall from "./components/Hall";
 import BackToTop from "./components/ui/BackToTop";
 import WhatsApp from "./components/ui/WhatsApp";
-import Awards from "./components/ui/Awards";
+import Awards from "./components/Awards";
 import Stay from "./components/Stay";
 import Testimonials from "./components/Testimonials";
 import GalleryPage from "./pages/GalleryPage";
@@ -20,6 +20,7 @@ import Offers from "./components/Offers";
 import SocialOffers from "./components/SocialOffers";
 import OffersContainer from "./components/OffersContainer";
 import AboutPage from "./pages/AboutPage";
+import HallPage from "./pages/HallPage";
 
 const App = () => {
   const slides = [
@@ -47,6 +48,7 @@ const App = () => {
     <>
       <Navbar />
       <AboutPage />
+      <HallPage />
       <Offers />
       <SocialOffers />
       <OffersContainer />

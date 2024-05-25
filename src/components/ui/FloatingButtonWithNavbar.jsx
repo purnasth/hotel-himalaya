@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from "react";
-import sata from "../../assets/awards/sata.webp";
-import tripaward from "../../assets/awards/tripaward.webp";
 import { IoClose } from "react-icons/io5";
-import { RiTrophyLine } from "react-icons/ri";
 
-const Awards = () => {
+const FloatingButtonWithNavbar = ({
+  buttonIcon,
+  buttonText,
+  buttonStyles,
+  navbarStyles,
+  children,
+  title,
+  ariaLabel,
+  afterHomeClass,
+}) => {
   const [showButton, setShowButton] = useState(false);
   const [showNavbar, setShowNavbar] = useState(false);
 
@@ -32,23 +38,27 @@ const Awards = () => {
     <div>
       <button
         className={`${
-          showButton ? "scale-100 translate-y-0" : "scale-0 translate-y-20"
-        } size-11 z-20 fixed bottom-8 left-8 bg-goldDark text-goldLight outline outline-2 outline-offset-2 outline-goldLight rounded-full shadow-lg flex items-center justify-center transition-all duration-500 ease-in-out`}
+          showButton ? "scale-100 translate-y-0" : `${afterHomeClass}`
+        } ${buttonStyles} transition-all duration-500 ease-in-out`}
         onClick={toggleNavbar}
-        title="Awards"
-        aria-label="Awards"
+        title={title}
+        aria-label={ariaLabel}
       >
-        <RiTrophyLine className="w-6 h-6 text-navy" />
+        {buttonIcon}
+        {buttonText && <span className="ml-2">{buttonText}</span>}
       </button>
-      <AwardsNavbar
+      <Navbar
         showNavbar={showNavbar}
         onClose={() => setShowNavbar(false)}
-      />
+        navbarStyles={navbarStyles}
+      >
+        {children}
+      </Navbar>
     </div>
   );
 };
 
-const AwardsNavbar = ({ showNavbar, onClose }) => {
+const Navbar = ({ showNavbar, onClose, children, navbarStyles }) => {
   const duration = 500;
 
   const handleClose = () => {
@@ -69,14 +79,14 @@ const AwardsNavbar = ({ showNavbar, onClose }) => {
       onClick={handleClose}
     >
       <div
-        className={`ml-auto w-64 h-screen overflow-y-auto bg-white px-2 transition-all duration-${duration} ease-in-out ${
+        className={`ml-auto w-64 h-screen overflow-y-auto transition-all duration-${duration} ease-in-out ${
           showNavbar
             ? "scale-100 translate-x-0 opacity-100"
             : "scale-100 translate-x-full opacity-0"
-        }`}
+        } ${navbarStyles}`}
         onClick={handleFormClick}
       >
-        <div className="sticky top-0 bg-white flex justify-between p-6">
+        <div className="sticky top-0 flex justify-between p-6">
           <h4 className="text-2xl">Awards</h4>
           <button
             className="-mr-4"
@@ -87,22 +97,10 @@ const AwardsNavbar = ({ showNavbar, onClose }) => {
             <IoClose className="text-2xl" />
           </button>
         </div>
-
-        <div className="mx-auto p-4">
-          <img
-            src={sata}
-            alt="Winner Sata 2023"
-            className="size-60 object-contain"
-          />
-          <img
-            src={tripaward}
-            alt="Tripadvisor Award 2024"
-            className="size-60 object-contain"
-          />
-        </div>
+        <div className="mx-auto p-4">{children}</div>
       </div>
     </div>
   );
 };
 
-export default Awards;
+export default FloatingButtonWithNavbar;
