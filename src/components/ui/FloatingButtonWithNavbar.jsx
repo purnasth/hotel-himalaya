@@ -51,6 +51,7 @@ const FloatingButtonWithNavbar = ({
         showNavbar={showNavbar}
         onClose={() => setShowNavbar(false)}
         navbarStyles={navbarStyles}
+        formTitle={title}
       >
         {children}
       </Navbar>
@@ -58,7 +59,8 @@ const FloatingButtonWithNavbar = ({
   );
 };
 
-const Navbar = ({ showNavbar, onClose, children, navbarStyles }) => {
+const Navbar = ({ showNavbar, onClose, children, navbarStyles, formTitle }) => {
+
   const duration = 500;
 
   const handleClose = () => {
@@ -86,8 +88,8 @@ const Navbar = ({ showNavbar, onClose, children, navbarStyles }) => {
         } ${navbarStyles}`}
         onClick={handleFormClick}
       >
-        <div className="sticky top-0 flex justify-between p-6">
-          <h4 className="text-2xl">Awards</h4>
+        <div className="sticky top-0 flex justify-between px-3 py-6">
+          <h4 className="text-2xl">{formTitle}</h4>
           <button
             className="-mr-4"
             onClick={onClose}

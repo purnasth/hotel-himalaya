@@ -51,3 +51,13 @@
     @apply bg-gradient-to-b from-[#f3bf58] from-[27%] via-[#ffecb3] via-[40%] to-[#9a6700] to-[98%] text-transparent bg-clip-text;
   }
 }
+
+@layer utilities {
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
