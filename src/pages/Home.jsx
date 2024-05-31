@@ -46,9 +46,6 @@ const Home = () => {
 
   return (
     <>
-      <Offers />
-      <SocialOffers />
-      <OffersContainer />
       <Slider
         slides={slides}
         containerClassName="w-full h-screen"
@@ -57,12 +54,16 @@ const Home = () => {
         trueClassName="opacity-100"
         falseClassName="opacity-0"
       />
+      <About/>
       <Stay />
       <Facilities />
       <Hall />
+      <Offers />
+      <SocialOffers />
+      <OffersContainer />
+      <Accommodation />
       <Testimonials />
       <FilterButton />
-      <Accommodation />
 
       <Slider
         slides={slides}
@@ -72,7 +73,6 @@ const Home = () => {
         trueClassName="opacity-100 scale-100 translate-y-0"
         falseClassName="opacity-0 scale-90 -translate-y-4 -z-10"
       />
-      <Hall />
     </>
   );
 };

@@ -16,7 +16,7 @@
     },
     { "name": "Contact Us", "url": "/contact", "title": "Contact" },
     { "name": "Inquiry", "url": "/inquiry", "title": "Inquiry" },
-    { "name": "Privacy Policy", "url": "/privacy", "title": "Privacy Policy" },
+    { "name": "Promotions", "url": "/promotions", "title": "Promotions" },
     {
       "name": "Terms & Conditions",
       "url": "/terms",

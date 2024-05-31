@@ -112,6 +112,10 @@ import AboutPage from "./pages/AboutPage";
 import HallPage from "./pages/HallPage";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
+import DinePage from "./pages/DinePage";
+import StayPage from "./pages/StayPage";
+import Nearby from "./components/ui/Nearby";
+import NearbyPage from "./pages/NearbyPage";
 
 const App = () => {
   return (
@@ -128,6 +132,14 @@ const App = () => {
           <Route path="/gallery" element={<GalleryPage />} />
 
           <Route path="/accommodation" element={<Accommodation />} />
+
+          <Route path="/dine" element={<DinePage />} />
+
+          <Route path="/stay" element={<StayPage />} />
+
+          <Route path="/places" element={<NearbyPage />} />
+
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
         <BackToTop />
