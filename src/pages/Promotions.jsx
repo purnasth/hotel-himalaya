@@ -4,7 +4,7 @@ import PromotionsComponent from "../components/PromotionsComponent";
 const Promotions = () => {
   return (
     <>
-      <main className="">
+      <main className="z-auto">
         <div className="container mt-12">
           <div className="text-center space-y-6 px-24 mb-24">
             <span className="uppercase">Our Best Offers Just For You</span>

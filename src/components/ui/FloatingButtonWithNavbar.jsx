@@ -44,7 +44,7 @@ const FloatingButtonWithNavbar = ({
         title={title}
         aria-label={ariaLabel}
       >
-        {/* {buttonIcon} */}
+        {buttonIcon}
         {buttonText && <span className="ml-2">{buttonText}</span>}
       </button>
       <Navbar
