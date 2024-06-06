@@ -4,6 +4,7 @@ import Banner from "../components/Banner";
 import FloatingButtonWithNavbar from "../components/ui/FloatingButtonWithNavbar";
 import { RiTrophyLine } from "react-icons/ri";
 import MembershipForm from "../components/ui/MembershipForm";
+import RecreationLayout from "../components/RecreationLayout";
 
 const RecreationPage = () => {
   return (
@@ -27,6 +28,7 @@ const RecreationPage = () => {
             <MembershipForm />
           </div>
         </div>
+        <RecreationLayout />
       </main>
     </>
   );
