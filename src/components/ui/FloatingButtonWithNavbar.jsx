@@ -44,7 +44,7 @@ const FloatingButtonWithNavbar = ({
         title={title}
         aria-label={ariaLabel}
       >
-        {buttonIcon}
+        {/* {buttonIcon} */}
         {buttonText && <span className="ml-2">{buttonText}</span>}
       </button>
       <Navbar
@@ -60,7 +60,6 @@ const FloatingButtonWithNavbar = ({
 };
 
 const Navbar = ({ showNavbar, onClose, children, navbarStyles, formTitle }) => {
-
   const duration = 500;
 
   const handleClose = () => {

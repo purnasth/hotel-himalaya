@@ -116,6 +116,7 @@ import DinePage from "./pages/DinePage";
 import StayPage from "./pages/StayPage";
 import Nearby from "./components/ui/Nearby";
 import NearbyPage from "./pages/NearbyPage";
+import Promotions from "./pages/Promotions";
 
 const App = () => {
   return (
@@ -138,6 +139,8 @@ const App = () => {
           <Route path="/stay" element={<StayPage />} />
 
           <Route path="/places" element={<NearbyPage />} />
+
+          <Route path="/promotions" element={<Promotions />} />
 
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
