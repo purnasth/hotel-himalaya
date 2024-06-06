@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { TbUsersGroup, TbClock } from "react-icons/tb";
-import { RiBowlLine } from "react-icons/ri";
+import { MdOutlineBrunchDining } from "react-icons/md";
 import Slider from "../Slider";
 
 const FilterComponent = ({ dineImages, contents }) => {
@@ -68,7 +68,7 @@ const FilterComponent = ({ dineImages, contents }) => {
                   <TbClock /> {selectedItem.time}
                 </li>
                 <li className="flex items-center justify-start gap-4">
-                  <RiBowlLine /> {selectedItem.cuisine}
+                  <MdOutlineBrunchDining /> {selectedItem.cuisine}
                 </li>
               </ul>
             </div>
