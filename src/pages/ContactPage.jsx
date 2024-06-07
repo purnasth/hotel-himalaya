@@ -7,6 +7,9 @@ import ContactForm from "../components/ui/ContactForm";
 import { HiArrowLongRight } from "react-icons/hi2";
 import Accordian from "../components/ui/Accordian";
 
+import { MdOutlineBed, MdOutlineBrunchDining } from "react-icons/md";
+import { TbCoffee, TbCalendarEvent } from "react-icons/tb";
+
 import { logo } from "../constants/data";
 
 const ContactPage = () => {
@@ -33,28 +36,28 @@ const ContactPage = () => {
 
   const accordionItems = [
     {
-      icon: "📦",
+      icon: MdOutlineBed,
       title: "Accommodation Booking & Information",
       subtitle: "Contacts for booking rooms and information",
       content:
         "Our return policy allows you to return items within 30 days of purchase. Please keep your receipt for a full refund.",
     },
     {
-      icon: "📦",
+      icon: TbCalendarEvent,
       title: "Group Reservation & Events",
       subtitle: "Hall booking for corporate events and family occasions",
       content:
         "Yes, we offer 24/7 technical support. You can contact us anytime via email or phone.",
     },
     {
-      icon: "📦",
+      icon: MdOutlineBrunchDining,
       title: "Dine & Recreation Booking",
       subtitle: "Table booking and recreation facilities information",
       content:
         "We are located at 123 Main Street, Springfield. Our store hours are Monday to Friday, 9 AM to 5 PM.",
     },
     {
-      icon: "📦",
+      icon: TbCoffee,
       title: "Patan Museum Cafe Booking",
       subtitle: "Cafe booking and information",
       content:
