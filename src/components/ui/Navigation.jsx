@@ -3,7 +3,7 @@ import { MdOutlineLocalPhone } from "react-icons/md";
 import { IoMailUnreadOutline } from "react-icons/io5";
 import logo from "../../assets/logo.svg";
 import { getIconComponent } from "../../utils/iconLoader.js";
-import Loader from "../Loader.jsx";
+import Loader from "../Loader";
 import useFetchData from "../../hooks/useFetchData";
 
 const Navigation = ({ mainClassName, isFooter }) => {
