@@ -5,6 +5,9 @@ import Video from "../components/ui/Video";
 import Nearby from "../components/ui/Nearby";
 import ContactForm from "../components/ui/ContactForm";
 import { HiArrowLongRight } from "react-icons/hi2";
+import Accordian from "../components/ui/Accordian";
+
+import { logo } from "../constants/data";
 
 const ContactPage = () => {
   const slides = [
@@ -27,8 +30,46 @@ const ContactPage = () => {
       url: "https://hotelhimalaya.com/project/images/slideshow/id4vO-04.jpg",
     },
   ];
+
+  const accordionItems = [
+    {
+      icon: "📦",
+      title: "Accommodation Booking & Information",
+      subtitle: "Contacts for booking rooms and information",
+      content:
+        "Our return policy allows you to return items within 30 days of purchase. Please keep your receipt for a full refund.",
+    },
+    {
+      icon: "📦",
+      title: "Group Reservation & Events",
+      subtitle: "Hall booking for corporate events and family occasions",
+      content:
+        "Yes, we offer 24/7 technical support. You can contact us anytime via email or phone.",
+    },
+    {
+      icon: "📦",
+      title: "Dine & Recreation Booking",
+      subtitle: "Table booking and recreation facilities information",
+      content:
+        "We are located at 123 Main Street, Springfield. Our store hours are Monday to Friday, 9 AM to 5 PM.",
+    },
+    {
+      icon: "📦",
+      title: "Patan Museum Cafe Booking",
+      subtitle: "Cafe booking and information",
+      content:
+        "We are located at 123 Main Street, Springfield. Our store hours are Monday to Friday, 9 AM to 5 PM.",
+    },
+  ];
   return (
     <>
+      <main></main>
+      <main></main>
+
+      <div className="container">
+        <Accordian items={accordionItems} />
+      </div>
+
       <div className="relative">
         <Slider
           slides={slides}
@@ -61,7 +102,7 @@ const ContactPage = () => {
             <div className="col-span-1 flex flex-col items-center text-center gap-4">
               <a href="/">
                 <img
-                  src="/src/assets/logo.svg"
+                  src={logo}
                   alt="Hotel Himalaya"
                   className="w-44 h-32 object-contain"
                   style={{
