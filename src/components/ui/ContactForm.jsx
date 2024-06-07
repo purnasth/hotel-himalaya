@@ -80,7 +80,7 @@ const ContactForm = () => {
             required={contactFormData.textarea.required}
           ></textarea>
         </li>
-        <div className="w-full mt-4">
+        <div className="w-full mt-4 group">
           <button
             type="submit"
             className="mt-12 w-full bg-gradient px-6 py-4 rounded-full hover-outline flex items-center justify-center gap-0 text-lg"
@@ -88,7 +88,7 @@ const ContactForm = () => {
             aria-label="Send Message"
           >
             Send Message
-            <HiArrowLongRight className="group-hover:translate-x-2 transition-all duration-300" />
+            <HiArrowLongRight className="ml-2 group-hover:translate-x-2 transition-all duration-300" />
           </button>
         </div>
       </form>

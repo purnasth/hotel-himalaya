@@ -4,6 +4,7 @@ import BreadCrumb from "../components/ui/BreadCrumb";
 import Video from "../components/ui/Video";
 import Nearby from "../components/ui/Nearby";
 import ContactForm from "../components/ui/ContactForm";
+import { HiArrowLongRight } from "react-icons/hi2";
 
 const ContactPage = () => {
   const slides = [
@@ -142,7 +143,7 @@ const ContactPage = () => {
               </ul>
             </div>
 
-            <div className="col-span-2">
+            <div className="col-span-2 outline outline-1 outline-white -outline-offset-[10px]">
               <Video
                 videoClassName="w-full h-full object-cover"
                 poster="https://mayurstay.com/hotelhimalaya/images/slideshow/m9TAT-1.jpg"
@@ -155,6 +156,111 @@ const ContactPage = () => {
           <ContactForm />
         </div>
         <Nearby />
+
+        <div className="grid grid-cols-3 content-center gap-16 mt-28 p-8">
+          <div className="col-span-1 content-center w-full">
+            <h3 className="text-3xl leading-snug">Discover Hotel Himalaya</h3>
+            <p className="text-justify md:text-pretty text-base mt-4 mb-20">
+              Our hotel offers 126 well-appointed rooms, a 180-degree panoramic
+              view of the Himalayas, and 'Café Horizon' with a variety of dining
+              options. Enjoy in-room dining, a tennis court, swimming pool, and
+              health club. We serve hygienic and timely meals with Indian,
+              Continental, and Chinese cuisine. Host events in one of our 12
+              versatile event halls for business or family occasions.
+            </p>
+            <h3 className="text-2xl mb-6">Facilites</h3>
+            <ul className="flex items-center gap-6 flex-wrap">
+              <li className="bg-goldLight/50 px-4 py-2 rounded-2xl">
+                Accommodation
+              </li>
+              <li className="bg-goldLight/50 px-4 py-2 rounded-2xl">
+                Fine Dine
+              </li>
+              <li className="bg-goldLight/50 px-4 py-2 rounded-2xl">
+                Event Halls
+              </li>
+              <li className="bg-goldLight/50 px-4 py-2 rounded-2xl">
+                Steam, Sauna, Jacuzzi
+              </li>
+              <li className="bg-goldLight/50 px-4 py-2 rounded-2xl">
+                Swimming Pool
+              </li>
+              <li className="bg-goldLight/50 px-4 py-2 rounded-2xl">
+                Health Center
+              </li>
+              <li className="bg-goldLight/50 px-4 py-2 rounded-2xl">
+                Lawn Tennis Court
+              </li>
+            </ul>
+          </div>
+          <div className="col-span-2 grid grid-cols-5 gap-8 p-8">
+            <div className="col-span-2 content-end relative">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/4e1d/2131/7f8b9696b68e3c854fbc935f98175f3d?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IfqHj9kfHZoaYjo7IzhKxyNWC4OvkhivogJYUW2IysDdUzA2jTblBUW~7-2ff6rBbZ61aYoaNh3JYI7-IXghL6Jg366LMXfLoomjfJJ0wg7BhyAwMtvfVI~Z30fwKoJo9KochbMEkeOZOaOUK3iVRweaAtZkbMz3IBXZg2Gsp4aUKMzkXhj2tQ9yrBBr8J5GgswtIa1Tll1DfDoZUwf6I0g7QwC75oK8zfUpNJU92TAZhZvSlVnbXrn~M66sLUojoNpqVO7fpCdev1WFZ9p7oKUKplG3u~H5930U29Z3XkeWdRFZGAmnaAn0X~jjXdMYllnZdDdIR5dsqVxfYAGoTA__"
+                alt=""
+                className="rounded-2xl"
+              />
+              <button
+                type="button"
+                className="w-auto mx-auto text-center mt-3 bg-gradient py-0 px-4 rounded-full z-10 hover-outline flex items-center justify-center group"
+                title="Occasions"
+                aria-label="Occasions"
+              >
+                Occasions
+                <HiArrowLongRight className="ml-2 group-hover:translate-x-2 transition-all duration-300" />
+              </button>
+            </div>
+            <div className="col-span-3 relative">
+              <img
+                src="https://hotelhimalaya.com/images/package/galleryimages/RdTdO-slider1.jpg"
+                alt=""
+                className="rounded-2xl"
+              />
+              <button
+                type="button"
+                className="w-auto mx-auto text-center mt-3 bg-gradient py-0 px-4 rounded-full z-10 hover-outline flex items-center justify-center group"
+                title="Fine Dine"
+                aria-label="Fine Dine"
+              >
+                Fine Dine
+                <HiArrowLongRight className="ml-2 group-hover:translate-x-2 transition-all duration-300" />
+              </button>
+            </div>
+
+            <div className="col-span-3 relative">
+              <img
+                src="https://hotelhimalaya.com/images/package/galleryimages/PtfRB-room1.jpg"
+                alt=""
+                className="rounded-2xl"
+              />
+              <button
+                type="button"
+                className="w-auto mx-auto text-center mt-3 bg-gradient py-0 px-4 rounded-full z-10 hover-outline flex items-center justify-center group"
+                title="Accommodation"
+                aria-label="Accommodation"
+              >
+                Accommodation
+                <HiArrowLongRight className="ml-2 group-hover:translate-x-2 transition-all duration-300" />
+              </button>
+            </div>
+            <div className="col-span-2 content-start relative">
+              <img
+                src="https://hotelhimalaya.com/images/package/galleryimages/WNbtI-pool.jpg"
+                alt=""
+                className="rounded-2xl"
+              />
+              <button
+                type="button"
+                className="w-auto mx-auto text-center mt-3 bg-gradient py-0 px-4 rounded-full z-10 hover-outline flex items-center justify-center group"
+                title="Recreation"
+                aria-label="Recreation"
+              >
+                Recreation
+                <HiArrowLongRight className="ml-2 group-hover:translate-x-2 transition-all duration-300" />
+              </button>
+            </div>
+          </div>
+        </div>
       </main>
     </>
   );
