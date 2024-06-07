@@ -1,4 +1,5 @@
 import React from "react";
+import Video from "./ui/Video";
 
 const About = () => {
   return (
@@ -24,28 +25,11 @@ const About = () => {
           </p>
         </div>
 
-        <video
-          className="w-full h-full object-cover mt-24"
-          autoPlay
-          loop
-          muted
-          playsInline
+        <Video
+          videoClassName="w-full h-full object-cover mt-24"
           poster="https://mayurstay.com/hotelhimalaya/images/slideshow/m9TAT-1.jpg"
-          preload="auto"
-        >
-          <source
-            src="https://hotelhimalaya.com/project/template/web/img/about/HOTEL_HIMALAYA.mp4"
-            type="video/mp4"
-          />
-          <track
-            src="#"
-            kind="captions"
-            srcLang="en"
-            label="english_captions"
-          ></track>
-          The video of the Hotel Himalaya portrays the beauty of the hotel and
-          the surrounding area.
-        </video>
+          video="https://hotelhimalaya.com/template/web/img/about/HOTEL_HIMALAYA.mp4"
+        />
       </div>
     </main>
   );

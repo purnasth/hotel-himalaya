@@ -119,6 +119,7 @@ import NearbyPage from "./pages/NearbyPage";
 import Promotions from "./pages/Promotions";
 import RecreationPage from "./pages/RecreationPage";
 import BrochurePDF from "./components/BrochurePDF";
+import ContactPage from "./pages/ContactPage";
 
 const App = () => {
   return (
@@ -141,6 +142,8 @@ const App = () => {
           <Route path="/stay" element={<StayPage />} />
 
           <Route path="/places" element={<NearbyPage />} />
+
+          <Route path="/contact" element={<ContactPage />} />
 
           <Route path="/promotions" element={<Promotions />} />
 
