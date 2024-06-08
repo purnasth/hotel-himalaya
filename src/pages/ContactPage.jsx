@@ -10,7 +10,10 @@ import Accordian from "../components/ui/Accordian";
 import { MdOutlineBed, MdOutlineBrunchDining } from "react-icons/md";
 import { TbCoffee, TbCalendarEvent } from "react-icons/tb";
 
-import { logo } from "../constants/data";
+import { MdOutlineLocalPhone, MdOutlineMailOutline } from "react-icons/md";
+import { TbClipboard, TbClock } from "react-icons/tb";
+
+import Socials from "../components/ui/Socials";
 
 const ContactPage = () => {
   const slides = [
@@ -34,45 +37,166 @@ const ContactPage = () => {
     },
   ];
 
-  const accordionItems = [
+  const contactAccordianContents = [
     {
       icon: MdOutlineBed,
-      title: "Accommodation Booking & Information",
-      subtitle: "Contacts for booking rooms and information",
-      content:
-        "Our return policy allows you to return items within 30 days of purchase. Please keep your receipt for a full refund.",
+      category: "Accommodation Booking & Information",
+      description: "Contacts for booking rooms and information",
+      information:
+        "Our 126 well-appointed rooms offer every comfort the traveler may need and we have a full range of amenities for our distinguished guests. Indulge in serene luxury with meticulously curated rooms, modern amenities, and breathtaking views for an unforgettable tailored stay.",
+      details: [
+        {
+          icon: TbClock,
+          title: "Operating Hours",
+          description: "Sunday - Saturday",
+          additionalInfo: "08:00 AM - 10:00 PM",
+          type: "text",
+        },
+        {
+          icon: MdOutlineLocalPhone,
+          title: "Phone",
+          description: "+977-9851139592",
+          buttonLabel: "Call",
+          href: "tel:+977-9851139592",
+          type: "link",
+        },
+        {
+          icon: MdOutlineMailOutline,
+          title: "Email",
+          description: "reservation@hotelhimalaya.com",
+          buttonLabel: "Mail",
+          href: "mailto:reservation@hotelhimalaya.com",
+          type: "link",
+        },
+        {
+          icon: TbClipboard,
+          title: "Online Booking",
+          buttonLabel: "Book",
+          href: "https://hotelhimalaya.com//result.php?hotel_code=q7x6fU",
+          type: "button",
+        },
+      ],
     },
     {
       icon: TbCalendarEvent,
-      title: "Group Reservation & Events",
-      subtitle: "Hall booking for corporate events and family occasions",
-      content:
-        "Yes, we offer 24/7 technical support. You can contact us anytime via email or phone.",
+      category: "Group Reservation & Events",
+      description: "Hall booking for corporate events and family occasions",
+      information:
+        "Hotel Himalaya, an idyllic setting for events that promise enchantment and elegance in every moment. Our conference and meeting halls have seen and hosted many international conventions, workshops and special banquets. Our clienteles include many NGO's and INGO's like the UN, corporate houses and prominent families seeking special venue / menu for their celebration.",
+      details: [
+        {
+          icon: TbClock,
+          title: "Operating Hours",
+          description: "Monday - Sunday",
+          additionalInfo: "08:00 AM - 5:00 PM",
+          type: "text",
+        },
+        {
+          icon: MdOutlineLocalPhone,
+          title: "Phone",
+          description: "+977-9801810708",
+          buttonLabel: "Call",
+          href: "tel:+977-9801810708",
+          type: "link",
+        },
+        {
+          icon: MdOutlineMailOutline,
+          title: "Email",
+          description: "banquetsales@hotelhimalaya.com",
+          buttonLabel: "Mail",
+          href: "mailto:banquetsales@hotelhimalaya.com",
+          type: "link",
+        },
+        {
+          icon: TbClipboard,
+          title: "Online Reservation or Enquiry",
+          buttonLabel: "Book",
+          href: "/events",
+          type: "button",
+        },
+      ],
     },
     {
       icon: MdOutlineBrunchDining,
-      title: "Dine & Recreation Booking",
-      subtitle: "Table booking and recreation facilities information",
-      content:
-        "We are located at 123 Main Street, Springfield. Our store hours are Monday to Friday, 9 AM to 5 PM.",
+      category: "Dine & Recreation Booking",
+      description: "Table reservation and recreation facilities information",
+      information:
+        "Immerse yourself in an unforgettable dining experience where culinary artistry meets exquisite ambiance. Savor gourmet dishes crafted from the finest ingredients, each plate a masterpiece. Our elegant decor and attentive service set the stage for a perfect evening. Join us for a culinary journey that delights the senses and creates lasting memories.",
+      details: [
+        {
+          icon: TbClock,
+          title: "Operating Hours",
+          description: "Monday - Sunday",
+          additionalInfo: "08:00 AM - 11:00 PM",
+          type: "text",
+        },
+        {
+          icon: MdOutlineLocalPhone,
+          title: "Phone",
+          description: "+977-9851339602",
+          buttonLabel: "Call",
+          href: "tel:+977-9851339602",
+          type: "link",
+        },
+        {
+          icon: MdOutlineMailOutline,
+          title: "Email",
+          description: "info@hotelhimalaya.com",
+          buttonLabel: "Mail",
+          href: "mailto:info@hotelhimalaya.com",
+          type: "link",
+        },
+        {
+          icon: TbClipboard,
+          title: "Online Reservation or Enquiry",
+          buttonLabel: "Book",
+          href: "/dine",
+          type: "button",
+        },
+      ],
     },
     {
       icon: TbCoffee,
-      title: "Patan Museum Cafe Booking",
-      subtitle: "Cafe booking and information",
-      content:
-        "We are located at 123 Main Street, Springfield. Our store hours are Monday to Friday, 9 AM to 5 PM.",
+      category: "Patan Museum Cafe Booking",
+      description: "Cafe booking and information",
+      information:
+        "Begin your day with a global culinary exploration at the Patan Museum Café, a UNESCO World Heritage site, where a lavish buffet awaits. Operated by Hotel Himalaya and just a 6-minute journey away, our café offers a feast for the senses with authentic flavors spanning from Terai to the Himalayas, all complemented by breathtaking views and the option to dine under the sun’s warm embrace.",
+      details: [
+        {
+          icon: TbClock,
+          title: "Operating Hours",
+          description: "Monday - Sunday",
+          additionalInfo: "08:00 AM - 11:00 PM",
+          type: "text",
+        },
+        {
+          icon: MdOutlineLocalPhone,
+          title: "Phone",
+          description: "+977-9851339602",
+          buttonLabel: "Call",
+          href: "tel:+977-9851339602",
+          type: "link",
+        },
+        {
+          icon: MdOutlineMailOutline,
+          title: "Email",
+          description: "pmc@hotelhimalaya.com",
+          buttonLabel: "Mail",
+          href: "mailto:pmc@hotelhimalaya.com",
+          type: "link",
+        },
+        {
+          icon: TbClipboard,
+          title: "Online Reservation or Enquiry",
+          buttonLabel: "Book",
+          href: "/dine",
+          type: "button",
+        },
+      ],
     },
   ];
   return (
     <>
-      <main></main>
-      <main></main>
-
-      <div className="container">
-        <Accordian items={accordionItems} />
-      </div>
-
       <div className="relative">
         <Slider
           slides={slides}
@@ -103,88 +227,7 @@ const ContactPage = () => {
 
           <div className="grid grid-cols-3 items-center content-center gap-12 my-40">
             <div className="col-span-1 flex flex-col items-center text-center gap-4">
-              <a href="/">
-                <img
-                  src={logo}
-                  alt="Hotel Himalaya"
-                  className="w-44 h-32 object-contain"
-                  style={{
-                    filter:
-                      "brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7449%) hue-rotate(190deg) brightness(107%) contrast(96%)",
-                  }}
-                />
-              </a>
-              <ul className="space-y-1">
-                <li>
-                  <a
-                    href="https://www.google.com/maps/place/Hotel+Himalaya"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Kupondol Height, Lalitpur, Nepal
-                  </a>
-                </li>
-                <li>
-                  <a href="tel:+977 01-5423900">+977 01-5423900</a>
-                </li>
-                <li>
-                  <a href="mailto:info@hotelhimalaya.com">
-                    info@hotelhimalaya.com
-                  </a>
-                </li>
-              </ul>
-              <ul className="flex items-center justify-center gap-4 text-2xl my-6">
-                <li>
-                  <a href="https://www.facebook.com/HotelHimalayaPatan/">
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      strokeWidth={0}
-                      viewBox="0 0 512 512"
-                      className="text-2xl"
-                      height="1em"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/hotelhimalaya_lalitpur/">
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      strokeWidth={0}
-                      viewBox="0 0 24 24"
-                      className="text-2xl"
-                      height="1em"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z" />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.tripadvisor.com/Hotel_Review-g315764-d316826-Reviews-Hotel_Himalaya-Patan_Lalitpur_Kathmandu_Valley_Bagmati_Zone_Central_Region.html">
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      strokeWidth={0}
-                      viewBox="0 0 24 24"
-                      className="text-2xl"
-                      height="1em"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M8.31 10.28a2.5 2.5 0 1 0 2.5 2.49 2.5 2.5 0 0 0-2.5-2.49zm0 3.8a1.31 1.31 0 1 1 0-2.61 1.31 1.31 0 1 1 0 2.61zm7.38-3.8a2.5 2.5 0 1 0 2.5 2.49 2.5 2.5 0 0 0-2.5-2.49zM17 12.77a1.31 1.31 0 1 1-1.31-1.3 1.31 1.31 0 0 1 1.31 1.3z" />
-                      <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm7.38 10.77a3.69 3.69 0 0 1-6.2 2.71L12 16.77l-1.18-1.29a3.69 3.69 0 1 1-5-5.44l-1.2-1.3H7.3a8.33 8.33 0 0 1 9.41 0h2.67l-1.2 1.31a3.71 3.71 0 0 1 1.2 2.72z" />
-                      <path d="M14.77 9.05a7.19 7.19 0 0 0-5.54 0A4.06 4.06 0 0 1 12 12.7a4.08 4.08 0 0 1 2.77-3.65z" />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+              <Socials />
             </div>
 
             <div className="col-span-2 outline outline-1 outline-white -outline-offset-[10px]">
@@ -196,8 +239,13 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-4xl mx-auto my-32 border border-gold p-3">
-          <ContactForm />
+
+        <div className="container">
+          <Accordian accordians={contactAccordianContents} />
+
+          <div className="max-w-5xl mx-auto my-32 border border-gold p-3">
+            <ContactForm />
+          </div>
         </div>
         <Nearby />
 

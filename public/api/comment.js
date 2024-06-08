@@ -91,6 +91,31 @@
       "email": "pmc@hotelhimalaya.com"
     }
   },
+  // "intro": {
+  //   "address": "Kupondol Height, Lalitpur, Nepal",
+  //   "googleMapsUrl": "https://www.google.com/maps/place/Hotel+Himalaya",
+  //   "phones": ["+977 01-5423900"],
+  //   "emails": [
+  //     "info@hotelhimalaya.com"
+  //   ],
+  //   "socialLinks": [
+  //     {
+  //       "url": "https://www.facebook.com/HotelHimalayaPatan/",
+  //       "icon": "FaFacebook",
+  //       "title": "Facebook"
+  //     },
+  //     {
+  //       "url": "https://www.instagram.com/hotelhimalaya_lalitpur/",
+  //       "icon": "RiInstagramFill",
+  //       "title": "Instagram"
+  //     },
+  //     {
+  //       "url": "https://www.tripadvisor.com/Hotel_Review-g315764-d316826-Reviews-Hotel_Himalaya-Patan_Lalitpur_Kathmandu_Valley_Bagmati_Zone_Central_Region.html",
+  //       "icon": "BiLogoTripAdvisor",
+  //       "title": "TripAdvisor"
+  //     }
+  //   ]
+  // },
   "hospitalityPartners": [
     {
       "name": "Miss World",

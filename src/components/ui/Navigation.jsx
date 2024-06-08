@@ -1,11 +1,9 @@
 import React from "react";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { IoMailUnreadOutline } from "react-icons/io5";
-import logo from "../../assets/logo.svg";
-import { getIconComponent } from "../../utils/iconLoader.js";
 import Loader from "../Loader";
 import useFetchData from "../../hooks/useFetchData";
-import Socials from "./Socials.jsx";
+import Socials from "./Socials";
 
 const Navigation = ({ mainClassName, isFooter }) => {
   const { data, loading, error } = useFetchData("/api/footerData.json");
@@ -85,7 +83,7 @@ const Navigation = ({ mainClassName, isFooter }) => {
           </div>
           <div className="intro">
             <div className="flex flex-col items-center text-center gap-4">
-              <Socials data={data} />
+              <Socials />
               <div className="hospitality">
                 <h4 className="text-xl">Hospitality Partners</h4>
                 <div className="mt-6 mb-10 flex items-center justify-center gap-10">

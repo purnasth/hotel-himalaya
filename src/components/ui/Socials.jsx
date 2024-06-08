@@ -1,62 +1,76 @@
 import React from "react";
-import logo from "../../assets/logo.svg";
-import { getIconComponent } from "../../utils/iconLoader.js";
+import { logo } from "../../constants/data";
 
-const Socials = ({ data }) => {
+import { FaFacebook } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { BiLogoTripAdvisor } from "react-icons/bi";
+
+const Socials = () => {
+  const contactInfo = [
+    {
+      id: "location",
+      title: "Kupondol Height, Lalitpur, Nepal",
+      href: "https://www.google.com/maps/place/Hotel+Himalaya",
+    },
+    {
+      id: "phone",
+      title: "+977 01-5423900",
+      href: "tel:+977 01-5423900",
+    },
+    {
+      id: "email",
+      title: "info@hotelhimalaya.com",
+      href: "mailto:info@hotelhimalaya.com",
+    },
+  ];
+  const socialLinks = [
+    {
+      href: "https://www.facebook.com/HotelHimalayaPatan/",
+      icon: FaFacebook,
+    },
+    {
+      href: "https://www.instagram.com/hotelhimalaya_lalitpur/",
+      icon: RiInstagramFill,
+    },
+    {
+      href: "https://www.tripadvisor.com/Hotel_Review-g315764-d316826-Reviews-Hotel_Himalaya-Patan_Lalitpur_Kathmandu_Valley_Bagmati_Zone_Central_Region.html",
+      icon: BiLogoTripAdvisor,
+    },
+  ];
+
   return (
     <>
-      <a href="/">
-        <img
-          src={logo}
-          alt="Hotel Himalaya"
-          className="w-44 h-32 object-contain"
-          style={{
-            filter:
-              "brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7449%) hue-rotate(190deg) brightness(107%) contrast(96%)",
-          }}
-        />
-      </a>
-      <ul className="space-y-1">
-        <li>
-          <a
-            href={data.intro?.googleMapsUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {data.intro?.address}
-          </a>
-        </li>
-        {data.intro?.phones?.map((phone, index) => (
-          <li key={index}>
-            <a href={`tel:${phone}`}>{phone}</a>
-          </li>
-        ))}
-        {data.intro?.emails?.map((email, index) => (
-          <li key={index}>
-            <a href={`mailto:${email}`}>{email}</a>
-          </li>
-        ))}
-      </ul>
-      <ul className="flex items-center justify-center gap-4 text-2xl my-6">
-        {data.intro?.socialLinks?.map((link, index) => {
-          const IconComponent = getIconComponent(link.icon);
-          return (
+      <div className="col-span-1 flex flex-col items-center text-center gap-4">
+        <a href="/">
+          <img
+            src={logo}
+            alt="Hotel Himalaya"
+            className="w-44 h-32 object-contain"
+            style={{
+              filter:
+                "brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7449%) hue-rotate(190deg) brightness(107%) contrast(96%)",
+            }}
+          />
+        </a>
+
+        <ul className="space-y-1">
+          {contactInfo.map((contact, index) => (
             <li key={index}>
-              <a href={link.url}>
-                {IconComponent ? (
-                  <IconComponent className="text-2xl" />
-                ) : (
-                  <img
-                    src={link.icon}
-                    alt={link.title}
-                    className="size-6 object-contain"
-                  />
-                )}
+              <a href={contact.href}>{contact.title}</a>
+            </li>
+          ))}
+        </ul>
+
+        <ul className="flex items-center justify-center gap-4 text-2xl my-6">
+          {socialLinks.map((social, index) => (
+            <li key={index}>
+              <a href={social.href}>
+                <social.icon className="text-2xl" />
               </a>
             </li>
-          );
-        })}
-      </ul>
+          ))}
+        </ul>
+      </div>
     </>
   );
 };

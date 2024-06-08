@@ -41,7 +41,7 @@ const ContactForm = () => {
     },
   };
   return (
-    <div className="bg-goldLight/20 p-12 border border-gold">
+    <div className="bg-goldLight/20 p-20 border border-gold">
       <p className="text-lg mb-12">
         Can't find the contact and information you're looking for? Write to us
         via this quick form.
