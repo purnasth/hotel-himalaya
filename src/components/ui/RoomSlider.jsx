@@ -47,7 +47,7 @@ const RoomSlider = ({ items, currentIndex }) => {
               <div className="absolute inset-0 w-full h-full p-8 text-white bg-gradient-to-t from-black/70 to-black/0 z-0 opacity-0 group-hover:opacity-40  transition-all duration-300 ease-linear" />
             </div>
             <h3 className="text-xl font-semibold mt-6 mb-2">{item.title}</h3>
-            <p className="line-clamp-1">{item.description}</p>
+            <p className="line-clamp-1">{item.subtitle}</p>
           </div>
         ))}
 

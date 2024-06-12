@@ -9,7 +9,7 @@ const items = [
   {
     image: "https://mayurstay.com/hotelhimalaya/images/subpackage/9Lgh2-1.jpg",
     title: "Junior Suite",
-    description:
+    subtitle:
       "Our most spacious room category, the Junior Suites boast of plush beds with finest linen, sufficient working space, comfortable lounge area and en-suite bathrooms featuring bathtub. All these ‘suites’ are situated in the extreme corners of the floors for its quietness, offering windows on two sides with the views of lush green landscaped gardens on one side and city as well as Himalayas on the other. The most opulent rooms that we offer, you won’t wish to leave once you’ve stepped inside.",
     size: "18 ft. by 18 ft. - 324 sq. ft.",
   },
@@ -17,7 +17,7 @@ const items = [
     image:
       "https://s3-alpha-sig.figma.com/img/652f/d1ff/51c5b431e1e513c1711258b59200170e?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p99cPVqMsnroCGN-LwN4qwKKseumgKpYj1oX~hZzOGPRUr1MOgP7BCklnDTj9ABOLf1MQ4DIZrDY4FQ3ZvBamDfqqYdAoEjxBtKElTz4pq4Vqb9yr7c9hh2dBYPKqFmzqc5xMVH-Cwsm9Sg3KXuSEzQwnN2mc0cOjTxoE2VE7xeo3NMte1JBFuCVFk3FbwKTqaoCBjyntTgFZRhr9Q1wy3IxuR7kRpbvLROcYXQy6sco0tKzVbYAJR3nfmnuYPyfiQWAepYVkzs62~PgwiGGhkiAdh-xGHJ8gfpETzjgIINcLEyP7YEMjUZFHjJ23uT8wahEaUKC69Ea7WoGA6DTKQ__",
     title: "Executive Room",
-    description:
+    subtitle:
       "Our newly built Executive Floor commands the best view of the Kathmandu valley. These well-appointed rooms on the 5th floor offer spectacular views of the city and mountains on the horizon. The large windows create an enclosed balcony where you can soak up the sun and marvel at the city below and mountains beyond. The stylish en-suite bathrooms feature rain showers and the room comes equipped with everything the business or leisure traveler might have in mind.",
     size: "18 ft. 12 ft. - 216 sq. ft.",
   },
@@ -25,7 +25,7 @@ const items = [
     image:
       "https://s3-alpha-sig.figma.com/img/9aa8/5155/85bd92c071f86d85d5fcb8c41873dcac?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Wg4qzgKE9bJLALaCw4pNdQBiImQTNUiWvpskZM7fClvWja5YjWinr1QaGRKIKHRpcklC84BN8TkhmPLZYG7d9hF5IX4JhLX3vLa-BdzKPmlao3z-SfPEGGib-0adLov0b7hvCXRxyyW3yJbRzyg4jZEfoC2SBYd4DRqbWumtA7gmNFAnefzsvl6mgbdpcee4FDmmXnWOjvrsqeo1kEw5qbqpw3woYvOa8ae9ojT6YkcOLRnO9p8XCTk25xlduFzEcYryaR5uRoEt0W6xMKWAcHCLKB1kHAvgu4DRQiibhv9QFQKWOM~PU6RIwx8lS0ZT6QvycD-IcQvrFEyLn5oO0w__",
     title: "Deluxe Room",
-    description:
+    subtitle:
       "We offer deluxe room with king size bed and well equipped with all the facilities and equipments you need for a comfortable stay. Spend quality time in our room fulfilled with a luxurious bathroom along with view of mountains and city. Spend your leisure time and make your stay a memorable stay. Feel like home and away in a silent environment.",
     size: "15 ft. 12 ft. by 6 inch - 189 sq. ft.",
   },
