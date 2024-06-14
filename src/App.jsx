@@ -120,6 +120,7 @@ import Promotions from "./pages/Promotions";
 import RecreationPage from "./pages/RecreationPage";
 import BrochurePDF from "./components/BrochurePDF";
 import ContactPage from "./pages/ContactPage";
+import SocialMediaPostsPage from "./pages/SocialMediaPostsPage";
 
 const App = () => {
   return (
@@ -148,6 +149,8 @@ const App = () => {
           <Route path="/promotions" element={<Promotions />} />
 
           <Route path="/recreation" element={<RecreationPage />} />
+
+          <Route path="/social-offer" element={<SocialMediaPostsPage />} />
 
           <Route path="/brochure" element={<BrochurePDF />} />
 

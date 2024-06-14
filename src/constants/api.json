@@ -1,5 +1,10 @@
 {
-  "mainLinks": ["Stay", "Fine Dine", "Recreation", "Events"],
+  "mainLinks": [
+    "Stay",
+    "Fine Dine",
+    "Recreation",
+    "Events"
+  ],
   "secondaryLinks": [
     "About the Hotel",
     "Gallery",
@@ -8,7 +13,7 @@
     "Contact Us",
     "Inquiry",
     "Privacy Policy",
-    "Terms & Conditions"
+    "Social Media Posts"
   ],
   "bookingInfo": {
     "roomBooking": {
@@ -18,12 +23,18 @@
     },
     "eventBooking": {
       "title": "Event Booking",
-      "phones": ["+977 9761693040", "+977 9801810708"],
+      "phones": [
+        "+977 9761693040",
+        "+977 9801810708"
+      ],
       "email": "banquetsales@hotelhimalaya.com"
     },
     "dineRecreationBooking": {
       "title": "Dine & Recreation Booking",
-      "phones": ["+977-9851339602", "+977-9801810708"],
+      "phones": [
+        "+977-9851339602",
+        "+977-9801810708"
+      ],
       "email": "info@hotelhimalaya.com"
     },
     "patanMuseumCafeBooking": {
@@ -34,7 +45,10 @@
   },
   "intro": {
     "address": "Kupondol Height, Lalitpur, Nepal",
-    "phones": ["+977 01-5423900", "+977 01-5423901"],
+    "phones": [
+      "+977 01-5423900",
+      "+977 01-5423901"
+    ],
     "emails": [
       "banquetsales@hotelhimalaya.com",
       "info@hotelhimalaya.com",
