@@ -4,6 +4,7 @@ import Video from "./ui/Video";
 const About = () => {
   return (
     <main>
+      <div className="absolute inset-0 bg-gold/20 size-full h-3/4 -z-10"></div>
       <div className="container">
         <div className="text-center space-y-8 px-12">
           <span className="uppercase">37 years of hospitality</span>

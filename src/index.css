@@ -34,7 +34,7 @@
   }
 
   .stay-slider-button {
-    @apply absolute top-1/2 translate-y-1/2 rounded-full py-1 px-5 bg-gradient text-xl cursor-pointer transition-all duration-1000;
+    @apply absolute top-1/2 rounded-full py-1 px-5 bg-gradient text-xl cursor-pointer transition-all duration-1000;
   }
 
   .hall-slider-button {
