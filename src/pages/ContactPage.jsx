@@ -14,6 +14,7 @@ import { MdOutlineLocalPhone, MdOutlineMailOutline } from "react-icons/md";
 import { TbClipboard, TbClock } from "react-icons/tb";
 
 import Socials from "../components/ui/Socials";
+import Banner from "../components/Banner";
 
 const ContactPage = () => {
   const slides = [
@@ -197,7 +198,7 @@ const ContactPage = () => {
   ];
   return (
     <>
-      <div className="relative">
+      {/* <div className="relative">
         <Slider
           slides={slides}
           containerClassName="w-full h-screen"
@@ -212,7 +213,14 @@ const ContactPage = () => {
         <div className="absolute left-1/2 -translate-x-1/2 bottom-5">
           <BreadCrumb page="Contact" />
         </div>
-      </div>
+      </div> */}
+
+      <Banner
+        banner="https://s3-alpha-sig.figma.com/img/768f/7e1f/d49cd3ddfce19581c959d4800854ec35?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W-V8zu~UhDiVWjhawgd5oynAoQ9ptZamLNqK2maePyeICfqy1FDsqGWs4TjjHwiQGaT0KqJ-Ehi9IVRZJx-qz5ZCTvLZPEZClnHxTihdjgVSl5DkKPZYtVjvlAFTIPIOdZRKWrc28hZWavi3ntDlBri14tjSB7FuMfB0CgFRLRGKfLbUqcPQrM~JT-hG0v-oVkOjJH88R5GAdnFz9uaW9zJduJllpKtX0yqMpK0VUohwMXIodk~gKc4OBYVNrSyf8b7z1uesenciYPULsJomMst3pmXKA1QcFVz9cMiHY~0wZp-lCTbemUwivyxInlAVa6TcVgF17~t~dtRchxGyug__"
+        title="Contacts"
+        description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae quos delectus iusto autem obcaecati?"
+        page="Contact"
+      />
 
       <main>
         <div className="container mt-12">
