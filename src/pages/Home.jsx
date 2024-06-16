@@ -8,6 +8,7 @@ import Testimonials from "../components/Testimonials";
 import SocialOffers from "../components/SocialOffers";
 import useFetchData from "../hooks/useFetchData";
 import Loader from "../components/Loader";
+import SocialPosts from "../components/SocialPosts";
 
 const Home = () => {
   const { data, loading, error } = useFetchData("/api/heroSlides.json");
@@ -38,7 +39,8 @@ const Home = () => {
       <Hall />
       <Testimonials />
       {/* <Offers /> */}
-      <SocialOffers />
+      {/* <SocialPosts /> */}
+      {/* <SocialOffers /> */}
       {/* <OffersContainer /> */}
       {/* <Accommodation /> */}
       {/* <FilterButton /> */}
