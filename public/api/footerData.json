@@ -94,15 +94,15 @@
   "hospitalityPartners": [
     {
       "name": "Miss World",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Miss_World_logo.png"
+      "logo": "../images/hospitality/missWorld.png"
     },
     {
       "name": "Miss Earth",
-      "logo": "/src/assets/hospitality/missWorld.png"
+      "logo": "../images/hospitality/missEarth.png"
     },
     {
       "name": "Miss International",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/7/71/Miss.International.logo.png"
+      "logo": "../images/hospitality/missInternational.png"
     }
   ],
   "copyright": {
