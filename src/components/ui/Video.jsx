@@ -1,6 +1,20 @@
 import React from "react";
+import useFetchData from "../../hooks/useFetchData";
+import Loader from "../Loader";
 
-const Video = ({ videoClassName, poster, video }) => {
+const Video = ({ videoClassName }) => {
+  const { data, loading, error } = useFetchData("/api/videoApi.json");
+
+  if (loading) {
+    return <Loader />;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
+  const { video, poster } = data;
+
   return (
     <>
       <video

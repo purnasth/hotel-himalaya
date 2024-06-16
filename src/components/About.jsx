@@ -26,11 +26,7 @@ const About = () => {
           </p>
         </div>
 
-        <Video
-          videoClassName="w-full h-full object-cover mt-24"
-          poster="https://mayurstay.com/hotelhimalaya/images/slideshow/m9TAT-1.jpg"
-          video="https://hotelhimalaya.com/template/web/img/about/HOTEL_HIMALAYA.mp4"
-        />
+        <Video videoClassName="w-full h-full object-cover mt-24" />
       </div>
     </main>
   );

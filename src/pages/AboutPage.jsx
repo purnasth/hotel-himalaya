@@ -1,5 +1,4 @@
 import React from "react";
-import Banner from "../components/Banner";
 import useFetchData from "../hooks/useFetchData";
 import Loader from "../components/Loader";
 import About from "../components/About";

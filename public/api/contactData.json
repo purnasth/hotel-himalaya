@@ -1,0 +1,56 @@
+{
+  "banner": "../images/banner/about.jpg",
+  "title": "Contacts",
+  "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae quos delectus iusto autem obcaecati?",
+  "page": "Contact",
+  "slogan": "True Nepalese Hospitality",
+  "subdescription": "Would you like to find out how to get to us or you have a question you need to ask? Call us or e-mail us, here are all the contact information you need to know.",
+  "slides": [
+    {
+      "url": "../images/about/1.jpeg",
+      "title": "Hotel Himalaya"
+    },
+    {
+      "url": "../images/banner/about.jpg",
+      "title": "Hotel Himalaya"
+    },
+    {
+      "url": "../images/about/3.jpg",
+      "title": "Hotel Himalaya"
+    },
+    {
+      "url": "../images/about/4.jpg",
+      "title": "Hotel Himalaya"
+    },
+    {
+      "url": "../images/about/5.jpg",
+      "title": "Hotel Himalaya"
+    },
+    {
+      "url": "../images/about/6.jpg",
+      "title": "Hotel Himalaya"
+    }
+  ],
+  "aboutSlides": [
+    {
+      "url": "../images/banner/rooms.jpg",
+      "title": "Junior Suite Room"
+    },
+    {
+      "url": "../images/banner/swimming.jpg",
+      "title": "Swimming Pool Deck"
+    },
+    {
+      "url": "../images/banner/dine.jpg",
+      "title": "By the Waterfall"
+    },
+    {
+      "url": "../images/banner/dalaan.jpg",
+      "title": "Dalaan"
+    },
+    {
+      "url": "../images/banner/pdr.jpg",
+      "title": "PDR III"
+    }
+  ]
+}

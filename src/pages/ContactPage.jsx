@@ -15,29 +15,10 @@ import { TbClipboard, TbClock } from "react-icons/tb";
 
 import Socials from "../components/ui/Socials";
 import Banner from "../components/Banner";
+import useFetchData from "../hooks/useFetchData";
+import Loader from "../components/Loader";
 
 const ContactPage = () => {
-  const slides = [
-    {
-      url: "https://mayurstay.com/hotelhimalaya/images/slideshow/m9TAT-1.jpg",
-    },
-    {
-      url: "https://mayurstay.com/hotelhimalaya/images/slideshow/mxXP9-2.jpg",
-    },
-    {
-      url: "https://mayurstay.com/hotelhimalaya/images/slideshow/GDLNu-03.jpg",
-    },
-    {
-      url: "https://mayurstay.com/hotelhimalaya/images/package/banner/GJ05P-banner.jpeg",
-    },
-    {
-      url: "https://mayurstay.com/hotelhimalaya/images/package/galleryimages/km7M2-room3.jpg",
-    },
-    {
-      url: "https://hotelhimalaya.com/project/images/slideshow/id4vO-04.jpg",
-    },
-  ];
-
   const contactAccordianContents = [
     {
       icon: MdOutlineBed,
@@ -196,41 +177,42 @@ const ContactPage = () => {
       ],
     },
   ];
+
+  const { data, loading, error } = useFetchData("/api/contactData.json");
+
+  if (loading) {
+    return <Loader />;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
+  const {
+    banner,
+    title,
+    description,
+    page,
+    slogan,
+    subdescription,
+    slides,
+    aboutSlides,
+  } = data;
+
   return (
     <>
-      {/* <div className="relative">
-        <Slider
-          slides={slides}
-          containerClassName="w-full h-screen"
-          buttonClassName="hero-slider-button"
-          imgClassName="w-full h-full object-cover absolute inset-0 transition-all duration-[2s]"
-          trueClassName="opacity-100"
-          falseClassName="opacity-0"
-        />
-
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/0 select-none pointer-events-none"></div>
-
-        <div className="absolute left-1/2 -translate-x-1/2 bottom-5">
-          <BreadCrumb page="Contact" />
-        </div>
-      </div> */}
-
       <Banner
-        banner="https://s3-alpha-sig.figma.com/img/768f/7e1f/d49cd3ddfce19581c959d4800854ec35?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W-V8zu~UhDiVWjhawgd5oynAoQ9ptZamLNqK2maePyeICfqy1FDsqGWs4TjjHwiQGaT0KqJ-Ehi9IVRZJx-qz5ZCTvLZPEZClnHxTihdjgVSl5DkKPZYtVjvlAFTIPIOdZRKWrc28hZWavi3ntDlBri14tjSB7FuMfB0CgFRLRGKfLbUqcPQrM~JT-hG0v-oVkOjJH88R5GAdnFz9uaW9zJduJllpKtX0yqMpK0VUohwMXIodk~gKc4OBYVNrSyf8b7z1uesenciYPULsJomMst3pmXKA1QcFVz9cMiHY~0wZp-lCTbemUwivyxInlAVa6TcVgF17~t~dtRchxGyug__"
-        title="Contacts"
-        description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae quos delectus iusto autem obcaecati?"
-        page="Contact"
+        banner={banner}
+        title={title}
+        description={description}
+        page={page}
       />
 
-      <main>
+      <main className="font -serif">
         <div className="container mt-12">
           <div className="text-center space-y-6 px-24">
-            <span className="uppercase">True Nepalese Hospitality</span>
-            <h3 className="text-3xl leading-snug">
-              Would you like to find out how to get to us or you have a question
-              you need to ask? Call us or e-mail us, here are all the contact
-              information you need to know.
-            </h3>
+            <span className="uppercase">{slogan}</span>
+            <h3 className="text-3xl leading-snug">{subdescription}</h3>
           </div>
 
           <div className="grid grid-cols-3 items-center content-center gap-12 my-40">
@@ -239,11 +221,7 @@ const ContactPage = () => {
             </div>
 
             <div className="col-span-2 outline outline-1 outline-white -outline-offset-[10px]">
-              <Video
-                videoClassName="w-full h-full object-cover"
-                poster="https://mayurstay.com/hotelhimalaya/images/slideshow/m9TAT-1.jpg"
-                video="https://hotelhimalaya.com/template/web/img/about/HOTEL_HIMALAYA.mp4"
-              />
+              <Video videoClassName="w-full h-full object-cover" />
             </div>
           </div>
         </div>
