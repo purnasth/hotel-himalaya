@@ -1,6 +1,8 @@
 import React from "react";
 import Slider from "./Slider";
 import EnquiryNow from "./ui/EnquiryNow";
+import { getIconComponent } from "../utils/iconMap";
+import IconRenderer from "./IconRenderer";
 
 const HallComponent = ({ content }) => {
   const { title, description, image, details, setup } = content;
@@ -27,17 +29,24 @@ const HallComponent = ({ content }) => {
           </p>
           {details && (
             <ul>
-              <li className="flex items-center justify-between mt-6 py-2">
-                {Object.entries(details).map(([key, detail]) => (
-                  <span
+              {Object.entries(details).map(([key, detail]) => {
+                const IconComponent = getIconComponent(detail.icon);
+                return (
+                  <li
                     key={key}
-                    className="flex items-center md:gap-1 text-xs md:text-base"
+                    className="flex items-center justify-between mt-6 py-2"
                   >
-                    <detail.icon className="text-sm md:text-xl mr-2" />
-                    {detail.value}
-                  </span>
-                ))}
-              </li>
+                    <span className="flex items-center md:gap-1 text-xs md:text-base">
+                      {IconComponent ? (
+                        <IconComponent className="text-sm md:text-xl mr-2" />
+                      ) : (
+                        <img src={detail.icon} alt="icon" />
+                      )}
+                      {detail.value}
+                    </span>
+                  </li>
+                );
+              })}
             </ul>
           )}
         </div>
@@ -51,12 +60,17 @@ const HallComponent = ({ content }) => {
             <h5 className="text-lg text-center mb-6">Hall Setup Style</h5>
             <ul className="list-decimal list-inside font-light text-base space-y-3 max-h-52 overflow-y-auto">
               {setup &&
-                setup.map((setup, index) => (
-                  <li key={index} className="flex items-center gap-2">
-                    {/* <setup.icon className="text-sm md:text-base" /> */}
-                    {setup.title}: {setup.details}
-                  </li>
-                ))}
+                setup.map((setupItem, index) => {
+                  return (
+                    <li key={index} className="flex items-center gap-2">
+                      <IconRenderer
+                        iconName={setupItem.icon}
+                        className="text-xl text-black"
+                      />
+                      {setupItem.title}: {setupItem.details}
+                    </li>
+                  );
+                })}
             </ul>
           </div>
         </div>
