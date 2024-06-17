@@ -1,9 +1,11 @@
 {
     "id": "events",
-    "banner": "../images/banner/pdr.jpg",
+    "!comment_banner": "../images/banner/pdr.jpg",
+    "banner": "../images/halls/pdr/3.jpg",
     "title": "Auspicious Events Center",
-    "subtitle": "Comfortable accommodation directly in the hotel with extensive Wellness and exceptional gastronomy.",
+    "subtitle": "Save the date for upcoming event and experience an unforgettable evening of elegance, entertainment, and luxury.",
     "slogan": "Trusted by 10,000+ happy faces",
+    "description": "Save the date for upcoming event and experience an unforgettable evening of elegance, entertainment, and luxury.",
     "details": "Our conference and meeting halls have seen and hosted many international conventions, workshops and special banquets. Our clienteles include many NGO's and INGO's like the UN, corporate houses and prominent families seeking special venue / menu for their celebration. Whether a corporate conference, convention or a lavish banquet, our team is on hand to help you create a uniquely tailored event to suit your needs.",
     "forCategories": [
         {
@@ -50,19 +52,19 @@
             "description": "Our crown jewel in event hosting. Now boasting state-of-the-art amenities, this stunning venue is perfect for any occasion.Experience the pinnacle of luxury and functionality at the Himalaya Grand Ballroom.",
             "image": [
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/KN2OQ-event01.jpg",
+                    "src": "../images/halls/1.jpg",
                     "alt": "Himalaya Grand Ball Room"
                 },
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/xs2Xy-event2.jpg",
+                    "src": "../images/halls/hgbr/2.jpg",
                     "alt": "Himalaya Grand Ball Room"
                 },
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/wJCiy-event3.jpg",
+                    "src": "../images/halls/hgbr/3.jpg",
                     "alt": "Himalaya Grand Ball Room"
                 },
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/ly6To-event1.jpg",
+                    "src": "../images/halls/hgbr/4.jpg",
                     "alt": "Himalaya Grand Ball Room"
                 }
             ],
@@ -122,19 +124,19 @@
             "description": "Ascend to sophistication in our Neo-classical Skyline Hall, where timeless elegance meets modern convenience. Elevate your events, from dynamic workshops to unforgettable banquets",
             "image": [
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/jj0Cp-skyline-hall1.jpg",
+                    "src": "../images/halls/2.jpg",
                     "alt": "Skyline Hall"
                 },
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/Y1jTW-skyline-hall.jpg",
+                    "src": "../images/halls/sh/2.jpg",
                     "alt": "Skyline Hall"
                 },
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/DQiHF-skyline-hall2.jpg",
+                    "src": "../images/halls/sh/3.jpg",
                     "alt": "Skyline Hall"
                 },
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/2gj8N-skyline3.jpg",
+                    "src": "../images/halls/sh/4.jpg",
                     "alt": "Skyline Hall"
                 }
             ],
@@ -194,19 +196,19 @@
             "description": "Our Rato Baithak hall is a spacious and elegant room with upholstered walls and state-of-the-art conference aids. Skyline Hall and Rato Baithak are conveniently located on the same floor.",
             "image": [
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/C0Ne4-rato.jpg",
+                    "src": "../images/halls/rb/1.jpg",
                     "alt": "Rato Baithak"
                 },
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/L54GZ-rato1.jpg",
+                    "src": "../images/halls/rb/2.jpg",
                     "alt": "Rato Baithak"
                 },
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/mtShI-rato3.jpg",
+                    "src": "../images/halls/rb/3.jpg",
                     "alt": "Rato Baithak"
                 },
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/m0WlX-rato2.jpg",
+                    "src": "../images/halls/rb/4.jpg",
                     "alt": "Rato Baithak"
                 }
             ],
@@ -266,19 +268,19 @@
             "description": "If you want to have a private party or a confidential business discussion, our Green Room, strategically secluded on the third floor of the hotel is the best place for you.",
             "image": [
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/VyxO5-green4.jpg",
+                    "src": "../images/halls/3.jpg",
                     "alt": "Green Room"
                 },
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/W1Xdo-green2.jpg",
+                    "src": "../images/halls/gr/2.jpg",
                     "alt": "Green Room"
                 },
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/kgEIc-green1.jpg",
+                    "src": "../images/halls/gr/3.jpg",
                     "alt": "Green Room"
                 },
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/OCBgi-green3.jpg",
+                    "src": "../images/halls/gr/4.jpg",
                     "alt": "Green Room"
                 }
             ],
@@ -338,19 +340,19 @@
             "description": "Welcome to Regent Hall at Hotel Himalaya, where sophistication meets productivity. With advanced amenities like a whiteboard, flip chart, and soft board, we ensure seamless communication.",
             "image": [
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/ukxkK-regenthall.jpg",
+                    "src": "../images/halls/rh/1.jpg",
                     "alt": "Regent Hall"
                 },
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/cObai-regent3.jpg",
+                    "src": "../images/halls/4.jpg",
                     "alt": "Regent Hall"
                 },
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/FxLTG-regent1.jpg",
+                    "src": "../images/halls/rh/2.jpg",
                     "alt": "Regent Hall"
                 },
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/W7Ge1-regent2.jpg",
+                    "src": "../images/halls/rh/3.jpg",
                     "alt": "Regent Hall"
                 }
             ],
@@ -410,15 +412,15 @@
             "description": "A private dining area is a reserved space within a restaurant for exclusive events too, providing a more personalized setting for occasions like business meetings or family celebrations.",
             "image": [
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/Ndkc8-pdr1.jpg",
+                    "src": "../images/halls/pdr/1.jpg",
                     "alt": "PDR"
                 },
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/c91Sv-event_pdr2.jpg",
+                    "src": "../images/halls/pdr/2.jpg",
                     "alt": "PDR"
                 },
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/k6bcI-event_pdr3.jpg",
+                    "src": "../images/halls/pdr/3.jpg",
                     "alt": "PDR"
                 }
             ],
@@ -443,11 +445,11 @@
             "description": "Step into The Board Room, where every detail is tailored to elevate your business gatherings. From sleek design to cutting-edge amenities, unlock the perfect space for productive meetings and inspired collaborations.",
             "image": [
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/hpG39-board.jpg",
+                    "src": "../images/halls/br/1.jpg",
                     "alt": "Board Room"
                 },
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/hpG39-board.jpg",
+                    "src": "../images/halls/br/1.jpg",
                     "alt": "Board Room"
                 }
             ],
@@ -472,11 +474,11 @@
             "description": "Step into the Palm Garden at Hotel Himalaya, where tranquility reigns amidst verdant palms. This serene enclave invites relaxation, reflection, and leisurely exploration. Immerse yourself in a harmonious blend of natural beauty and comfort",
             "image": [
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/pcRdQ-palm_garden.jpg",
+                    "src": "../images/halls/pg/1.jpg",
                     "alt": "Palm Gardens"
                 },
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/pcRdQ-palm_garden.jpg",
+                    "src": "../images/halls/pg/1.jpg",
                     "alt": "Palm Gardens"
                 }
             ],
@@ -506,11 +508,11 @@
             "description": "Explore the enchanting Temple Garden at Hotel Himalaya, a peaceful sanctuary adorned with flora rich in symbolism. This garden is a tranquil refuge for those seeking solace and inspiration.",
             "image": [
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/B2XAQ-temple_garden.jpg",
+                    "src": "../images/halls/tg/1.jpg",
                     "alt": "Temple Garden"
                 },
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/B2XAQ-temple_garden.jpg",
+                    "src": "../images/halls/tg/1.jpg",
                     "alt": "Temple Garden"
                 }
             ],
@@ -540,11 +542,11 @@
             "description": "Welcome to the Basecamp Garden, your outdoor haven for rest and friendly gatherings. Inspired by the adventurous spirit of a basecamp, this garden is the heart of social life, a place to relax and connect.",
             "image": [
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/I8nKt-garden1.jpg",
+                    "src": "../images/halls/bg/1.jpg",
                     "alt": "Basecamp Garden"
                 },
                 {
-                    "src": "https://hotelhimalaya.com/images/package/galleryimages/I8nKt-garden1.jpg",
+                    "src": "../images/halls/bg/1.jpg",
                     "alt": "Basecamp Garden"
                 }
             ],

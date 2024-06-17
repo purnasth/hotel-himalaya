@@ -16,7 +16,15 @@ const HallPage = () => {
     return <div>Error: {error}</div>;
   }
 
-  const { banner, title, subtitle, description, slogan, hallCategories, amenities } = data;
+  const {
+    banner,
+    title,
+    subtitle,
+    description,
+    slogan,
+    hallCategories,
+    amenities,
+  } = data;
 
   return (
     <>

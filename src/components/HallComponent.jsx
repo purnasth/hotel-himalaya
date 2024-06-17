@@ -1,7 +1,6 @@
 import React from "react";
 import Slider from "./Slider";
 import EnquiryNow from "./ui/EnquiryNow";
-import { getIconComponent } from "../utils/iconMap";
 import IconRenderer from "./IconRenderer";
 
 const HallComponent = ({ content }) => {
@@ -30,18 +29,16 @@ const HallComponent = ({ content }) => {
           {details && (
             <ul>
               {Object.entries(details).map(([key, detail]) => {
-                const IconComponent = getIconComponent(detail.icon);
                 return (
                   <li
                     key={key}
                     className="flex items-center justify-between mt-6 py-2"
                   >
                     <span className="flex items-center md:gap-1 text-xs md:text-base">
-                      {IconComponent ? (
-                        <IconComponent className="text-sm md:text-xl mr-2" />
-                      ) : (
-                        <img src={detail.icon} alt="icon" />
-                      )}
+                      <IconRenderer
+                        iconName={detail.icon}
+                        className="text-xl text-black mr-2"
+                      />
                       {detail.value}
                     </span>
                   </li>
