@@ -9,7 +9,6 @@ const TestimonialFilter = ({ contents }) => {
     setTimeout(() => {
       setSelectedItem(item);
       setIsVisible(true);
-      // Scroll to the display section
       const displaySection = document.getElementById(
         "filtered-content-display"
       );
@@ -22,7 +21,7 @@ const TestimonialFilter = ({ contents }) => {
   return (
     <div className="flex flex-col gap-24">
       <div className="sticky top-0 flex justify-between flex-nowrap gap-12 max-w-full overflow-x-auto p-8 z-20">
-        {contents.map(({ id, title, image }) => (
+        {contents.map(({ id, title, image, source }) => (
           <button
             key={id}
             onClick={() =>
@@ -37,7 +36,7 @@ const TestimonialFilter = ({ contents }) => {
             <div className="flex items-center justify-between px-4 w-56">
               <img
                 src={image}
-                alt={title}
+                alt={source}
                 className="w-auto h-9 object-contain p-2"
               />
               <p className="text-sm md:text-base line-clamp-1">- {title}</p>
