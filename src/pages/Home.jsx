@@ -11,17 +11,27 @@ import Loader from "../components/Loader";
 import SocialPosts from "../components/SocialPosts";
 
 const Home = () => {
-  const { data, loading, error } = useFetchData("/api/heroSlides.json");
+  const {
+    data: heroSlidesData,
+    loading: heroSlidesLoading,
+    error: heroSlidesError,
+  } = useFetchData("/api/heroSlides.json");
 
-  if (loading) {
+  const {
+    data: aboutData,
+    loading: aboutLoading,
+    error: aboutError,
+  } = useFetchData("/api/aboutData.json");
+
+  if (heroSlidesLoading || aboutLoading) {
     return <Loader />;
   }
 
-  if (error) {
-    return <div>Error: {error}</div>;
+  if (heroSlidesError || aboutError) {
+    return <div>Error: {heroSlidesError || aboutError}</div>;
   }
 
-  const { slides } = data;
+  const { slides } = heroSlidesData;
 
   return (
     <>
@@ -33,7 +43,7 @@ const Home = () => {
         trueClassName="opacity-100"
         falseClassName="opacity-0"
       />
-      <About />
+      <About data={aboutData} />
       <Stay />
       <Facilities />
       <Hall />
@@ -44,7 +54,6 @@ const Home = () => {
       {/* <OffersContainer /> */}
       {/* <Accommodation /> */}
       {/* <FilterButton /> */}
-
       {/* <Slider
         slides={slides}
         containerClassName="w-1/3 h-96 overflow-hidden relative mx-auto mt-10 group"
