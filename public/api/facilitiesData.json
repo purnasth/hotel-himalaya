@@ -1,0 +1,28 @@
+{
+    "hotelFacilities": [
+        {
+            "id": 1,
+            "title": "Dine in Fine Place",
+            "subtitle": "Taste the difference!",
+            "description": "Perfect place to indulge in the finest foods and signature cocktails with friends and family.",
+            "icon": "../images/banner/dine.jpg",
+            "router": "/dine"
+        },
+        {
+            "id": 2,
+            "title": "Swimming Pool",
+            "subtitle": "Dive into perfection!",
+            "description": "Have a wonderful time in our refreshing pool with your family and friends.",
+            "icon": "../images/banner/swimming.jpg",
+            "router": "/recreation"
+        },
+        {
+            "id": 3,
+            "title": "Patan Museum Cafe",
+            "subtitle": "Unwind in Elegance!",
+            "description": "Begin your day with a global culinary exploration, a UNESCO World Heritage site, where a lavish buffet awaits.",
+            "icon": "https://hotelhimalaya.com/images/package/galleryimages/OeO8g-cafe1.jpg",
+            "router": "/dine"
+        }
+    ]
+}

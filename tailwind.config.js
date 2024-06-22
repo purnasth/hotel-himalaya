@@ -8,7 +8,21 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        notoSerif: ['"Noto Serif"', "serif"],
+        notoSerif: [
+          '"Noto Serif"',
+          "ui-serif",
+          "Georgia",
+          "Cambria",
+          "Times New Roman",
+          "Times",
+          "serif",
+        ],
+        cursive: [
+          '"Style Script"',
+          "Georgia",
+          "Cambria",
+          "cursive",
+        ],
       },
       colors: {
         "custom-blue": "#070a0f",
