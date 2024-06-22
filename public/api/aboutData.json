@@ -1,8 +1,13 @@
 {
   "banner": "../images/banner/about.jpg",
+  "slogan": "37 years of hospitality",
+  "home_title": "The stay at Hotel Himalaya means enjoying every moment. Relax. Find inspiration. Be fascinated.",
+  "home_description": "Nestled within 6.58 acres of exquisitely landscaped grounds, Hotel Himalaya is conveniently located 8 km away from the Tribhuwan International Airport and only 2 km from the Kathmandu city center. We have always been an ideal haven for business and leisure travelers alike, offering resort ambiance with an intimate touch. Since many of the distinguished NGOs and INGOs in Kathmandu are in the vicinity the UN head office is only a few minutes walking distance.",
   "title": "About Hotel Himalaya",
   "description": "The stay at Hotel Himalaya means enjoying every moment. Relax. Find inspiration. Be fascinated.",
   "page": "About Us",
+  "title_description": "Situated in the epicenter of Kathmandu Valley, offering great value for money with superb rooms and a wonderful dining experience. Come and stay with us and allow us to make you feel at home with true Nepalese hospitality!",
+  "main_description": "Our 126 well-appointed rooms offer every comfort the traveler may need and we have a full range of amenities for our distinguished guests. You can enjoy a 180-degree panoramic view of the majestic Himalayan range from our garden. We offer the finest cuisine in our international restaurant Café Horizon as well as In-Room dining for a more private meal. For our active guests, we have a superb long tennis court, swimming pool, and health club to keep you in shape and tone your body. The food served is hygienic and timely. The culinary chef uses their best skills to serve a delight on your table. You can enjoy the delicious recipes of Indian, Continental, and Chinese Cuisine.",
   "slides": [
     {
       "url": "../images/about/1.jpeg",

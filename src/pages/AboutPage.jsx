@@ -17,7 +17,15 @@ const AboutPage = () => {
     return <div>Error: {error}</div>;
   }
 
-  const { banner, title, description, slides, aboutSlides } = data;
+  const {
+    banner,
+    title,
+    description,
+    title_description,
+    main_description,
+    slides,
+    aboutSlides,
+  } = data;
 
   return (
     <>
@@ -47,26 +55,11 @@ const AboutPage = () => {
       <About data={data} />
 
       <main className="mt-0 pt-0">
-        <div className="p-8 space-y-10 text-center">
-          <h5 className="text-3xl leading-relaxed">
-            Situated in the epicenter of Kathmandu Valley, offering great value
-            for money with superb rooms and a wonderful dining experience. Come
-            and stay with us and allow us to make you feel at home with true
-            Nepalese hospitality!
-          </h5>
-          <p>
-            Our 126 well-appointed rooms offer every comfort the traveler may
-            need and we have a full range of amenities for our distinguished
-            guests. You can enjoy a 180-degree panoramic view of the majestic
-            Himalayan range from our garden. We offer the finest cuisine in our
-            international restaurant ‘Café Horizon’ as well as In-Room dining
-            for a more private meal. For our active guests, we have a superb
-            long tennis court, swimming pool, and health club to keep you in
-            shape and tone your body. The food served is hygienic and timely.
-            The culinary chef uses their best skills to serve a delight on your
-            table. You can enjoy the delicious recipes of Indian, Continental,
-            and Chinese Cuisine.
-          </p>
+        <div className="p-8 text-center">
+          <div className="container max-w-6xl space-y-10 mb-24">
+            <h5 className="text-3xl leading-normal">{title_description}</h5>
+            <p>{main_description}</p>
+          </div>
           <Slider
             slides={aboutSlides.map((slide) => ({
               url: slide.url,
