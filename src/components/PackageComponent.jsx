@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "./Slider";
+import IconRenderer from "./IconRenderer";
 
 const PackageComponent = ({ content }) => {
   const { title, description, image, details, amenities } = content;
@@ -31,7 +32,10 @@ const PackageComponent = ({ content }) => {
                     key={key}
                     className="flex items-center md:gap-1 text-xs md:text-base"
                   >
-                    <detail.icon className="text-sm md:text-xl mr-2" />
+                    <IconRenderer
+                      iconName={detail.icon}
+                      className="text-xl text-black mr-2"
+                    />
                     {detail.value}
                   </span>
                 ))}
@@ -55,7 +59,10 @@ const PackageComponent = ({ content }) => {
               {amenities &&
                 amenities.map((amenity, index) => (
                   <li key={index} className="flex items-center gap-4">
-                    <amenity.icon className="text-sm md:text-base" />
+                    <IconRenderer
+                      iconName={amenity.icon}
+                      className="text-xl text-black"
+                    />
                     {amenity.title}
                   </li>
                 ))}
