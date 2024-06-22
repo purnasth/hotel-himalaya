@@ -1,0 +1,73 @@
+{
+    "id": 1,
+    "title": "Discover Hotel Himalaya",
+    "description": "Our hotel offers 126 well-appointed rooms, a 180-degree panoramic view of the Himalayas, and 'Café Horizon' with a variety of dining options. Enjoy in-room dining, a tennis court, swimming pool, and health club. We serve hygienic and timely meals with Indian, Continental, and Chinese cuisine. Host events in one of our 12 versatile event halls for business or family occasions.",
+    "facilities": [
+        {
+            "id": 1,
+            "title": "Accommodation",
+            "icon": "MdOutlineBed"
+        },
+        {
+            "id": 2,
+            "title": "Fine Dine",
+            "icon": "MdOutlineBrunchDining"
+        },
+        {
+            "id": 3,
+            "title": "Event Halls",
+            "icon": "TbCalendarEvent"
+        },
+        {
+            "id": 4,
+            "title": "Steam, Sauna, Jacuzzi",
+            "icon": "MdOutlineSpa"
+        },
+        {
+            "id": 5,
+            "title": "Swimming Pool",
+            "icon": "TbSwimming"
+        },
+        {
+            "id": 6,
+            "title": "Health Center",
+            "icon": "MdOutlineHealthAndSafety"
+        },
+        {
+            "id": 7,
+            "title": "Lawn Tennis Court",
+            "icon": "MdOutlineSportsTennis"
+        },
+        {
+            "id": 8,
+            "title": "Café Horizon",
+            "icon": "TbCoffee"
+        }
+    ],
+    "discover": [
+        {
+            "id": 1,
+            "title": "Occasions",
+            "imageUrl": "../images/banner/pdr.jpg",
+            "route": "/events"
+        },
+        {
+            "id": 2,
+            "title": "Fine Dine",
+            "imageUrl": "../images/banner/dalaan.jpg",
+            "route": "/dine"
+        },
+        {
+            "id": 3,
+            "title": "Accommodation",
+            "imageUrl": "../images/banner/rooms.jpg",
+            "route": "/stay"
+        },
+        {
+            "id": 4,
+            "title": "Recreation",
+            "imageUrl": "../images/hero/3.png",
+            "route": "/recreation"
+        }
+    ]
+}

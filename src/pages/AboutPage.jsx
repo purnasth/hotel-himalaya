@@ -4,6 +4,7 @@ import Loader from "../components/Loader";
 import About from "../components/About";
 import Slider from "../components/Slider";
 import BreadCrumb from "../components/ui/BreadCrumb";
+import DiscoverHimalaya from "../components/DiscoverHimalaya";
 
 const AboutPage = () => {
   const { data, loading, error } = useFetchData("/api/aboutData.json");
@@ -46,7 +47,7 @@ const AboutPage = () => {
       <About data={data} />
 
       <main className="mt-0 pt-0">
-        <div className="container p-8 space-y-10 text-center">
+        <div className="p-8 space-y-10 text-center">
           <h5 className="text-3xl leading-relaxed">
             Situated in the epicenter of Kathmandu Valley, offering great value
             for money with superb rooms and a wonderful dining experience. Come
@@ -78,6 +79,7 @@ const AboutPage = () => {
             falseClassName="opacity-0 scale-90 -translate-y-4 -z-10"
           />
         </div>
+        <DiscoverHimalaya />
       </main>
     </>
   );
