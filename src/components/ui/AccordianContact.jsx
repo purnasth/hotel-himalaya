@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import IconRenderer from "../IconRenderer";
 
 const AccordianContact = ({ accordiansContact }) => {
   const { information, details } = accordiansContact;
@@ -12,11 +13,10 @@ const AccordianContact = ({ accordiansContact }) => {
           {item.type === "text" ? (
             <div className="flex items-center justify-between w-full mb-12 px-24">
               <div className="flex items-center gap-12">
-                {typeof item.icon === "function" ? (
-                  <item.icon className="text-xl" />
-                ) : (
-                  <img src={item.icon} alt="icon" />
-                )}
+                <IconRenderer
+                  iconName={item.icon}
+                  className="text-xl text-goldDark"
+                />
                 <h5 className="text-2xl">{item.description}</h5>
               </div>
               <button className="text-xl flex items-center justify-center gap-2">
@@ -31,11 +31,10 @@ const AccordianContact = ({ accordiansContact }) => {
                   className={`flex items-center justify-between w-full py-6 px-12`}
                 >
                   <div className="flex items-center gap-12">
-                    {typeof item.icon === "function" ? (
-                      <item.icon className="text-xl" />
-                    ) : (
-                      <img src={item.icon} alt="icon" />
-                    )}
+                    <IconRenderer
+                      iconName={item.icon}
+                      className="text-xl text-goldDark"
+                    />
                     <h5 className="text-2xl">{item.title}</h5>
                     {item.type === "link" ? (
                       <a href={item.href}>{item.description}</a>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { HiChevronDown } from "react-icons/hi";
 import AccordianContact from "./AccordianContact";
+import IconRenderer from "../IconRenderer";
 
 const Accordian = ({ accordians }) => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -21,11 +22,10 @@ const Accordian = ({ accordians }) => {
             onClick={() => toggleAccordian(index)}
           >
             <div className="flex items-center justify-start gap-12">
-              {typeof accordian.icon === "function" ? (
-                <accordian.icon className="text-3xl text-goldDark" />
-              ) : (
-                <img src={accordian.icon} alt="icon" />
-              )}
+              <IconRenderer
+                iconName={accordian.icon}
+                className="text-3xl text-goldDark"
+              />
               <div className="flex items-start justify-center gap-4 flex-col">
                 <h4 className="text-3xl font-medium">{accordian.category}</h4>
                 <p className="">{accordian.description}</p>
