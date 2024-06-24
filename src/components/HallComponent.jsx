@@ -50,7 +50,7 @@ const HallComponent = ({ content }) => {
 
         <div className="z-auto col-span-2 bg-amber-100 p-4 px-4 -mt-32">
           <div className="bg-amber-100 mb-12 ml-8">
-            <EnquiryNow />
+            <EnquiryNow prefill={{ eventTitle: title }} />
           </div>
 
           <div className="mt-6">

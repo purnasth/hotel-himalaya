@@ -80,7 +80,7 @@ const Navbar = ({ showNavbar, onClose, children, navbarStyles, formTitle }) => {
       onClick={handleClose}
     >
       <div
-        className={`ml-auto w-64 h-screen overflow-y-auto transition-all duration-${duration} ease-in-out ${
+        className={`ml-auto w-80 h-screen overflow-y-auto transition-all duration-${duration} ease-in-out ${
           showNavbar
             ? "scale-100 translate-x-0 opacity-100"
             : "scale-100 translate-x-full opacity-0"

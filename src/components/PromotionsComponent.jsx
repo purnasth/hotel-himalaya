@@ -6,97 +6,49 @@ const PromotionsComponent = () => {
     {
       id: 1,
       url: "https://hotelhimalaya.com/images/promotions/ppfvG-promo4.jpeg",
-      alt: "Hotel Himalaya",
+      alt: "Consumer Offer May 2024",
+      label: "Consumer Offer May 2024",
     },
     {
       id: 2,
-      url: "https://hotelhimalaya.com/images/promotions/ppfvG-promo4.jpeg",
-      alt: "Hotel Himalaya",
+      url: "https://hotelhimalaya.com/images/promotions/nbMHP-promo3.jpeg",
+      alt: "Special Offer at Cake Shop",
+      label: "Special Offer at Cake Shop",
     },
     {
       id: 3,
-      alt: "Hotel Himalaya",
-      url: "https://hotelhimalaya.com/images/promotions/nbMHP-promo3.jpeg",
+      url: "https://hotelhimalaya.com/images/promotions/6Yu1G-hotel-himalaya-promotion2.jpeg",
+      alt: "Saturday BBQ Brunch",
+      label: "Saturday BBQ Brunch",
     },
     {
       id: 4,
-      url: "https://hotelhimalaya.com/images/promotions/ppfvG-promo4.jpeg",
-      alt: "Hotel Himalaya",
-    },
-    {
-      id: 5,
-      url: "https://hotelhimalaya.com/images/promotions/nbMHP-promo3.jpeg",
-      alt: "Hotel Himalaya",
-    },
-    {
-      id: 6,
-      url: "https://hotelhimalaya.com/images/promotions/nbMHP-promo3.jpeg",
-      alt: "Hotel Himalaya",
-    },
-    {
-      id: 7,
-      url: "https://hotelhimalaya.com/images/promotions/ppfvG-promo4.jpeg",
-      alt: "Hotel Himalaya",
-    },
-    {
-      id: 8,
-      url: "https://hotelhimalaya.com/images/promotions/nbMHP-promo3.jpeg",
-      alt: "Hotel Himalaya",
+      url: "https://hotelhimalaya.com/images/promotions/DlBBx-hotel-himalaya-promotion1.jpeg",
+      alt: "Exclusive Monsoon Offer",
+      label: "Exclusive Monsoon Offer",
     },
   ];
 
   return (
     <>
-      <div className="flex items-center justify-center flex-wrap gap-8">
-        <div className="">
-          <img
-            src="https://hotelhimalaya.com/images/promotions/ppfvG-promo4.jpeg"
-            alt=""
-            className="aspect-square size-[28rem] object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
-          />
-          <div className="flex items-center justify-between gap-4 py-6">
-            <div className="space-y-4">
-              <h4 className="text-xl font-medium">Consumer Offer May 2024</h4>
-              <span className="text-sm">Get 3 for the price of 2</span>
-            </div>
+      <div className="grid grid-cols-4 gap-8">
+        {promotionsImages.map((promotion) => (
+          <div key={promotion.id} className="aspect-square size-full">
+            <img
+              src={promotion.url}
+              alt={promotion.alt}
+              className="aspect-square size-full object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
+            />
+            <div className="flex items-center justify-between gap-4 py-6">
+              <div className="space-y-4">
+                <h4 className="text-xl font-medium">{promotion.label}</h4>
+                <span className="text-sm">Get 3 for the price of 2</span>
+              </div>
 
-            <EnquiryNow />
-          </div>
-        </div>
-        <div className="">
-          <img
-            src="https://hotelhimalaya.com/images/promotions/nbMHP-promo3.jpeg"
-            alt=""
-            className="aspect-square size-[28rem] object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
-          />
-          <div className="flex items-center justify-between gap-4 py-6">
-            <div className="space-y-4">
-              <h4 className="text-xl font-medium">
-                Special Offer at Cake Shop
-              </h4>
-              <span className="text-sm">
-                From 7:00 PM onwards get 50% offer
-              </span>
+              <EnquiryNow prefill={{ eventTitle: promotion.label }} />
             </div>
-
-            <EnquiryNow />
           </div>
-        </div>
-        <div className="">
-          <img
-            src="https://hotelhimalaya.com/images/promotions/ppfvG-promo4.jpeg"
-            alt=""
-            className="aspect-square size-[28rem] object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
-          />
-          <div className="flex items-center justify-between gap-4 py-6">
-            <div className="space-y-4">
-              <h4 className="text-xl font-medium">Consumer Offer May 2024</h4>
-              <span className="text-sm">Get 3 for the price of 2</span>
-            </div>
-
-            <EnquiryNow />
-          </div>
-        </div>
+        ))}
       </div>
     </>
   );

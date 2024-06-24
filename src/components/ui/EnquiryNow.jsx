@@ -7,13 +7,14 @@ import { MdAlternateEmail } from "react-icons/md";
 import { HiOutlineMail } from "react-icons/hi";
 import { TbCalendarEvent, TbPhone, TbPencilQuestion } from "react-icons/tb";
 
-const EnquiryNow = () => {
+const EnquiryNow = ({ prefill }) => {
   const enquiryFormFields = [
     {
       id: "event",
       type: "text",
       label: "Event Title",
       icon: TbCalendarEvent,
+      defaultValue: prefill.eventTitle || "",
     },
     {
       id: "event-date",
@@ -77,6 +78,7 @@ const EnquiryNow = () => {
                 placeholder=""
                 required={field.id !== "message"}
                 min={field.type === "date" ? getTodayDate() : undefined}
+                defaultValue={field.defaultValue || ""}
               />
               <label
                 htmlFor={field.id}
