@@ -1,43 +1,9 @@
 import React from "react";
 import FloatingButtonWithNavbar from "./FloatingButtonWithNavbar";
 import { RiMessageLine } from "react-icons/ri";
+import IconRenderer from "../IconRenderer";
 
-import { FiUser } from "react-icons/fi";
-import { MdAlternateEmail } from "react-icons/md";
-import { HiOutlineMail } from "react-icons/hi";
-import { TbCalendarEvent, TbPhone, TbPencilQuestion } from "react-icons/tb";
-
-const EnquiryNow = ({ prefill }) => {
-  const enquiryFormFields = [
-    {
-      id: "event",
-      type: "text",
-      label: "Event Title",
-      icon: TbCalendarEvent,
-      defaultValue: prefill.eventTitle || "",
-    },
-    {
-      id: "event-date",
-      type: "date",
-      label: "Event Date",
-      icon: TbCalendarEvent,
-    },
-    { id: "name", type: "text", label: "Full Name", icon: FiUser },
-    {
-      id: "email",
-      type: "email",
-      label: "Email address",
-      icon: MdAlternateEmail,
-    },
-    { id: "phone", type: "tel", label: "Phone Number", icon: TbPhone },
-    {
-      id: "message",
-      type: "textarea",
-      label: "Message",
-      icon: HiOutlineMail,
-    },
-  ];
-
+const EnquiryNow = ({ prefill, enquiryFormFields }) => {
   const getTodayDate = () => {
     const today = new Date();
     let dd = today.getDate();
@@ -78,7 +44,7 @@ const EnquiryNow = ({ prefill }) => {
                 placeholder=""
                 required={field.id !== "message"}
                 min={field.type === "date" ? getTodayDate() : undefined}
-                defaultValue={field.defaultValue || ""}
+                defaultValue={prefill[field.id] || ""}
               />
               <label
                 htmlFor={field.id}
@@ -86,7 +52,7 @@ const EnquiryNow = ({ prefill }) => {
               >
                 {field.label}
               </label>
-              {typeof field.icon === "function" ? (
+              {/* {typeof field.icon === "function" ? (
                 <span className="absolute right-0 text-black/90 text-base p-1 bg-white pointer-events-none">
                   <field.icon />
                 </span>
@@ -96,7 +62,11 @@ const EnquiryNow = ({ prefill }) => {
                   alt={field.id}
                   className="absolute right-3 w-8 h-8 p-1"
                 />
-              )}
+              )} */}
+              <IconRenderer
+                iconName={field.icon}
+                className="absolute right-0 text-black/90 text-2xl p-1 bg-white pointer-events-none"
+              />
             </div>
           ))}
         </div>

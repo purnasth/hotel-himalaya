@@ -1,0 +1,60 @@
+{
+    "promotionsImages": [
+        {
+            "id": 1,
+            "url": "https://hotelhimalaya.com/images/promotions/ppfvG-promo4.jpeg",
+            "alt": "Consumer Offer May 2024",
+            "label": "Consumer Offer May 2024"
+        },
+        {
+            "id": 2,
+            "url": "https://hotelhimalaya.com/images/promotions/nbMHP-promo3.jpeg",
+            "alt": "Special Offer at Cake Shop",
+            "label": "Special Offer at Cake Shop"
+        },
+        {
+            "id": 3,
+            "url": "https://hotelhimalaya.com/images/promotions/6Yu1G-hotel-himalaya-promotion2.jpeg",
+            "alt": "Saturday BBQ Brunch",
+            "label": "Saturday BBQ Brunch"
+        },
+        {
+            "id": 4,
+            "url": "https://hotelhimalaya.com/images/promotions/DlBBx-hotel-himalaya-promotion1.jpeg",
+            "alt": "Exclusive Monsoon Offer",
+            "label": "Exclusive Monsoon Offer"
+        }
+    ],
+    "promotionsFormFields": [
+        {
+            "id": "event",
+            "type": "text",
+            "label": "Promotions Title",
+            "icon": "TbCalendarEvent"
+        },
+        {
+            "id": "name",
+            "type": "text",
+            "label": "Full Name",
+            "icon": "TbUser"
+        },
+        {
+            "id": "email",
+            "type": "email",
+            "label": "Email address",
+            "icon": "MdAlternateEmail"
+        },
+        {
+            "id": "phone",
+            "type": "tel",
+            "label": "Phone Number",
+            "icon": "TbPhone"
+        },
+        {
+            "id": "message",
+            "type": "textarea",
+            "label": "Message",
+            "icon": "MdOutlineEmail"
+        }
+    ]
+}

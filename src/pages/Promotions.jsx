@@ -1,7 +1,21 @@
 import React from "react";
 import PromotionsComponent from "../components/PromotionsComponent";
+import useFetchData from "../hooks/useFetchData";
+import Loader from "../components/Loader";
 
 const Promotions = () => {
+  const { data, loading, error } = useFetchData("/api/promotionsData.json");
+
+  if (loading) {
+    return <Loader />;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
+  const { promotionsImages, promotionsFormFields } = data;
+
   return (
     <>
       <main className="z-auto">
@@ -14,7 +28,10 @@ const Promotions = () => {
             </p>
           </div>
         </div>
-        <PromotionsComponent />
+        <PromotionsComponent
+          promotionsImages={promotionsImages}
+          enquiryFormFields={promotionsFormFields}
+        />
       </main>
     </>
   );
