@@ -87,7 +87,7 @@ const Navbar = ({ showNavbar, onClose, children, navbarStyles, formTitle }) => {
         } ${navbarStyles}`}
         onClick={handleFormClick}
       >
-        <div className="sticky top-0 flex justify-between px-3 py-6">
+        <div className="sticky top-0 flex justify-between px-3 py-6 bg-white z-20">
           <h4 className="text-2xl">{formTitle}</h4>
           <button
             className="-mr-4"

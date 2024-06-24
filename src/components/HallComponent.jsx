@@ -3,7 +3,7 @@ import Slider from "./Slider";
 import EnquiryNow from "./ui/EnquiryNow";
 import IconRenderer from "./IconRenderer";
 
-const HallComponent = ({ content }) => {
+const HallComponent = ({ content, enquiryFormFields }) => {
   const { title, description, image, details, setup } = content;
 
   return (
@@ -50,7 +50,10 @@ const HallComponent = ({ content }) => {
 
         <div className="z-auto col-span-2 bg-amber-100 p-4 px-4 -mt-32">
           <div className="bg-amber-100 mb-12 ml-8">
-            <EnquiryNow prefill={{ eventTitle: title }} />
+            <EnquiryNow
+              enquiryFormFields={enquiryFormFields}
+              prefill={{ event: title }}
+            />
           </div>
 
           <div className="mt-6">

@@ -30,6 +30,7 @@ const EnquiryNow = ({ prefill, enquiryFormFields }) => {
       title="Enquiry"
       ariaLabel="Enquiry"
     >
+      <h4 className="text-base mt-2 mb-12">Send your information and query.</h4>
       <form className="mt-4">
         <div className="grid sm:grid-cols-1 gap-8">
           {enquiryFormFields.map((field) => (

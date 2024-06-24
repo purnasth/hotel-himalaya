@@ -24,6 +24,7 @@ const HallPage = () => {
     slogan,
     hallCategories,
     amenities,
+    eventFormFields,
   } = data;
 
   return (
@@ -43,7 +44,12 @@ const HallPage = () => {
         </div>
         <div className="space-y-32 grid grid-cols-2 gap-12">
           {hallCategories.map((hall) => (
-            <HallComponent key={hall.id} page="Hall" content={hall} />
+            <HallComponent
+              key={hall.id}
+              page="Hall"
+              content={hall}
+              enquiryFormFields={eventFormFields}
+            />
           ))}
         </div>
         <Amenities amenities={amenities} />

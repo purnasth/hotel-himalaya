@@ -619,5 +619,55 @@
             "icon": "TbVideo",
             "title": "Video Conferencing"
         }
+    ],
+    "eventFormFields": [
+        {
+            "id": "event",
+            "type": "text",
+            "label": "Promotions Title",
+            "icon": "TbCalendarEvent"
+        },
+        {
+            "id": "eventDate",
+            "type": "date",
+            "label": "Event Date",
+            "icon": "TbCalendarEvent"
+        },
+        {
+            "id": "pax",
+            "type": "number",
+            "label": "Number of Pax",
+            "icon": "TbUsersGroup"
+        },
+        {
+            "id": "time",
+            "type": "time",
+            "label": "Event Time",
+            "icon": "TbClock"
+        },
+        {
+            "id": "name",
+            "type": "text",
+            "label": "Full Name",
+            "icon": "TbUser"
+        },
+        {
+            "id": "email",
+            "type": "email",
+            "label": "Email address",
+            "icon": "MdAlternateEmail"
+        },
+        {
+            "id": "phone",
+            "type": "tel",
+            "label": "Phone Number",
+            "icon": "TbPhone"
+        },
+        {
+            "id": "message",
+            "type": "textarea",
+            "label": "Message",
+            "icon": "MdOutlineEmail"
+        }
     ]
 }
