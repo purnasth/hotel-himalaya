@@ -15,8 +15,15 @@ const StayPage = () => {
     return <div>Error: {error}</div>;
   }
 
-  const { banner, title, subtitle, description, slogan, roomsCategories } =
-    data;
+  const {
+    banner,
+    title,
+    subtitle,
+    description,
+    slogan,
+    roomsCategories,
+    accommodationFormFields,
+  } = data;
   return (
     <>
       <Banner
@@ -35,7 +42,12 @@ const StayPage = () => {
         </div>
         <div className="container space-y-32">
           {roomsCategories.map((room) => (
-            <PackageComponent key={room.id} page="Stay" content={room} />
+            <PackageComponent
+              key={room.id}
+              page="Stay"
+              content={room}
+              enquiryFormFields={accommodationFormFields}
+            />
           ))}
         </div>
       </main>

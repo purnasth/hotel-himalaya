@@ -25,7 +25,7 @@ const EnquiryNow = ({ prefill, enquiryFormFields }) => {
     <FloatingButtonWithNavbar
       buttonIcon={<RiMessageLine className="text-base text-navy" />}
       buttonText="Enquiry"
-      buttonStyles="bg-gradient px-6 py-2 rounded-full hover-outline flex items-center justify-center gap-0"
+      buttonStyles="w-full bg-gradient px-6 py-2 rounded-full hover-outline flex items-center justify-center gap-0"
       navbarStyles="bg-white px-2"
       title="Enquiry"
       ariaLabel="Enquiry"

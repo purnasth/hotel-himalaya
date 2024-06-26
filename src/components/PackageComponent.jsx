@@ -1,8 +1,9 @@
 import React from "react";
 import Slider from "./Slider";
 import IconRenderer from "./IconRenderer";
+import Reservation from "./ui/Reservation";
 
-const PackageComponent = ({ content }) => {
+const PackageComponent = ({ content, enquiryFormFields }) => {
   const { title, description, image, details, amenities } = content;
 
   return (
@@ -44,16 +45,21 @@ const PackageComponent = ({ content }) => {
           )}
         </div>
 
-        <div className="z-10 col-span-1 bg-amber-100 p-4 pb-8 px-8 -mt-28 outline outline-black/0 outline-1 -outline-offset-8">
-          <button
+        <div className="relative z-auto col-span-1 bg-amber-100 p-4 pb-8 px-8 -mt-28 outline outline-black/0 outline-1 -outline-offset-8">
+          {/* <button
             className="w-full scale-100 translate-y-0 bg-gradient px-6 py-2 rounded-full hover-outline flex items-center justify-center gap-0 transition-all duration-500 ease-in-out"
             title="Reserve"
             aria-label="Reserve"
           >
             Reserve
-          </button>
+          </button> */}
 
-          <div className="mt-6">
+          <Reservation
+            enquiryFormFields={enquiryFormFields}
+            prefill={{ room: title }}
+          />
+
+          <div className="mt-6 z-10">
             <h5 className="text-lg text-center mb-6">Room Amenities</h5>
             <ul className="list-decimal list-inside font-light text-base space-y-3 max-h-60 overflow-y-auto">
               {amenities &&
