@@ -11,18 +11,18 @@ import { MdOutlineCardMembership } from "react-icons/md";
 
 const MembershipForm = () => {
   const enquiryFormFields = [
-    {
-      id: "event",
-      type: "text",
-      label: "Event Title",
-      icon: TbCalendarEvent,
-    },
-    {
-      id: "event-date",
-      type: "date",
-      label: "Event Date",
-      icon: TbCalendarEvent,
-    },
+    // {
+    //   id: "event",
+    //   type: "text",
+    //   label: "Event Title",
+    //   icon: TbCalendarEvent,
+    // },
+    // {
+    //   id: "event-date",
+    //   type: "date",
+    //   label: "Event Date",
+    //   icon: TbCalendarEvent,
+    // },
     { id: "name", type: "text", label: "Full Name", icon: FiUser },
     {
       id: "email",
