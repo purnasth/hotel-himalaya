@@ -14,13 +14,16 @@ const RecreationLayout = () => {
             </p>
             <h3 className="text-2xl mb-6">Facilites</h3>
             <ul className="flex items-center gap-6 flex-wrap">
-              <li className="bg-goldLight/50 px-4 py-2 rounded-2xl">
+              <li className="bg-[#00daff42] px-4 py-2 rounded-2xl relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></div>
                 Outdoor Pool
               </li>
-              <li className="bg-goldLight/50 px-4 py-2 rounded-2xl">
+              <li className="bg-[#00daff42] px-4 py-2 rounded-2xl relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></div>
                 Sunbathing Area
               </li>
-              <li className="bg-goldLight/50 px-4 py-2 rounded-2xl">
+              <li className="bg-[#00daff42] px-4 py-2 rounded-2xl relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></div>
                 Goggles and Swim Sets
               </li>
             </ul>
@@ -61,19 +64,11 @@ const RecreationLayout = () => {
           <div className="col-span-2 grid grid-cols-5 gap-8 p-8">
             <div className="col-span-2 content-end">
               <img
-                src="https://hotelhimalaya.com/images/package/galleryimages/kRVFf-jacuzzi.jpg"
+                src="https://hotelhimalaya.com/images/package/galleryimages/ynHoF-sauna.jpg"
                 alt=""
                 className="rounded-2xl"
               />
             </div>
-            <div className="col-span-3">
-              <img
-                src="https://hotelhimalaya.com/images/package/galleryimages/JqAZq-steam.jpg"
-                alt=""
-                className="rounded-2xl"
-              />
-            </div>
-
             <div className="col-span-3">
               <img
                 src="https://hotelhimalaya.com/images/package/galleryimages/ZtJxG-jacuzzi1.jpg"
@@ -81,9 +76,17 @@ const RecreationLayout = () => {
                 className="rounded-2xl"
               />
             </div>
+
+            <div className="col-span-3">
+              <img
+                src="https://hotelhimalaya.com/images/package/galleryimages/JqAZq-steam.jpg"
+                alt=""
+                className="rounded-2xl"
+              />
+            </div>
             <div className="col-span-2">
               <img
-                src="https://hotelhimalaya.com/images/package/galleryimages/ynHoF-sauna.jpg"
+                src="https://hotelhimalaya.com/images/package/galleryimages/kRVFf-jacuzzi.jpg"
                 alt=""
                 className="rounded-2xl"
               />
@@ -99,13 +102,16 @@ const RecreationLayout = () => {
             </p>
             <h3 className="text-2xl mb-6">Facilites</h3>
             <ul className="flex items-center gap-6 flex-wrap">
-              <li className="bg-goldLight/50 px-4 py-2 rounded-2xl">
+              <li className="bg-[#7466fb30] px-4 py-2 rounded-2xl relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></div>
                 Steam Room
               </li>
-              <li className="bg-goldLight/50 px-4 py-2 rounded-2xl">
+              <li className="bg-[#7466fb30] px-4 py-2 rounded-2xl relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></div>
                 Spa Services
               </li>
-              <li className="bg-goldLight/50 px-4 py-2 rounded-2xl">
+              <li className="bg-[#7466fb30] px-4 py-2 rounded-2xl relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></div>
                 Sauna & Jacuzzi
               </li>
             </ul>
@@ -121,13 +127,16 @@ const RecreationLayout = () => {
             </p>
             <h3 className="text-2xl mb-6">Facilites</h3>
             <ul className="flex items-center gap-6 flex-wrap">
-              <li className="bg-goldLight/50 px-4 py-2 rounded-2xl">
+              <li className="bg-[#d9480057] px-4 py-2 rounded-2xl relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></div>
                 Tennis Equipment
               </li>
-              <li className="bg-goldLight/50 px-4 py-2 rounded-2xl">
+              <li className="bg-[#d9480057] px-4 py-2 rounded-2xl relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></div>
                 Tennis Lessons
               </li>
-              <li className="bg-goldLight/50 px-4 py-2 rounded-2xl">
+              <li className="bg-[#d9480057] px-4 py-2 rounded-2xl relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></div>
                 Tennis Tournament
               </li>
             </ul>
@@ -206,13 +215,16 @@ const RecreationLayout = () => {
             </p>
             <h3 className="text-2xl mb-6">Facilites</h3>
             <ul className="flex items-center gap-6 flex-wrap">
-              <li className="bg-goldLight/50 px-4 py-2 rounded-2xl">
+              <li className="bg-[#74392359] px-4 py-2 rounded-2xl relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></div>
                 Fitness Equipment
               </li>
-              <li className="bg-goldLight/50 px-4 py-2 rounded-2xl">
+              <li className="bg-[#74392359] px-4 py-2 rounded-2xl relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></div>
                 Exercise Classes
               </li>
-              <li className="bg-goldLight/50 px-4 py-2 rounded-2xl">
+              <li className="bg-[#74392359] px-4 py-2 rounded-2xl relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/20 opacity-30 -z-10 pointer-events-none"></div>
                 Personal Training
               </li>
             </ul>
