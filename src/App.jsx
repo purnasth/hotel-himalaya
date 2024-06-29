@@ -121,8 +121,10 @@ import RecreationPage from "./pages/RecreationPage";
 import BrochurePDF from "./components/BrochurePDF";
 import ContactPage from "./pages/ContactPage";
 import SocialMediaPostsPage from "./pages/SocialMediaPostsPage";
+import useLenisScroll from "./hooks/useLenisScroll";
 
 const App = () => {
+  useLenisScroll();
   return (
     <>
       <Router>
