@@ -4,6 +4,7 @@ import HallComponent from "../components/HallComponent";
 import useFetchData from "../hooks/useFetchData";
 import Loader from "../components/Loader";
 import Amenities from "../components/Amenities";
+import Summary from "../components/ui/Summary";
 
 const HallPage = () => {
   const { data, loading, error } = useFetchData("/api/hallData.json");
@@ -18,6 +19,7 @@ const HallPage = () => {
 
   const {
     banner,
+    video,
     title,
     subtitle,
     description,
@@ -31,8 +33,9 @@ const HallPage = () => {
     <>
       <Banner
         banner={banner}
+        // video={video}
         title={title}
-        description={subtitle}
+        description={description}
         page="Events"
       />
       <main>
@@ -54,6 +57,11 @@ const HallPage = () => {
         </div>
         <Amenities amenities={amenities} />
       </main>
+      <Summary
+        video={video}
+        quote="Take a break. Recharge your batteries. Find inspiration."
+        link="#"
+      />
     </>
   );
 };
