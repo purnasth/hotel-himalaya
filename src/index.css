@@ -1,7 +1,11 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap'); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Kaftan Serif";
+  src: url("./assets/fonts/KaftanSerif-Regular.woff2");
+}
 
 @layer base {
   * {
@@ -12,6 +16,27 @@
   html {
     @apply overflow-x-hidden;
   }
+
+  /* h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-luxury;
+  }
+
+  a,
+  body {
+    @apply font-notoSerif;
+  }
+
+  span,
+  ul,
+  li,
+  p {
+    @apply font-notoSerif;
+  } */
 
   body {
     @apply font-notoSerif;

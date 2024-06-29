@@ -8,6 +8,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
+        luxury: ['"Kaftan Serif"', "Georgia", "Cambria", "serif"],
         notoSerif: [
           '"Noto Serif"',
           "ui-serif",
@@ -17,12 +18,7 @@ module.exports = {
           "Times",
           "serif",
         ],
-        cursive: [
-          '"Style Script"',
-          "Georgia",
-          "Cambria",
-          "cursive",
-        ],
+        cursive: ['"Style Script"', "Georgia", "Cambria", "cursive"],
       },
       colors: {
         "custom-blue": "#070a0f",
