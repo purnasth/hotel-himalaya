@@ -59,7 +59,7 @@ const HallPage = () => {
       </main>
       <Summary
         video={video}
-        quote="Take a break. Recharge your batteries. Find inspiration."
+        quote="Mark the date & Create lasting memories."
         link="#"
       />
     </>

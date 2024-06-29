@@ -53,7 +53,7 @@ const RecreationPage = () => {
       </main>
       <Summary
         video={video}
-        quote="Take a break. Recharge your batteries. Find inspiration."
+        quote="Experience luxury. Rejuvenate your body & mind."
         link="#"
       />
     </>

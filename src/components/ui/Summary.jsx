@@ -26,7 +26,7 @@ const Summary = ({ video, quote, link }) => {
         The video of the Hotel Himalaya portrays the beauty of the hotel and the
         surrounding area.
       </video>
-      <div className="font-luxury absolute inset-0 flex items-center justify-center flex-col gap-8 size-full container text-custom-white z-20">
+      <div className="font-luxury text-center absolute inset-0 flex items-center justify-center flex-col gap-8 size-full container text-custom-white z-20">
         <span className="font-bold text-2xl text-gradient">Hotel Himalaya</span>
         <h5 className="font-ight text-4xl leading-snug">{quote}</h5>
         <Link
