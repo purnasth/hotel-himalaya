@@ -1,0 +1,165 @@
+{
+    "id": "Recreation",
+    "slogan": "True Nepalese Hospitality",
+    "banner": "../images/banner/swimming.jpg",
+    "video": "../video/recreation.mp4",
+    "title": "Recreation Center",
+    "description": "Experience ultimate relaxation with our modern amenities: gym, swimming pool, jacuzzi, sauna and steam, designed to rejuvenate your body and mind.",
+    "page_description": "Explore an array of activities designed to suit every taste, from exhilarating outdoor adventures to serene leisure facilities. Whether you seek excitement or tranquility, we offer a membership package with a great deal of diverse options to ensure a memorable stay for everyone.",
+    "recreations": [
+        {
+            "title": "Swimming Pool",
+            "description": "Dive into a world of leisure and luxury in our pristine swimming pool, where azure waters beckon for a refreshing escape under the Himalayan sky.",
+            "facilities": [
+                "Outdoor Pool",
+                "Sunbathing Area",
+                "Goggles and Swim Sets"
+            ],
+            "images": [
+                {
+                    "url": "../images/recreation/swimming/1.jpg",
+                    "alt": "Swimming Pool 1",
+                    "colSpan": 2
+                },
+                {
+                    "url": "../images/recreation/swimming/2.jpg",
+                    "alt": "Swimming Pool 2",
+                    "colSpan": 3
+                },
+                {
+                    "url": "../images/recreation/swimming/3.jpg",
+                    "alt": "Swimming Pool 3",
+                    "colSpan": 3
+                },
+                {
+                    "url": "../images/recreation/swimming/4.jpg",
+                    "alt": "Swimming Pool 4",
+                    "colSpan": 2
+                }
+            ],
+            "facilitiesColor": "#00daff42"
+        },
+        {
+            "title": "Steam, Sauna, Jacuzzi",
+            "description": "Indulge in blissful relaxation as you immerse yourself in the luxurious bubbles of our Jacuzzi, a sanctuary of serenity amidst the Himalayan landscape.",
+            "facilities": [
+                "Steam Room",
+                "Spa Services",
+                "Sauna & Jacuzzi"
+            ],
+            "images": [
+                {
+                    "url": "../images/recreation/steam/1.jpg",
+                    "alt": "Steam Sauna Jacuzzi 1",
+                    "colSpan": 2
+                },
+                {
+                    "url": "../images/recreation/steam/2.jpg",
+                    "alt": "Steam Sauna Jacuzzi 2",
+                    "colSpan": 3
+                },
+                {
+                    "url": "../images/recreation/steam/3.jpg",
+                    "alt": "Steam Sauna Jacuzzi 3",
+                    "colSpan": 3
+                },
+                {
+                    "url": "../images/recreation/steam/4.jpg",
+                    "alt": "Steam Sauna Jacuzzi 4",
+                    "colSpan": 2
+                }
+            ],
+            "facilitiesColor": "#7466fb30"
+        },
+        {
+            "title": "Lawn Tennis Court",
+            "description": "Serve up an ace on our meticulously maintained lawn tennis court, where every match is a thrilling testament to skill and sportsmanship amidst stunning natural surroundings.",
+            "facilities": [
+                "Tennis Equipment",
+                "Tennis Lessons",
+                "Tennis Tournament"
+            ],
+            "images": [
+                {
+                    "url": "../images/recreation/tennis/1.jpg",
+                    "alt": "Lawn Tennis Court 1",
+                    "colSpan": 2
+                },
+                {
+                    "url": "../images/recreation/tennis/2.jpg",
+                    "alt": "Lawn Tennis Court 2",
+                    "colSpan": 3
+                },
+                {
+                    "url": "../images/recreation/tennis/3.jpg",
+                    "alt": "Lawn Tennis Court 3",
+                    "colSpan": 3
+                },
+                {
+                    "url": "../images/recreation/tennis/4.jpg",
+                    "alt": "Lawn Tennis Court 4",
+                    "colSpan": 2
+                }
+            ],
+            "facilitiesColor": "#d9480057"
+        },
+        {
+            "title": "Gym",
+            "description": "Unleash your inner strength and vitality in our well-equipped gym, where every workout is infused with the spirit of determination and progress.",
+            "facilities": [
+                "Fitness Equipment",
+                "Exercise Classes",
+                "Personal Training"
+            ],
+            "images": [
+                {
+                    "url": "../images/recreation/gym/1.jpg",
+                    "alt": "Gym 1",
+                    "colSpan": 2
+                },
+                {
+                    "url": "../images/recreation/gym/2.jpg",
+                    "alt": "Gym 2",
+                    "colSpan": 3
+                },
+                {
+                    "url": "../images/recreation/gym/3.jpg",
+                    "alt": "Gym 3",
+                    "colSpan": 3
+                },
+                {
+                    "url": "../images/recreation/gym/4.jpg",
+                    "alt": "Gym 4",
+                    "colSpan": 2
+                }
+            ],
+            "facilitiesColor": "#74392359"
+        }
+    ],
+    "membershipFormFields": [
+        {
+            "id": "name",
+            "type": "text",
+            "label": "Full Name",
+            "icon": "TbUser"
+        },
+        {
+            "id": "email",
+            "type": "email",
+            "label": "Email address",
+            "icon": "MdAlternateEmail"
+        },
+        {
+            "id": "phone",
+            "type": "tel",
+            "label": "Phone Number",
+            "icon": "TbPhone"
+        },
+        {
+            "id": "message",
+            "type": "textarea",
+            "label": "Message",
+            "icon": "MdOutlineEmail"
+        }
+    ]
+}
