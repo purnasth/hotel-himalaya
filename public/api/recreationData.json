@@ -1,7 +1,7 @@
 {
     "id": "Recreation",
     "slogan": "True Nepalese Hospitality",
-    "banner": "../images/banner/swimming.jpg",
+    "banner": "../images/banner/swimming.webp",
     "video": "../video/recreation.mp4",
     "title": "Recreation Center",
     "description": "Experience ultimate relaxation with our modern amenities: gym, swimming pool, jacuzzi, sauna and steam, designed to rejuvenate your body and mind.",
@@ -17,22 +17,22 @@
             ],
             "images": [
                 {
-                    "url": "../images/recreation/swimming/1.jpg",
+                    "url": "../images/recreation/swimming/1.webp",
                     "alt": "Swimming Pool 1",
                     "colSpan": 2
                 },
                 {
-                    "url": "../images/recreation/swimming/2.jpg",
+                    "url": "../images/recreation/swimming/2.webp",
                     "alt": "Swimming Pool 2",
                     "colSpan": 3
                 },
                 {
-                    "url": "../images/recreation/swimming/3.jpg",
+                    "url": "../images/recreation/swimming/3.webp",
                     "alt": "Swimming Pool 3",
                     "colSpan": 3
                 },
                 {
-                    "url": "../images/recreation/swimming/4.jpg",
+                    "url": "../images/recreation/swimming/4.webp",
                     "alt": "Swimming Pool 4",
                     "colSpan": 2
                 }
@@ -49,22 +49,22 @@
             ],
             "images": [
                 {
-                    "url": "../images/recreation/steam/1.jpg",
+                    "url": "../images/recreation/steam/1.webp",
                     "alt": "Steam Sauna Jacuzzi 1",
                     "colSpan": 2
                 },
                 {
-                    "url": "../images/recreation/steam/2.jpg",
+                    "url": "../images/recreation/steam/2.webp",
                     "alt": "Steam Sauna Jacuzzi 2",
                     "colSpan": 3
                 },
                 {
-                    "url": "../images/recreation/steam/3.jpg",
+                    "url": "../images/recreation/steam/3.webp",
                     "alt": "Steam Sauna Jacuzzi 3",
                     "colSpan": 3
                 },
                 {
-                    "url": "../images/recreation/steam/4.jpg",
+                    "url": "../images/recreation/steam/4.webp",
                     "alt": "Steam Sauna Jacuzzi 4",
                     "colSpan": 2
                 }
@@ -81,22 +81,22 @@
             ],
             "images": [
                 {
-                    "url": "../images/recreation/tennis/1.jpg",
+                    "url": "../images/recreation/tennis/1.webp",
                     "alt": "Lawn Tennis Court 1",
                     "colSpan": 2
                 },
                 {
-                    "url": "../images/recreation/tennis/2.jpg",
+                    "url": "../images/recreation/tennis/2.webp",
                     "alt": "Lawn Tennis Court 2",
                     "colSpan": 3
                 },
                 {
-                    "url": "../images/recreation/tennis/3.jpg",
+                    "url": "../images/recreation/tennis/3.webp",
                     "alt": "Lawn Tennis Court 3",
                     "colSpan": 3
                 },
                 {
-                    "url": "../images/recreation/tennis/4.jpg",
+                    "url": "../images/recreation/tennis/4.webp",
                     "alt": "Lawn Tennis Court 4",
                     "colSpan": 2
                 }
@@ -113,22 +113,22 @@
             ],
             "images": [
                 {
-                    "url": "../images/recreation/gym/1.jpg",
+                    "url": "../images/recreation/gym/1.webp",
                     "alt": "Gym 1",
                     "colSpan": 2
                 },
                 {
-                    "url": "../images/recreation/gym/2.jpg",
+                    "url": "../images/recreation/gym/2.webp",
                     "alt": "Gym 2",
                     "colSpan": 3
                 },
                 {
-                    "url": "../images/recreation/gym/3.jpg",
+                    "url": "../images/recreation/gym/3.webp",
                     "alt": "Gym 3",
                     "colSpan": 3
                 },
                 {
-                    "url": "../images/recreation/gym/4.jpg",
+                    "url": "../images/recreation/gym/4.webp",
                     "alt": "Gym 4",
                     "colSpan": 2
                 }

@@ -1,35 +1,35 @@
 {
     "slides": [
         {
-            "url": "../images/hero/1.jpg",
+            "url": "../images/hero/1.webp",
             "title": "Hotel Himalaya"
         },
         {
-            "url": "../images/hero/2.jpg",
+            "url": "../images/hero/2.webp",
             "title": "Himalaya Architecture"
         },
         {
-            "url": "../images/banner/about.jpg",
+            "url": "../images/banner/about.webp",
             "title": "Hotel Himalaya"
         },
         {
-            "url": "../images/banner/dalaan.jpg",
+            "url": "../images/banner/dalaan.webp",
             "title": "Dalaan"
         },
         {
-            "url": "../images/banner/dine.jpg",
+            "url": "../images/banner/dine.webp",
             "title": "By The Waterfall"
         },
         {
-            "url": "../images/banner/pdr.jpg",
+            "url": "../images/banner/pdr.webp",
             "title": "PDR III"
         },
         {
-            "url": "../images/banner/rooms.jpg",
+            "url": "../images/banner/rooms.webp",
             "title": "Junior Suite"
         },
         {
-            "url": "../images/hero/3.png",
+            "url": "../images/hero/3.webp",
             "title": "Swimming Pool Deck"
         }
     ]

@@ -37,7 +37,7 @@ const TestimonialFilter = ({ contents }) => {
               <img
                 src={image}
                 alt={source}
-                className="w-auto h-9 object-contain p-2"
+                className="w-auto h-8 object-contain p-2"
               />
               <p className="text-sm md:text-base line-clamp-1">- {title}</p>
             </div>

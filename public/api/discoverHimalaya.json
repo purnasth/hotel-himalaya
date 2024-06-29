@@ -48,25 +48,25 @@
         {
             "id": 1,
             "title": "Occasions",
-            "imageUrl": "../images/banner/pdr.jpg",
+            "imageUrl": "../images/banner/pdr.webp",
             "route": "/events"
         },
         {
             "id": 2,
             "title": "Fine Dine",
-            "imageUrl": "../images/banner/dalaan.jpg",
+            "imageUrl": "../images/banner/dalaan.webp",
             "route": "/dine"
         },
         {
             "id": 3,
             "title": "Accommodation",
-            "imageUrl": "../images/banner/rooms.jpg",
+            "imageUrl": "../images/banner/rooms.webp",
             "route": "/stay"
         },
         {
             "id": 4,
             "title": "Recreation",
-            "imageUrl": "../images/hero/3.png",
+            "imageUrl": "../images/hero/3.webp",
             "route": "/recreation"
         }
     ]

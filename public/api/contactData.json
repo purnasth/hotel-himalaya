@@ -1,5 +1,5 @@
 {
-  "banner": "../images/banner/about.jpg",
+  "banner": "../images/banner/about.webp",
   "title": "Contacts",
   "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae quos delectus iusto autem obcaecati?",
   "page": "Contact",
@@ -7,49 +7,49 @@
   "subdescription": "Would you like to find out how to get to us or you have a question you need to ask? Call us or e-mail us, here are all the contact information you need to know.",
   "slides": [
     {
-      "url": "../images/about/1.jpeg",
+      "url": "../images/about/1.webp",
       "title": "Hotel Himalaya"
     },
     {
-      "url": "../images/banner/about.jpg",
+      "url": "../images/banner/about.webp",
       "title": "Hotel Himalaya"
     },
     {
-      "url": "../images/about/3.jpg",
+      "url": "../images/about/3.webp",
       "title": "Hotel Himalaya"
     },
     {
-      "url": "../images/about/4.jpg",
+      "url": "../images/about/4.webp",
       "title": "Hotel Himalaya"
     },
     {
-      "url": "../images/about/5.jpg",
+      "url": "../images/about/5.webp",
       "title": "Hotel Himalaya"
     },
     {
-      "url": "../images/about/6.jpg",
+      "url": "../images/about/6.webp",
       "title": "Hotel Himalaya"
     }
   ],
   "aboutSlides": [
     {
-      "url": "../images/banner/rooms.jpg",
+      "url": "../images/banner/rooms.webp",
       "title": "Junior Suite Room"
     },
     {
-      "url": "../images/banner/swimming.jpg",
+      "url": "../images/banner/swimming.webp",
       "title": "Swimming Pool Deck"
     },
     {
-      "url": "../images/banner/dine.jpg",
+      "url": "../images/banner/dine.webp",
       "title": "By the Waterfall"
     },
     {
-      "url": "../images/banner/dalaan.jpg",
+      "url": "../images/banner/dalaan.webp",
       "title": "Dalaan"
     },
     {
-      "url": "../images/banner/pdr.jpg",
+      "url": "../images/banner/pdr.webp",
       "title": "PDR III"
     }
   ],

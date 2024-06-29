@@ -5,7 +5,7 @@
   "home_title": "Boutique Accommodation",
   "home_description": "In a realm where tranquility and beauty intertwine, find yourself nestled in the embrace of an enchanting haven.",
   "slogan": "True Nepalese Hospitality",
-  "banner": "../images/banner/rooms.jpg",
+  "banner": "../images/banner/rooms.webp",
   "video": "../video/accommodation.mp4",
   "title": "Stay with Us",
   "subtitle": "Do you prefer accommodation directly in a hotel, with all the services and comforts that belong to it? We offer comfortably furnished rooms and modern suits.",
@@ -19,15 +19,15 @@
       "description": "Our most spacious room category, the Junior Suites boast of plush beds with finest linen, sufficient working space, comfortable lounge area and en-suite bathrooms featuring bathtub. All these ‘suites’ are situated in the extreme corners of the floors for its quietness, offering windows on two sides with the views of lush green landscaped gardens on one side and city as well as Himalayas on the other. The most opulent rooms that we offer, you won’t wish to leave once you’ve stepped inside.",
       "image": [
         {
-          "src": "../images/stay/js1.jpg",
+          "src": "../images/stay/js1.webp",
           "alt": "Deluxe Room"
         },
         {
-          "src": "../images/stay/js2.jpg",
+          "src": "../images/stay/js2.webp",
           "alt": "Junior Suite"
         },
         {
-          "src": "../images/stay/js3.jpg",
+          "src": "../images/stay/js3.webp",
           "alt": "Executive Suite"
         }
       ],
@@ -112,15 +112,15 @@
       "description": "Our newly built Executive Floor commands the best view of the Kathmandu valley. These well-appointed rooms on the 5th floor offer spectacular views of the city and mountains on the horizon. The large windows create an enclosed balcony where you can soak up the sun and marvel at the city below and mountains beyond. The stylish en-suite bathrooms feature rain showers and the room comes equipped with everything the business or leisure traveler might have in mind.",
       "image": [
         {
-          "src": "../images/stay/er1.jpg",
+          "src": "../images/stay/er1.webp",
           "alt": "Deluxe Room"
         },
         {
-          "src": "../images/stay/er2.jpeg",
+          "src": "../images/stay/er2.webp",
           "alt": "Junior Suite"
         },
         {
-          "src": "../images/stay/er3.jpg",
+          "src": "../images/stay/er3.webp",
           "alt": "Executive Suite"
         }
       ],
@@ -205,19 +205,19 @@
       "description": "We offer deluxe room with king size bed and well equipped with all the facilities and equipments you need for a comfortable stay. Spend quality time in our room fulfilled with a luxurious bathroom along with view of mountains and city. Spend your leisure time and make your stay a memorable stay. Feel like home and away in a silent environment.",
       "image": [
         {
-          "src": "../images/stay/dr1.jpeg",
+          "src": "../images/stay/dr1.webp",
           "alt": "Deluxe Room"
         },
         {
-          "src": "../images/stay/dr2.jpeg",
+          "src": "../images/stay/dr2.webp",
           "alt": "Junior Suite"
         },
         {
-          "src": "../images/stay/dr3.jpg",
+          "src": "../images/stay/dr3.webp",
           "alt": "Executive Suite"
         },
         {
-          "src": "../images/stay/dr4.jpg",
+          "src": "../images/stay/dr4.webp",
           "alt": "Executive Suite"
         }
       ],

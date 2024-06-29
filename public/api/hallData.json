@@ -1,7 +1,7 @@
 {
     "id": "events",
-    "!comment_banner": "../images/banner/pdr.jpg",
-    "banner": "../images/halls/pdr/3.jpg",
+    "!banner": "../images/banner/pdr.webp",
+    "banner": "../images/halls/pdr3.webp",
     "video": "../video/events.mp4",
     "title": "Auspicious Events Center",
     "subtitle": "Save the date for upcoming event and experience an unforgettable evening of elegance, entertainment, and luxury.",
@@ -25,23 +25,23 @@
     "buttonText": "View More",
     "hallImages": [
         {
-            "url": "../images/banner/pdr.jpg",
+            "url": "../images/banner/pdr.webp",
             "title": "PDR III"
         },
         {
-            "url": "../images/halls/1.jpg",
+            "url": "../images/halls/1.webp",
             "title": "Himalaya Grand Ball Room"
         },
         {
-            "url": "../images/halls/2.jpg",
+            "url": "../images/halls/2.webp",
             "title": "Skyline Hall"
         },
         {
-            "url": "../images/halls/3.jpg",
+            "url": "../images/halls/3.webp",
             "title": "Green Room"
         },
         {
-            "url": "../images/halls/4.jpg",
+            "url": "../images/halls/4.webp",
             "title": "Regent Hall"
         }
     ],
@@ -53,19 +53,19 @@
             "description": "Our crown jewel in event hosting. Now boasting state-of-the-art amenities, this stunning venue is perfect for any occasion.Experience the pinnacle of luxury and functionality at the Himalaya Grand Ballroom.",
             "image": [
                 {
-                    "src": "../images/halls/1.jpg",
+                    "src": "../images/halls/hgbr/1.webp",
                     "alt": "Himalaya Grand Ball Room"
                 },
                 {
-                    "src": "../images/halls/hgbr/2.jpg",
+                    "src": "../images/halls/hgbr/2.webp",
                     "alt": "Himalaya Grand Ball Room"
                 },
                 {
-                    "src": "../images/halls/hgbr/3.jpg",
+                    "src": "../images/halls/hgbr/3.webp",
                     "alt": "Himalaya Grand Ball Room"
                 },
                 {
-                    "src": "../images/halls/hgbr/4.jpg",
+                    "src": "../images/halls/hgbr/4.webp",
                     "alt": "Himalaya Grand Ball Room"
                 }
             ],
@@ -125,19 +125,19 @@
             "description": "Ascend to sophistication in our Neo-classical Skyline Hall, where timeless elegance meets modern convenience. Elevate your events, from dynamic workshops to unforgettable banquets",
             "image": [
                 {
-                    "src": "../images/halls/2.jpg",
+                    "src": "../images/halls/sh/1.webp",
                     "alt": "Skyline Hall"
                 },
                 {
-                    "src": "../images/halls/sh/2.jpg",
+                    "src": "../images/halls/sh/2.webp",
                     "alt": "Skyline Hall"
                 },
                 {
-                    "src": "../images/halls/sh/3.jpg",
+                    "src": "../images/halls/sh/3.webp",
                     "alt": "Skyline Hall"
                 },
                 {
-                    "src": "../images/halls/sh/4.jpg",
+                    "src": "../images/halls/sh/4.webp",
                     "alt": "Skyline Hall"
                 }
             ],
@@ -197,19 +197,19 @@
             "description": "Our Rato Baithak hall is a spacious and elegant room with upholstered walls and state-of-the-art conference aids. Skyline Hall and Rato Baithak are conveniently located on the same floor.",
             "image": [
                 {
-                    "src": "../images/halls/rb/1.jpg",
+                    "src": "../images/halls/rb/1.webp",
                     "alt": "Rato Baithak"
                 },
                 {
-                    "src": "../images/halls/rb/2.jpg",
+                    "src": "../images/halls/rb/2.webp",
                     "alt": "Rato Baithak"
                 },
                 {
-                    "src": "../images/halls/rb/3.jpg",
+                    "src": "../images/halls/rb/3.webp",
                     "alt": "Rato Baithak"
                 },
                 {
-                    "src": "../images/halls/rb/4.jpg",
+                    "src": "../images/halls/rb/4.webp",
                     "alt": "Rato Baithak"
                 }
             ],
@@ -269,19 +269,19 @@
             "description": "If you want to have a private party or a confidential business discussion, our Green Room, strategically secluded on the third floor of the hotel is the best place for you.",
             "image": [
                 {
-                    "src": "../images/halls/3.jpg",
+                    "src": "../images/halls/gr/1.webp",
                     "alt": "Green Room"
                 },
                 {
-                    "src": "../images/halls/gr/2.jpg",
+                    "src": "../images/halls/gr/2.webp",
                     "alt": "Green Room"
                 },
                 {
-                    "src": "../images/halls/gr/3.jpg",
+                    "src": "../images/halls/gr/3.webp",
                     "alt": "Green Room"
                 },
                 {
-                    "src": "../images/halls/gr/4.jpg",
+                    "src": "../images/halls/gr/4.webp",
                     "alt": "Green Room"
                 }
             ],
@@ -341,19 +341,19 @@
             "description": "Welcome to Regent Hall at Hotel Himalaya, where sophistication meets productivity. With advanced amenities like a whiteboard, flip chart, and soft board, we ensure seamless communication.",
             "image": [
                 {
-                    "src": "../images/halls/rh/1.jpg",
+                    "src": "../images/halls/rh/1.webp",
                     "alt": "Regent Hall"
                 },
                 {
-                    "src": "../images/halls/4.jpg",
+                    "src": "../images/halls/rh/4.webp",
                     "alt": "Regent Hall"
                 },
                 {
-                    "src": "../images/halls/rh/2.jpg",
+                    "src": "../images/halls/rh/2.webp",
                     "alt": "Regent Hall"
                 },
                 {
-                    "src": "../images/halls/rh/3.jpg",
+                    "src": "../images/halls/rh/3.webp",
                     "alt": "Regent Hall"
                 }
             ],
@@ -413,15 +413,15 @@
             "description": "A private dining area is a reserved space within a restaurant for exclusive events too, providing a more personalized setting for occasions like business meetings or family celebrations.",
             "image": [
                 {
-                    "src": "../images/halls/pdr/1.jpg",
+                    "src": "../images/halls/pdr/1.webp",
                     "alt": "PDR"
                 },
                 {
-                    "src": "../images/halls/pdr/2.jpg",
+                    "src": "../images/halls/pdr/2.webp",
                     "alt": "PDR"
                 },
                 {
-                    "src": "../images/halls/pdr/3.jpg",
+                    "src": "../images/halls/pdr/3.webp",
                     "alt": "PDR"
                 }
             ],
@@ -446,11 +446,11 @@
             "description": "Step into The Board Room, where every detail is tailored to elevate your business gatherings. From sleek design to cutting-edge amenities, unlock the perfect space for productive meetings and inspired collaborations.",
             "image": [
                 {
-                    "src": "../images/halls/br/1.jpg",
+                    "src": "../images/halls/br/1.webp",
                     "alt": "Board Room"
                 },
                 {
-                    "src": "../images/halls/br/1.jpg",
+                    "src": "../images/halls/br/1.webp",
                     "alt": "Board Room"
                 }
             ],
@@ -475,11 +475,11 @@
             "description": "Step into the Palm Garden at Hotel Himalaya, where tranquility reigns amidst verdant palms. This serene enclave invites relaxation, reflection, and leisurely exploration. Immerse yourself in a harmonious blend of natural beauty and comfort",
             "image": [
                 {
-                    "src": "../images/halls/pg/1.jpg",
+                    "src": "../images/halls/pg/1.webp",
                     "alt": "Palm Gardens"
                 },
                 {
-                    "src": "../images/halls/pg/1.jpg",
+                    "src": "../images/halls/pg/1.webp",
                     "alt": "Palm Gardens"
                 }
             ],
@@ -509,11 +509,11 @@
             "description": "Explore the enchanting Temple Garden at Hotel Himalaya, a peaceful sanctuary adorned with flora rich in symbolism. This garden is a tranquil refuge for those seeking solace and inspiration.",
             "image": [
                 {
-                    "src": "../images/halls/tg/1.jpg",
+                    "src": "../images/halls/tg/1.webp",
                     "alt": "Temple Garden"
                 },
                 {
-                    "src": "../images/halls/tg/1.jpg",
+                    "src": "../images/halls/tg/1.webp",
                     "alt": "Temple Garden"
                 }
             ],
@@ -543,11 +543,11 @@
             "description": "Welcome to the Basecamp Garden, your outdoor haven for rest and friendly gatherings. Inspired by the adventurous spirit of a basecamp, this garden is the heart of social life, a place to relax and connect.",
             "image": [
                 {
-                    "src": "../images/halls/bg/1.jpg",
+                    "src": "../images/halls/bg/1.webp",
                     "alt": "Basecamp Garden"
                 },
                 {
-                    "src": "../images/halls/bg/1.jpg",
+                    "src": "../images/halls/bg/1.webp",
                     "alt": "Basecamp Garden"
                 }
             ],
