@@ -48,13 +48,13 @@ const HallComponent = ({ content, enquiryFormFields }) => {
           )}
         </div>
 
-        <div className="z-auto col-span-2 bg-amber-100 p-4 px-4 -mt-32">
-          <div className="bg-amber-100 mb-12 ml-8">
-            <EnquiryNow
-              enquiryFormFields={enquiryFormFields}
-              prefill={{ event: title }}
-            />
-          </div>
+        <div className="relative z-auto col-span-2 bg-amber-100 p-4 px-4 -mt-28">
+          {/* <div className="bg-amber-100 mb-12 ml-8"> */}
+          <EnquiryNow
+            enquiryFormFields={enquiryFormFields}
+            prefill={{ event: title }}
+          />
+          {/* </div> */}
 
           <div className="mt-6">
             <h5 className="text-lg text-center mb-6">Hall Setup Style</h5>
