@@ -1,7 +1,8 @@
 import React from "react";
 import Slider from "./Slider";
 import IconRenderer from "./IconRenderer";
-import Reservation from "./ui/Reservation";
+// import Reservation from "./ui/Reservation";
+import { FaRegClipboard } from "react-icons/fa";
 
 const PackageComponent = ({ content, enquiryFormFields }) => {
   const { title, description, image, details, amenities } = content;
@@ -22,7 +23,7 @@ const PackageComponent = ({ content, enquiryFormFields }) => {
       <div className="container px-14 grid grid-cols-3 gap-24 mt-12">
         <div className="col-span-2 space-y-6">
           <h3 className="text-3xl leading-snug underline">{title}</h3>
-          <p className="text-justify md:text-pretty text-base font-light">
+          <p className="text-justify md:text-pretty text-base text-black/80">
             {description}
           </p>
           {details && (
@@ -46,18 +47,19 @@ const PackageComponent = ({ content, enquiryFormFields }) => {
         </div>
 
         <div className="relative z-auto col-span-1 bg-amber-100 p-4 pb-8 px-8 -mt-28 outline outline-black/0 outline-1 -outline-offset-8">
-          {/* <button
-            className="w-full scale-100 translate-y-0 bg-gradient px-6 py-2 rounded-full hover-outline flex items-center justify-center gap-0 transition-all duration-500 ease-in-out"
+          <button
+            className="w-full scale-100 translate-y-0 bg-gradient px-6 py-2 rounded-full hover-outline flex items-center justify-center gap-2 transition-all duration-500 ease-in-out"
             title="Reserve"
             aria-label="Reserve"
           >
             Reserve
-          </button> */}
+            {/* <FaRegClipboard className="text-sm" /> */}
+          </button>
 
-          <Reservation
+          {/* <Reservation
             enquiryFormFields={enquiryFormFields}
             prefill={{ room: title }}
-          />
+          /> */}
 
           <div className="mt-6 z-10">
             <h5 className="text-lg text-center mb-6">Room Amenities</h5>

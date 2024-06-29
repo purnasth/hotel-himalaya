@@ -19,6 +19,18 @@ module.exports = {
           "serif",
         ],
         cursive: ['"Style Script"', "Georgia", "Cambria", "cursive"],
+        "inria-sans": [
+          '"Inria Sans"',
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+        ],
+        "merriweather-sans": [
+          '"Merriweather Sans"',
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+        ],
       },
       colors: {
         "custom-blue": "#070a0f",

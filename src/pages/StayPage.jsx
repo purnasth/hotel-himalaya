@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import PackageComponent from "../components/PackageComponent";
 import useFetchData from "../hooks/useFetchData";
 import Loader from "../components/Loader";
+import Summary from "../components/ui/Summary";
 
 const StayPage = () => {
   const { data, loading, error } = useFetchData("/api/accommodationData.json");
@@ -23,11 +24,15 @@ const StayPage = () => {
     slogan,
     roomsCategories,
     accommodationFormFields,
+    video,
+    rojai,
   } = data;
+
   return (
     <>
       <Banner
         banner={banner}
+        video={video}
         title={title}
         description={description}
         page="Accommodation"
@@ -51,6 +56,11 @@ const StayPage = () => {
           ))}
         </div>
       </main>
+      <Summary
+        video={video}
+        quote="Take a break. Recharge your batteries. Find inspiration."
+        link={rojai}
+      />
     </>
   );
 };

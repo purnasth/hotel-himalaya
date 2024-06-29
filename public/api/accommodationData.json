@@ -1,10 +1,12 @@
 {
   "id": "Stay",
+  "rojai": "https://hotelhimalaya.com/result.php?hotel_code=q7x6fU",
   "home_slogan": "125 Well Appointed Rooms",
   "home_title": "Boutique Accommodation",
   "home_description": "In a realm where tranquility and beauty intertwine, find yourself nestled in the embrace of an enchanting haven.",
   "slogan": "True Nepalese Hospitality",
   "banner": "../images/banner/rooms.jpg",
+  "video": "../video/accommodation.mp4",
   "title": "Stay with Us",
   "subtitle": "Do you prefer accommodation directly in a hotel, with all the services and comforts that belong to it? We offer comfortably furnished rooms and modern suits.",
   "description": "Indulge in serene luxury with meticulously curated rooms, modern amenities, and breathtaking views for an unforgettable tailored stay.",
@@ -317,7 +319,12 @@
       "type": "select",
       "label": "Max Guests",
       "icon": "TbUsersGroup",
-      "options": [{ "value": "1", "label": "2 pax + 1 child + 1 extra bed" }]
+      "options": [
+        {
+          "value": "1",
+          "label": "2 pax + 1 child + 1 extra bed"
+        }
+      ]
     },
     {
       "id": "pax",
@@ -325,10 +332,22 @@
       "label": "Number of Pax",
       "icon": "TbUsersGroup",
       "options": [
-        { "value": "1", "label": "1 pax" },
-        { "value": "2", "label": "2 pax" },
-        { "value": "2+1", "label": "2 pax + 1 child" },
-        { "value": "2+2", "label": "2 pax + 2 child" }
+        {
+          "value": "1",
+          "label": "1 pax"
+        },
+        {
+          "value": "2",
+          "label": "2 pax"
+        },
+        {
+          "value": "2+1",
+          "label": "2 pax + 1 child"
+        },
+        {
+          "value": "2+2",
+          "label": "2 pax + 2 child"
+        }
       ]
     },
     {
@@ -337,9 +356,18 @@
       "label": "Number of Beds Needed",
       "icon": "TbBed",
       "options": [
-        { "value": "1", "label": "1 bed" },
-        { "value": "2", "label": "2 beds" },
-        { "value": "3", "label": "3 beds" }
+        {
+          "value": "1",
+          "label": "1 bed"
+        },
+        {
+          "value": "2",
+          "label": "2 beds"
+        },
+        {
+          "value": "3",
+          "label": "3 beds"
+        }
       ]
     },
     {
@@ -348,8 +376,14 @@
       "label": "Refund Type",
       "icon": "TbCash",
       "options": [
-        { "value": "non-refundable", "label": "Non-Refundable" },
-        { "value": "refundable", "label": "Refundable (higher price)" }
+        {
+          "value": "non-refundable",
+          "label": "Non-Refundable"
+        },
+        {
+          "value": "refundable",
+          "label": "Refundable (higher price)"
+        }
       ]
     },
     {
@@ -358,11 +392,26 @@
       "label": "Additional Services",
       "icon": "TbListCheck",
       "options": [
-        { "value": "airportPickup", "label": "Free Airport Pickup (+$10)" },
-        { "value": "airportDrop", "label": "Free Airport Drop (+$10)" },
-        { "value": "breakfast", "label": "Breakfast (+$20)" },
-        { "value": "lunch", "label": "Lunch (+$30)" },
-        { "value": "dinner", "label": "Dinner (+$30)" }
+        {
+          "value": "airportPickup",
+          "label": "Free Airport Pickup (+$10)"
+        },
+        {
+          "value": "airportDrop",
+          "label": "Free Airport Drop (+$10)"
+        },
+        {
+          "value": "breakfast",
+          "label": "Breakfast (+$20)"
+        },
+        {
+          "value": "lunch",
+          "label": "Lunch (+$30)"
+        },
+        {
+          "value": "dinner",
+          "label": "Dinner (+$30)"
+        }
       ]
     },
     {
