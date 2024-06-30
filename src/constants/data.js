@@ -9,10 +9,6 @@ export { logo, logoMark, sata, tripaward, himalayaPDF };
 
 // icons
 import {
-  HiOutlineArrowLongLeft,
-  HiOutlineArrowLongRight,
-} from "react-icons/hi2";
-import {
   TbUsersGroup,
   TbClock,
   TbChevronDown,
@@ -22,6 +18,8 @@ import {
   TbCalendarQuestion,
   TbTrophy,
   TbMailFilled,
+  TbArrowNarrowLeft,
+  TbArrowNarrowRight,
 } from "react-icons/tb";
 import {
   MdKeyboardDoubleArrowRight,
@@ -44,11 +42,11 @@ export {
   TbClipboard,
   TbCalendarQuestion,
   TbMailFilled,
+  TbArrowNarrowLeft,
+  TbArrowNarrowRight,
   IoHome,
   IoClose,
   MdKeyboardDoubleArrowRight,
-  HiOutlineArrowLongLeft,
-  HiOutlineArrowLongRight,
   TbUsersGroup,
   TbClock,
   TbTrophy,

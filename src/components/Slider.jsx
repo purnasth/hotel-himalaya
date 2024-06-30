@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import {
-  HiOutlineArrowLongLeft,
-  HiOutlineArrowLongRight,
-} from "../constants/data";
+import NextPrevButton from "./ui/NextPrevButton";
 
 const Slider = ({
   slides,
@@ -51,12 +48,12 @@ const Slider = ({
           )}
         </React.Fragment>
       ))}
-      <button onClick={prevSlide} className={`left-5 ${buttonClassName}`}>
-        <HiOutlineArrowLongLeft />
-      </button>
-      <button onClick={nextSlide} className={`right-5 ${buttonClassName}`}>
-        <HiOutlineArrowLongRight />
-      </button>
+
+      <NextPrevButton
+        prevSlide={prevSlide}
+        nextSlide={nextSlide}
+        buttonClassName={buttonClassName}
+      />
     </div>
   );
 };

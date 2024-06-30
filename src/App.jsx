@@ -23,6 +23,7 @@ import BrochurePDF from "./components/BrochurePDF";
 import ContactPage from "./pages/ContactPage";
 import SocialMediaPostsPage from "./pages/SocialMediaPostsPage";
 import useLenisScroll from "./hooks/useLenisScroll";
+import SocialPosts from "./components/SocialPosts";
 
 const App = () => {
   useLenisScroll();

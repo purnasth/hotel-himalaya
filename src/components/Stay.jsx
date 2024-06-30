@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 
-import {
-  withDataFetching,
-  RoomSlider,
-  HiOutlineArrowLongLeft,
-  HiOutlineArrowLongRight,
-} from "../constants/data";
+import { withDataFetching, RoomSlider } from "../constants/data";
+import NextPrevButton from "./ui/NextPrevButton";
 
 const Stay = ({ data }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -41,18 +37,11 @@ const Stay = ({ data }) => {
           </div>
 
           <div className="flex items-center gap-2">
-            <button
-              className="bg-gradient py-1 px-5 rounded-full hover-outline"
-              onClick={handlePrevClick}
-            >
-              <HiOutlineArrowLongLeft className="text-lg" />
-            </button>
-            <button
-              className="bg-gradient py-1 px-5 rounded-full hover-outline"
-              onClick={handleNextClick}
-            >
-              <HiOutlineArrowLongRight className="text-lg" />
-            </button>
+            <NextPrevButton
+              prevSlide={handlePrevClick}
+              nextSlide={handleNextClick}
+              buttonClassName="bg-gradient py-1 px-5 rounded-full hover-outline"
+            />
           </div>
         </div>
       </div>

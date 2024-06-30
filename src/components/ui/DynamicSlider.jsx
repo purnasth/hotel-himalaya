@@ -1,20 +1,17 @@
 import React, { useState } from "react";
-import {
-  HiOutlineArrowLongLeft,
-  HiOutlineArrowLongRight,
-} from "../../constants/data";
+import NextPrevButton from "./NextPrevButton";
 
 const DynamicSlider = ({ items, itemsPerSlide }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalItems = items.length;
 
-  const handlePrevClick = () => {
+  const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? totalItems - 1 : prevIndex - 1
     );
   };
 
-  const handleNextClick = () => {
+  const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === totalItems - 1 ? 0 : prevIndex + 1
     );
@@ -48,18 +45,11 @@ const DynamicSlider = ({ items, itemsPerSlide }) => {
         ))}
       </div>
       <div className="flex items-center justify-center gap-2 my-8">
-        <button
-          className="py-1 px-5 rounded-full flex items-center gap-2 bg-goldDark text-goldLight outline outline-2 outline-goldLight pointer-events-auto hover-outline"
-          onClick={handlePrevClick}
-        >
-          <HiOutlineArrowLongLeft className="text-lg" />
-        </button>
-        <button
-          className="py-1 px-5 rounded-full flex items-center gap-2 bg-goldDark text-goldLight outline outline-2 outline-goldLight pointer-events-auto hover-outline"
-          onClick={handleNextClick}
-        >
-          <HiOutlineArrowLongRight className="text-lg" />
-        </button>
+        <NextPrevButton
+          prevSlide={prevSlide}
+          nextSlide={nextSlide}
+          buttonClassName="py-1 px-5 rounded-full flex items-center gap-2 bg-goldDark text-goldLight outline outline-2 outline-goldLight pointer-events-auto hover-outline"
+        />
       </div>
     </div>
   );
