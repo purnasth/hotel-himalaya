@@ -1,7 +1,10 @@
 import React from "react";
-import FloatingButtonWithNavbar from "./FloatingButtonWithNavbar";
-import { MdOutlineCardMembership } from "react-icons/md";
-import IconRenderer from "../IconRenderer";
+
+import {
+  FloatingButtonWithNavbar,
+  IconRenderer,
+  MdOutlineCardMembership,
+} from "../../constants/data";
 
 const MembershipForm = ({ enquiryFormFields }) => {
   const getTodayDate = () => {

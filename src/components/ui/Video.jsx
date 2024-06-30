@@ -1,18 +1,7 @@
 import React from "react";
-import useFetchData from "../../hooks/useFetchData";
-import Loader from "../Loader";
+import { withDataFetching } from "../../constants/data";
 
-const Video = ({ videoClassName }) => {
-  const { data, loading, error } = useFetchData("/api/videoApi.json");
-
-  if (loading) {
-    return <Loader />;
-  }
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
-
+const Video = ({ data, videoClassName }) => {
   const { video, poster } = data;
 
   return (
@@ -40,4 +29,4 @@ const Video = ({ videoClassName }) => {
   );
 };
 
-export default Video;
+export default withDataFetching(Video, "/api/videoApi.json");

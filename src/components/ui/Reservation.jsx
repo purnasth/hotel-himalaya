@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
-import FloatingButtonWithNavbar from "./FloatingButtonWithNavbar";
-import IconRenderer from "../IconRenderer";
-import { FaRegClipboard } from "react-icons/fa";
+
+import {
+  FloatingButtonWithNavbar,
+  IconRenderer,
+  FaRegClipboard,
+} from "../../constants/data";
 
 const Reservation = ({ prefill, enquiryFormFields }) => {
   const [formData, setFormData] = useState(prefill);

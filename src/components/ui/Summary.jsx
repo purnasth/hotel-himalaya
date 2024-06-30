@@ -1,6 +1,6 @@
 import React from "react";
-import logoMark from "../../assets/logo-mark.svg";
 import { Link } from "react-router-dom";
+import { logoMark } from "../../constants/data";
 
 const Summary = ({ video, quote, link }) => {
   return (

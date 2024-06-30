@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { FaWhatsapp } from "../../constants/data";
 
 const WhatsApp = () => {
   const [showButton, setShowButton] = useState(false);
@@ -21,8 +22,8 @@ const WhatsApp = () => {
   }, []);
 
   return (
-    <a
-      href="https://wa.me/+9779851339602"
+    <Link
+      to="https://wa.me/+9779851339602"
       target="_blank"
       rel="noreferrer"
       className={`${
@@ -32,7 +33,7 @@ const WhatsApp = () => {
       aria-label="WhatsApp"
     >
       <FaWhatsapp className="text-3xl" />
-    </a>
+    </Link>
   );
 };
 

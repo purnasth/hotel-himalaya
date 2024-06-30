@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import { HiChevronDown } from "react-icons/hi";
-import AccordianContact from "./AccordianContact";
-import IconRenderer from "../IconRenderer";
+import {
+  AccordianContact,
+  IconRenderer,
+  HiChevronDown,
+} from "../../constants/data";
 
 const Accordian = ({ accordians }) => {
   const [activeIndex, setActiveIndex] = useState(null);

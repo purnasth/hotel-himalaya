@@ -1,13 +1,7 @@
 import React, { useState, useEffect } from "react";
-import useFetchData from "../../hooks/useFetchData";
+import { withDataFetching } from "../../constants/data";
 
-function Nearby() {
-  const {
-    data: nearbyLocations,
-    loading,
-    error,
-  } = useFetchData("/api/nearbyLocations.json");
-
+function Nearby({ data: nearbyLocations }) {
   const [isMapOpen, setIsMapOpen] = useState(false);
   const [mapUrl, setMapUrl] = useState("");
   const [selectedLocation, setSelectedLocation] = useState(null);
@@ -39,9 +33,6 @@ function Nearby() {
   const handleLocationClick = (location) => {
     openMapModal(location.map, location);
   };
-
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error loading locations</div>;
 
   return (
     <div className="grid grid-cols-4 items-center gap-8">
@@ -92,4 +83,4 @@ function Nearby() {
   );
 }
 
-export default Nearby;
+export default withDataFetching(Nearby, "/api/nearbyLocations.json");

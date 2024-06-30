@@ -1,7 +1,11 @@
 import React, { useState } from "react";
-import { TbUsersGroup, TbClock } from "react-icons/tb";
-import { MdOutlineBrunchDining } from "react-icons/md";
-import Slider from "../Slider";
+
+import {
+  Slider,
+  TbUsersGroup,
+  TbClock,
+  MdOutlineBrunchDining,
+} from "../../constants/data";
 
 const FilterComponent = ({ dineImages, contents }) => {
   const [selectedItem, setSelectedItem] = useState(contents[0]);

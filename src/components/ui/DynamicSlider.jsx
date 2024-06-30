@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import {
   HiOutlineArrowLongLeft,
   HiOutlineArrowLongRight,
-} from "react-icons/hi2";
+} from "../../constants/data";
 
 const DynamicSlider = ({ items, itemsPerSlide }) => {
   const [currentIndex, setCurrentIndex] = useState(0);

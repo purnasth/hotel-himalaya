@@ -206,5 +206,42 @@
         }
       ]
     }
+  ],
+  "contactFormFields": [
+    {
+      "id": "name",
+      "label": "Full Name",
+      "type": "text",
+      "placeholder": "Enter your full name",
+      "required": true
+    },
+    {
+      "id": "email",
+      "label": "Email Address",
+      "type": "email",
+      "placeholder": "Enter your email address",
+      "required": true
+    },
+    {
+      "id": "contactNumber",
+      "label": "Contact Number",
+      "type": "tel",
+      "placeholder": "Enter your contact number",
+      "required": true
+    },
+    {
+      "id": "subject",
+      "label": "Subject",
+      "type": "text",
+      "placeholder": "Enter your subject",
+      "required": true
+    },
+    {
+      "id": "message",
+      "label": "Message",
+      "type": "textarea",
+      "placeholder": "Enter your message",
+      "required": false
+    }
   ]
 }

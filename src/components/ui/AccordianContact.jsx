@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import IconRenderer from "../IconRenderer";
+import { IconRenderer } from "../../constants/data";
 
 const AccordianContact = ({ accordiansContact }) => {
   const { information, details } = accordiansContact;

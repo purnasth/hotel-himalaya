@@ -1,9 +1,10 @@
 import React from "react";
-import { logo } from "../../constants/data";
-
-import { FaFacebook } from "react-icons/fa";
-import { RiInstagramFill } from "react-icons/ri";
-import { BiLogoTripAdvisor } from "react-icons/bi";
+import {
+  logo,
+  FaFacebook,
+  RiInstagramFill,
+  BiLogoTripAdvisor,
+} from "../../constants/data";
 
 const Socials = () => {
   const contactInfo = [

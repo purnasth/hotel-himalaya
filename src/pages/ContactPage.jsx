@@ -29,6 +29,7 @@ const ContactPage = () => {
     slogan,
     subdescription,
     accordian,
+    contactFormFields,
   } = data;
 
   return (
@@ -62,7 +63,7 @@ const ContactPage = () => {
           <Accordian accordians={accordian} />
 
           <div className="max-w-5xl mx-auto my-32 border border-gold p-3">
-            <ContactForm />
+            <ContactForm enquiryFormFields={contactFormFields} />
           </div>
         </div>
         <Nearby />

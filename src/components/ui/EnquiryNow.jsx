@@ -1,7 +1,9 @@
 import React from "react";
-import FloatingButtonWithNavbar from "./FloatingButtonWithNavbar";
-import { RiMessageLine } from "react-icons/ri";
-import IconRenderer from "../IconRenderer";
+import {
+  FloatingButtonWithNavbar,
+  IconRenderer,
+  RiMessageLine,
+} from "../../constants/data";
 
 const EnquiryNow = ({ prefill, enquiryFormFields }) => {
   const getTodayDate = () => {

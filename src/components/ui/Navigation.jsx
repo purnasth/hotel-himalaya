@@ -1,21 +1,12 @@
 import React from "react";
-import { MdOutlineLocalPhone } from "react-icons/md";
-import { IoMailUnreadOutline } from "react-icons/io5";
-import Loader from "../Loader";
-import useFetchData from "../../hooks/useFetchData";
-import Socials from "./Socials";
+import {
+  MdOutlineLocalPhone,
+  IoMailUnreadOutline,
+  Socials,
+  withDataFetching,
+} from "../../constants/data";
 
-const Navigation = ({ mainClassName, isFooter }) => {
-  const { data, loading, error } = useFetchData("/api/footerData.json");
-
-  if (loading) {
-    return <Loader />;
-  }
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
-
+const Navigation = ({ data, mainClassName, isFooter }) => {
   const year = new Date().getFullYear();
 
   return (
@@ -130,4 +121,4 @@ const Navigation = ({ mainClassName, isFooter }) => {
   );
 };
 
-export default Navigation;
+export default withDataFetching(Navigation, "/api/footerData.json");

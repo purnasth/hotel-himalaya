@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { RiArrowUpDoubleLine } from "react-icons/ri";
+import { RiArrowUpDoubleLine } from "../../constants/data";
 
 const BackToTop = () => {
   const [showButton, setShowButton] = useState(false);
