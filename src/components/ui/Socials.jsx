@@ -1,7 +1,7 @@
 import React from "react";
 import {
   logo,
-  FaFacebook,
+  MdFacebook,
   RiInstagramFill,
   BiLogoTripAdvisor,
 } from "../../constants/data";
@@ -27,7 +27,7 @@ const Socials = () => {
   const socialLinks = [
     {
       href: "https://www.facebook.com/HotelHimalayaPatan/",
-      icon: FaFacebook,
+      icon: MdFacebook,
     },
     {
       href: "https://www.instagram.com/hotelhimalaya_lalitpur/",

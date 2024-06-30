@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import {
   withDataFetching,
   IconRenderer,
-  HiArrowLongRight,
+  TbCircleArrowRight,
 } from "../constants/data";
 
 const DiscoverHimalaya = ({ data }) => {
@@ -60,7 +60,7 @@ const DiscoverHimalaya = ({ data }) => {
                     aria-label={title}
                   >
                     {title}
-                    <HiArrowLongRight className="ml-2 group-hover:translate-x-2 transition-all duration-300" />
+                    <TbCircleArrowRight className="ml-2 group-hover:translate-x-2 transition-all duration-300" />
                   </Link>
                 </div>
               </div>

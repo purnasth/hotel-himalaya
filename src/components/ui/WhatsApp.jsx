@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaWhatsapp } from "../../constants/data";
+import { TbBrandWhatsapp } from "../../constants/data";
 
 const WhatsApp = () => {
   const [showButton, setShowButton] = useState(false);
@@ -32,7 +32,7 @@ const WhatsApp = () => {
       title="WhatsApp"
       aria-label="WhatsApp"
     >
-      <FaWhatsapp className="text-3xl" />
+      <TbBrandWhatsapp className="text-3xl" />
     </Link>
   );
 };

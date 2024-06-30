@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import {
   FloatingButtonWithNavbar,
   IconRenderer,
-  FaRegClipboard,
+  TbClipboard,
 } from "../../constants/data";
 
 const Reservation = ({ prefill, enquiryFormFields }) => {
@@ -102,7 +102,7 @@ const Reservation = ({ prefill, enquiryFormFields }) => {
 
   return (
     <FloatingButtonWithNavbar
-      buttonIcon={<FaRegClipboard className="text-base" />}
+      buttonIcon={<TbClipboard className="text-lg" />}
       buttonText="Reserve"
       buttonStyles="w-full bg-gradient px-6 py-2 rounded-full hover-outline flex items-center justify-center gap-0"
       navbarStyles="bg-white px-2"

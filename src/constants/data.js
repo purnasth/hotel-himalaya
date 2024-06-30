@@ -8,53 +8,55 @@ import himalayaPDF from "../assets/himalaya_booklet.pdf";
 export { logo, logoMark, sata, tripaward, himalayaPDF };
 
 // icons
-import { HiChevronDown } from "react-icons/hi";
-import { HiArrowLongRight } from "react-icons/hi2";
 import {
   HiOutlineArrowLongLeft,
   HiOutlineArrowLongRight,
 } from "react-icons/hi2";
-import { RiMessageLine } from "react-icons/ri";
-import { RiArrowUpDoubleLine } from "react-icons/ri";
-import { IoHome } from "react-icons/io5";
-import { IoClose } from "react-icons/io5";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import { TbUsersGroup, TbClock } from "react-icons/tb";
-import { MdOutlineBrunchDining } from "react-icons/md";
-import { MdOutlineCardMembership } from "react-icons/md";
-import { MdOutlineLocalPhone } from "react-icons/md";
-import { IoMailUnreadOutline } from "react-icons/io5";
-import { FaRegClipboard } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { RiInstagramFill } from "react-icons/ri";
+import {
+  TbUsersGroup,
+  TbClock,
+  TbChevronDown,
+  TbCircleArrowRight,
+  TbBrandWhatsapp,
+  TbClipboard,
+  TbCalendarQuestion,
+  TbTrophy,
+} from "react-icons/tb";
+import {
+  MdKeyboardDoubleArrowRight,
+  MdOutlineBrunchDining,
+  MdOutlineCardMembership,
+  MdOutlineLocalPhone,
+  MdFacebook,
+  MdOutlineKeyboardDoubleArrowUp,
+} from "react-icons/md";
 import { BiLogoTripAdvisor } from "react-icons/bi";
-import { FaWhatsapp } from "react-icons/fa";
-import { RiTrophyLine } from "react-icons/ri";
-import { RiMenu2Fill } from "react-icons/ri";
+import { RiInstagramFill, RiMenu2Fill } from "react-icons/ri";
 import { IoIosCloseCircleOutline } from "react-icons/io";
+import { IoHome, IoClose, IoMailUnreadOutline } from "react-icons/io5";
 
 export {
-  HiChevronDown,
-  RiArrowUpDoubleLine,
-  RiMessageLine,
+  MdFacebook,
+  TbCircleArrowRight,
+  TbChevronDown,
+  TbBrandWhatsapp,
+  TbClipboard,
+  TbCalendarQuestion,
   IoHome,
   IoClose,
   MdKeyboardDoubleArrowRight,
-  HiArrowLongRight,
   HiOutlineArrowLongLeft,
   HiOutlineArrowLongRight,
   TbUsersGroup,
   TbClock,
+  TbTrophy,
   MdOutlineBrunchDining,
   MdOutlineCardMembership,
+  MdOutlineKeyboardDoubleArrowUp,
   MdOutlineLocalPhone,
   IoMailUnreadOutline,
-  FaRegClipboard,
-  FaFacebook,
   RiInstagramFill,
   BiLogoTripAdvisor,
-  FaWhatsapp,
-  RiTrophyLine,
   RiMenu2Fill,
   IoIosCloseCircleOutline,
 };

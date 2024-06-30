@@ -1,5 +1,5 @@
 import React from "react";
-import { Video } from "../constants/data";
+import Video from "./ui/Video";
 
 const About = ({ data }) => {
   const { slogan, home_title, home_description } = data;

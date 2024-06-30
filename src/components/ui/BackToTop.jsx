@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { RiArrowUpDoubleLine } from "../../constants/data";
+import { MdOutlineKeyboardDoubleArrowUp } from "../../constants/data";
 
 const BackToTop = () => {
   const [showButton, setShowButton] = useState(false);
@@ -36,7 +36,7 @@ const BackToTop = () => {
       title="Back to Top"
       aria-label="Back to Top"
     >
-      <RiArrowUpDoubleLine className="text-2xl" />
+      <MdOutlineKeyboardDoubleArrowUp className="text-2xl" />
     </button>
   );
 };

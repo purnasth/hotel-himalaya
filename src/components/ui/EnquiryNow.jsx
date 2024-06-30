@@ -2,7 +2,7 @@ import React from "react";
 import {
   FloatingButtonWithNavbar,
   IconRenderer,
-  RiMessageLine,
+  TbCalendarQuestion,
 } from "../../constants/data";
 
 const EnquiryNow = ({ prefill, enquiryFormFields }) => {
@@ -25,7 +25,7 @@ const EnquiryNow = ({ prefill, enquiryFormFields }) => {
 
   return (
     <FloatingButtonWithNavbar
-      buttonIcon={<RiMessageLine className="text-base text-navy" />}
+      buttonIcon={<TbCalendarQuestion className="text-base" />}
       buttonText="Enquiry"
       buttonStyles="w-full bg-gradient px-6 py-2 rounded-full hover-outline flex items-center justify-center gap-0"
       navbarStyles="bg-white px-2"

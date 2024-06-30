@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import {
   logo,
   Navigation,
-  FaRegClipboard,
+  TbClipboard,
   RiMenu2Fill,
   IoIosCloseCircleOutline,
 } from "../constants/data";
@@ -29,21 +29,26 @@ const Navbar = () => {
             <div className="flex items-center justify-between">
               <button
                 onClick={toggleMenu}
-                className="py-2 px-5 rounded-full flex items-center gap-2 bg-goldDark text-goldLight outline outline-2 outline-goldLight pointer-events-auto hover-outline"
+                className="relative py-2 px-5 rounded-full flex items-center gap-2 bg-goldDark text-goldLight outline outline-2 outline-goldLight pointer-events-auto hover-outline transition-all duration-700 ease-linear"
               >
-                {isMenuOpen ? (
-                  <IoIosCloseCircleOutline className="text-xl" />
-                ) : (
-                  <RiMenu2Fill className="text-xl" />
-                )}
-                Menu
+                <IoIosCloseCircleOutline
+                  className={`absolute left-0 top-1/2 translate-x-4 -translate-y-1/2 text-xl transition-all duration-700 ease-linear ${
+                    isMenuOpen ? "opacity-100 scale-100" : "opacity-0 scale-75"
+                  }`}
+                />
+                <RiMenu2Fill
+                  className={`absolute left-0 top-1/2 translate-x-4 -translate-y-1/2 text-xl transition-all duration-700 ease-linear ${
+                    isMenuOpen ? "opacity-0 scale-75" : "opacity-100 scale-100"
+                  }`}
+                />
+                <span className="ml-6">Menu</span>
               </button>
               <a
                 href="https://hotelhimalaya.com//result.php?hotel_code=q7x6fU"
                 target="_blank"
                 className="py-2 px-5 rounded-full flex items-center gap-2 bg-goldDark text-goldLight outline outline-2 outline-goldLight pointer-events-auto hover-outline"
               >
-                Book <FaRegClipboard className="text-base" />
+                Book <TbClipboard className="text-lg" />
               </a>
             </div>
           </div>

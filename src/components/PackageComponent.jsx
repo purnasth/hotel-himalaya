@@ -51,7 +51,6 @@ const PackageComponent = ({ content, enquiryFormFields }) => {
             aria-label="Reserve"
           >
             Reserve
-            {/* <FaRegClipboard className="text-sm" /> */}
           </button>
 
           {/* <Reservation

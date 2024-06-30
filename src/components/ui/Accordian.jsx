@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import {
   AccordianContact,
   IconRenderer,
-  HiChevronDown,
+  TbChevronDown,
 } from "../../constants/data";
 
 const Accordian = ({ accordians }) => {
@@ -35,9 +35,9 @@ const Accordian = ({ accordians }) => {
             </div>
             <span className="text-2xl outline outline-1 outline-goldDark text-goldDark p-2 rounded-full group-hover:bg-goldDark group-hover:text-goldLight transition-all duration-300 ease-linear">
               {activeIndex === index ? (
-                <HiChevronDown className="rotate-180 transition-all duration-200 ease-linear" />
+                <TbChevronDown className="rotate-180 transition-all duration-200 ease-linear" />
               ) : (
-                <HiChevronDown className="rotate-0 transition-all duration-200 ease-linear" />
+                <TbChevronDown className="rotate-0 transition-all duration-200 ease-linear" />
               )}
             </span>
           </button>

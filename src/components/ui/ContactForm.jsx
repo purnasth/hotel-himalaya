@@ -1,5 +1,5 @@
 import React from "react";
-import { HiArrowLongRight } from "../../constants/data";
+import { TbCircleArrowRight } from "../../constants/data";
 
 const ContactForm = ({ enquiryFormFields }) => {
   return (
@@ -47,7 +47,7 @@ const ContactForm = ({ enquiryFormFields }) => {
             aria-label="Send Message"
           >
             Send Message
-            <HiArrowLongRight className="ml-2 group-hover:translate-x-2 transition-all duration-300" />
+            <TbCircleArrowRight className="text-xl ml-2 group-hover:translate-x-2 transition-all duration-300" />
           </button>
         </div>
       </form>
