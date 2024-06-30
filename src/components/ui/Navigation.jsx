@@ -1,7 +1,7 @@
 import React from "react";
 import {
-  MdOutlineLocalPhone,
-  IoMailUnreadOutline,
+  MdPhone,
+  TbMailFilled,
   Socials,
   withDataFetching,
 } from "../../constants/data";
@@ -47,13 +47,13 @@ const Navigation = ({ data, mainClassName, isFooter }) => {
                   <div className="space-y-2">
                     {info.phone && (
                       <div className="flex items-center gap-2">
-                        <MdOutlineLocalPhone className="icon" />
+                        <MdPhone className="icon" />
                         <a href={`tel:${info.phone}`}>{info.phone}</a>
                       </div>
                     )}
                     {info.phones && (
                       <div className="flex items-center gap-2">
-                        <MdOutlineLocalPhone className="icon" />
+                        <MdPhone className="icon" />
                         <ul className="flex items-center gap-3">
                           {info.phones.map((phone, index) => (
                             <li key={index}>
@@ -64,7 +64,7 @@ const Navigation = ({ data, mainClassName, isFooter }) => {
                       </div>
                     )}
                     <div className="flex items-center gap-2">
-                      <IoMailUnreadOutline className="icon" />
+                      <TbMailFilled className="icon" />
                       <a href={`mailto:${info.email}`}>{info.email}</a>
                     </div>
                   </div>

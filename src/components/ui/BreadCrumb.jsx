@@ -22,7 +22,7 @@ const BreadCrumb = ({ page }) => {
           </li>
           <li aria-current="page">
             <h2 className="text-gradient inline-flex items-center justify-center text-sm md:text-base font-title tracking-wider ">
-              <MdKeyboardDoubleArrowRight className="text-goldLight text-lg me-2.5 -mt-[5px]" />
+              <MdKeyboardDoubleArrowRight className="text-goldLight text-lg me-2.5" />
               {page}
             </h2>
           </li>

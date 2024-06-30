@@ -21,19 +21,20 @@ import {
   TbClipboard,
   TbCalendarQuestion,
   TbTrophy,
+  TbMailFilled,
 } from "react-icons/tb";
 import {
   MdKeyboardDoubleArrowRight,
   MdOutlineBrunchDining,
   MdOutlineCardMembership,
-  MdOutlineLocalPhone,
+  MdPhone,
   MdFacebook,
   MdOutlineKeyboardDoubleArrowUp,
 } from "react-icons/md";
 import { BiLogoTripAdvisor } from "react-icons/bi";
 import { RiInstagramFill, RiMenu2Fill } from "react-icons/ri";
 import { IoIosCloseCircleOutline } from "react-icons/io";
-import { IoHome, IoClose, IoMailUnreadOutline } from "react-icons/io5";
+import { IoHome, IoClose } from "react-icons/io5";
 
 export {
   MdFacebook,
@@ -42,6 +43,7 @@ export {
   TbBrandWhatsapp,
   TbClipboard,
   TbCalendarQuestion,
+  TbMailFilled,
   IoHome,
   IoClose,
   MdKeyboardDoubleArrowRight,
@@ -53,8 +55,7 @@ export {
   MdOutlineBrunchDining,
   MdOutlineCardMembership,
   MdOutlineKeyboardDoubleArrowUp,
-  MdOutlineLocalPhone,
-  IoMailUnreadOutline,
+  MdPhone,
   RiInstagramFill,
   BiLogoTripAdvisor,
   RiMenu2Fill,
