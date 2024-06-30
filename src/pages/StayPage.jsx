@@ -1,21 +1,13 @@
 import React from "react";
-import Banner from "../components/Banner";
-import PackageComponent from "../components/PackageComponent";
-import useFetchData from "../hooks/useFetchData";
-import Loader from "../components/Loader";
-import Summary from "../components/ui/Summary";
 
-const StayPage = () => {
-  const { data, loading, error } = useFetchData("/api/accommodationData.json");
+import {
+  withDataFetching,
+  Banner,
+  Summary,
+  PackageComponent,
+} from "../constants/data";
 
-  if (loading) {
-    return <Loader />;
-  }
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
-
+const StayPage = ({ data }) => {
   const {
     banner,
     title,
@@ -65,4 +57,4 @@ const StayPage = () => {
   );
 };
 
-export default StayPage;
+export default withDataFetching(StayPage, "/api/accommodationData.json");

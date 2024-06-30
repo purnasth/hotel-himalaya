@@ -1,22 +1,14 @@
 import React from "react";
-import useFetchData from "../hooks/useFetchData";
-import Loader from "../components/Loader";
-import About from "../components/About";
-import Slider from "../components/Slider";
-import BreadCrumb from "../components/ui/BreadCrumb";
-import DiscoverHimalaya from "../components/DiscoverHimalaya";
 
-const AboutPage = () => {
-  const { data, loading, error } = useFetchData("/api/aboutData.json");
+import {
+  withDataFetching,
+  Slider,
+  BreadCrumb,
+  About,
+  DiscoverHimalaya,
+} from "../constants/data";
 
-  if (loading) {
-    return <Loader />;
-  }
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
-
+const AboutPage = ({ data }) => {
   const {
     banner,
     title,
@@ -78,4 +70,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default withDataFetching(AboutPage, "/api/aboutData.json");

@@ -1,18 +1,8 @@
 import React from "react";
-import Loader from "../components/Loader";
-import useFetchData from "../hooks/useFetchData";
 
-const SocialMediaPostsPage = () => {
-  const { data, loading, error } = useFetchData("/api/socialPosts.json");
+import { withDataFetching } from "../constants/data";
 
-  if (loading) {
-    return <Loader />;
-  }
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
-
+const SocialMediaPostsPage = ({ data }) => {
   const { socialsPosts } = data;
 
   return (
@@ -45,4 +35,4 @@ const SocialMediaPostsPage = () => {
   );
 };
 
-export default SocialMediaPostsPage;
+export default withDataFetching(SocialMediaPostsPage, "/api/socialPosts.json");

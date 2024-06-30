@@ -1,26 +1,17 @@
 import React from "react";
-import Video from "../components/ui/Video";
-import Nearby from "../components/ui/Nearby";
-import ContactForm from "../components/ui/ContactForm";
-import Accordian from "../components/ui/Accordian";
 
-import Socials from "../components/ui/Socials";
-import Banner from "../components/Banner";
-import useFetchData from "../hooks/useFetchData";
-import Loader from "../components/Loader";
-import DiscoverHimalaya from "../components/DiscoverHimalaya";
+import {
+  withDataFetching,
+  Accordian,
+  Banner,
+  DiscoverHimalaya,
+  Socials,
+  Video,
+  Nearby,
+  ContactForm,
+} from "../constants/data";
 
-const ContactPage = () => {
-  const { data, loading, error } = useFetchData("/api/contactData.json");
-
-  if (loading) {
-    return <Loader />;
-  }
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
-
+const ContactPage = ({ data }) => {
   const {
     banner,
     title,
@@ -74,4 +65,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default withDataFetching(ContactPage, "/api/contactData.json");

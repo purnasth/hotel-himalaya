@@ -83,9 +83,28 @@ import EnquiryNow from "../components/ui/EnquiryNow";
 import DynamicSlider from "../components/ui/DynamicSlider";
 import RoomSlider from "../components/ui/RoomSlider";
 import TestimonialFilter from "../components/ui/TestimonialFilter";
+import About from "../components/About";
+import DiscoverHimalaya from "../components/DiscoverHimalaya";
+import Accordian from "../components/ui/Accordian";
+import Nearby from "../components/ui/Nearby";
+import ContactForm from "../components/ui/ContactForm";
+import Banner from "../components/Banner";
+import Summary from "../components/ui/Summary";
+import FilterComponent from "../components/ui/FilterComponent";
+import HallComponent from "../components/HallComponent";
+import Amenities from "../components/Amenities";
+import PromotionsComponent from "../components/PromotionsComponent";
+import MembershipForm from "../components/ui/MembershipForm";
+import RecreationLayout from "../components/RecreationLayout";
+import PackageComponent from "../components/PackageComponent";
+import Facilities from "../components/Facilities";
+import Hall from "../components/Hall";
+import Stay from "../components/Stay";
+import Testimonials from "../components/Testimonials";
 
 export {
   AccordianContact,
+  Banner,
   IconRenderer,
   FloatingButtonWithNavbar,
   Slider,
@@ -98,4 +117,21 @@ export {
   DynamicSlider,
   RoomSlider,
   TestimonialFilter,
+  About,
+  DiscoverHimalaya,
+  Accordian,
+  Nearby,
+  ContactForm,
+  Summary,
+  FilterComponent,
+  HallComponent,
+  Amenities,
+  PromotionsComponent,
+  MembershipForm,
+  RecreationLayout,
+  PackageComponent,
+  Facilities,
+  Hall,
+  Stay,
+  Testimonials,
 };

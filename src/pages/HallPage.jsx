@@ -1,22 +1,14 @@
 import React from "react";
-import Banner from "../components/Banner";
-import HallComponent from "../components/HallComponent";
-import useFetchData from "../hooks/useFetchData";
-import Loader from "../components/Loader";
-import Amenities from "../components/Amenities";
-import Summary from "../components/ui/Summary";
 
-const HallPage = () => {
-  const { data, loading, error } = useFetchData("/api/hallData.json");
+import {
+  withDataFetching,
+  Banner,
+  Summary,
+  HallComponent,
+  Amenities,
+} from "../constants/data";
 
-  if (loading) {
-    return <Loader />;
-  }
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
-
+const HallPage = ({ data }) => {
   const {
     banner,
     video,
@@ -66,4 +58,4 @@ const HallPage = () => {
   );
 };
 
-export default HallPage;
+export default withDataFetching(HallPage, "/api/hallData.json");

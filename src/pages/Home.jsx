@@ -1,12 +1,15 @@
 import React from "react";
-import Slider from "../components/Slider";
-import Facilities from "../components/Facilities";
-import About from "../components/About";
-import Hall from "../components/Hall";
-import Stay from "../components/Stay";
-import Testimonials from "../components/Testimonials";
-import useFetchData from "../hooks/useFetchData";
-import Loader from "../components/Loader";
+
+import {
+  useFetchData,
+  Loader,
+  Slider,
+  About,
+  Stay,
+  Facilities,
+  Hall,
+  Testimonials,
+} from "../constants/data";
 
 const Home = () => {
   const {

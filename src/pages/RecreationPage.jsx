@@ -1,22 +1,14 @@
 import React from "react";
-import Banner from "../components/Banner";
-import MembershipForm from "../components/ui/MembershipForm";
-import RecreationLayout from "../components/RecreationLayout";
-import useFetchData from "../hooks/useFetchData";
-import Loader from "../components/Loader";
-import Summary from "../components/ui/Summary";
 
-const RecreationPage = () => {
-  const { data, loading, error } = useFetchData("/api/recreationData.json");
+import {
+  withDataFetching,
+  Banner,
+  MembershipForm,
+  RecreationLayout,
+  Summary,
+} from "../constants/data";
 
-  if (loading) {
-    return <Loader />;
-  }
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
-
+const RecreationPage = ({ data }) => {
   const {
     banner,
     video,
@@ -60,4 +52,4 @@ const RecreationPage = () => {
   );
 };
 
-export default RecreationPage;
+export default withDataFetching(RecreationPage, "/api/recreationData.json");

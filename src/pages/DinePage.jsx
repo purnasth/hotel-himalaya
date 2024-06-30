@@ -1,21 +1,13 @@
 import React from "react";
-import Banner from "../components/Banner";
-import FilterComponent from "../components/ui/FilterComponent";
-import useFetchData from "../hooks/useFetchData";
-import Loader from "../components/Loader";
-import Summary from "../components/ui/Summary";
 
-const DinePage = () => {
-  const { data, loading, error } = useFetchData("/api/dineData.json");
+import {
+  withDataFetching,
+  Banner,
+  Summary,
+  FilterComponent,
+} from "../constants/data";
 
-  if (loading) {
-    return <Loader />;
-  }
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
-
+const DinePage = ({ data }) => {
   const {
     banner,
     video,
@@ -56,4 +48,4 @@ const DinePage = () => {
   );
 };
 
-export default DinePage;
+export default withDataFetching(DinePage, "/api/dineData.json");

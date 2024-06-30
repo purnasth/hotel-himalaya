@@ -1,19 +1,8 @@
 import React from "react";
-import PromotionsComponent from "../components/PromotionsComponent";
-import useFetchData from "../hooks/useFetchData";
-import Loader from "../components/Loader";
 
-const Promotions = () => {
-  const { data, loading, error } = useFetchData("/api/promotionsData.json");
+import { withDataFetching, PromotionsComponent } from "../constants/data";
 
-  if (loading) {
-    return <Loader />;
-  }
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
-
+const Promotions = ({ data }) => {
   const { promotionsImages, promotionsFormFields } = data;
 
   return (
@@ -37,4 +26,4 @@ const Promotions = () => {
   );
 };
 
-export default Promotions;
+export default withDataFetching(Promotions, "/api/promotionsData.json");
