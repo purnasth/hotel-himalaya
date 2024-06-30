@@ -1,18 +1,7 @@
 import React from "react";
-import useFetchData from "../hooks/useFetchData";
-import Loader from "./Loader";
+import { withDataFetching } from "../constants/data";
 
-const Facilities = () => {
-  const { data, loading, error } = useFetchData("/api/facilitiesData.json");
-
-  if (loading) {
-    return <Loader />;
-  }
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
-
+const Facilities = ({ data }) => {
   const { hotelFacilities } = data;
 
   return (
@@ -50,4 +39,4 @@ const Facilities = () => {
   );
 };
 
-export default Facilities;
+export default withDataFetching(Facilities, "/api/facilitiesData.json");

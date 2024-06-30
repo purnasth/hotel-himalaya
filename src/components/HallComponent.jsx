@@ -1,7 +1,5 @@
 import React from "react";
-import Slider from "./Slider";
-import EnquiryNow from "./ui/EnquiryNow";
-import IconRenderer from "./IconRenderer";
+import { Slider, IconRenderer, EnquiryNow } from "../constants/data";
 
 const HallComponent = ({ content, enquiryFormFields }) => {
   const { title, description, image, details, setup } = content;

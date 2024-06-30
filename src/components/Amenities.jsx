@@ -1,5 +1,5 @@
 import React from "react";
-import IconRenderer from "./IconRenderer";
+import { IconRenderer } from "../constants/data";
 
 const Amenities = ({ amenities }) => {
   return (

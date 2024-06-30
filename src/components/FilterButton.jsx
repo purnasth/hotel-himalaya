@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Slider from "./Slider";
+
+import { Slider } from "../constants/data";
 
 const FilterButton = () => {
   const [activeFilter, setActiveFilter] = useState("filter1");
@@ -58,7 +59,9 @@ const FilterButton = () => {
             <div
               key={hall.id}
               className={`absolute top-0 left-0 w-full h-full transition-all duration-500 ${
-                activeFilter === hall.id ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"
+                activeFilter === hall.id
+                  ? "translate-y-0 opacity-100"
+                  : "translate-y-12 opacity-0"
               }`}
             >
               {activeFilter === hall.id && (

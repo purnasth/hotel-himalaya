@@ -1,19 +1,8 @@
 import React from "react";
-import TestimonialFilter from "./ui/TestimonialFilter";
-import useFetchData from "../hooks/useFetchData";
-import Loader from "./Loader";
 
-const Testimonials = () => {
-  const { data, loading, error } = useFetchData("/api/testimonialData.json");
+import { withDataFetching, TestimonialFilter } from "../constants/data";
 
-  if (loading) {
-    return <Loader />;
-  }
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
-
+const Testimonials = ({ data }) => {
   const { subheading, title, description, contents } = data;
 
   return (
@@ -30,4 +19,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default withDataFetching(Testimonials, "/api/testimonialData.json");

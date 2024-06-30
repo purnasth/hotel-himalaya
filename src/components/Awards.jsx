@@ -1,8 +1,11 @@
 import React from "react";
-import FloatingButtonWithNavbar from "./ui/FloatingButtonWithNavbar";
-import { RiTrophyLine } from "react-icons/ri";
-import sata from "../assets/awards/sata.webp";
-import tripaward from "../assets/awards/tripaward.webp";
+
+import {
+  FloatingButtonWithNavbar,
+  RiTrophyLine,
+  sata,
+  tripaward,
+} from "../constants/data";
 
 const Awards = () => {
   return (

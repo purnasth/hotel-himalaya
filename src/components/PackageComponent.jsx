@@ -1,8 +1,6 @@
 import React from "react";
-import Slider from "./Slider";
-import IconRenderer from "./IconRenderer";
-// import Reservation from "./ui/Reservation";
-import { FaRegClipboard } from "react-icons/fa";
+
+import { Slider, IconRenderer } from "../constants/data";
 
 const PackageComponent = ({ content, enquiryFormFields }) => {
   const { title, description, image, details, amenities } = content;

@@ -1,19 +1,8 @@
 import React from "react";
-import DynamicSlider from "./ui/DynamicSlider";
-import useFetchData from "../hooks/useFetchData";
-import Loader from "./Loader";
 
-const SocialPosts = () => {
-  const { data, loading, error } = useFetchData("/api/socialPosts.json");
+import { withDataFetching, DynamicSlider } from "../constants/data";
 
-  if (loading) {
-    return <Loader />;
-  }
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
-
+const SocialPosts = ({ data }) => {
   const { socialsPosts } = data;
 
   return (
@@ -23,4 +12,4 @@ const SocialPosts = () => {
   );
 };
 
-export default SocialPosts;
+export default withDataFetching(SocialPosts, "/api/socialPosts.json");

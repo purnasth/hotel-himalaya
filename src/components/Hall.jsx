@@ -1,19 +1,8 @@
-import React, { useState, useEffect } from "react";
-import Slider from "./Slider";
-import Loader from "./Loader";
-import useFetchData from "../hooks/useFetchData";
+import React from "react";
 
-const Hall = () => {
-  const { data, loading, error } = useFetchData("/api/hallData.json");
+import { withDataFetching, Slider } from "../constants/data";
 
-  if (loading) {
-    return <Loader />;
-  }
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
-
+const Hall = ({ data }) => {
   const { title, slogan, details, forCategories, buttonText, hallImages } =
     data;
 
@@ -56,4 +45,4 @@ const Hall = () => {
   );
 };
 
-export default Hall;
+export default withDataFetching(Hall, "/api/hallData.json");

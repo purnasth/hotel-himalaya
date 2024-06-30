@@ -1,5 +1,5 @@
 import React from "react";
-import BreadCrumb from "./ui/BreadCrumb";
+import { BreadCrumb } from "../constants/data";
 
 const Banner = ({ banner, title, description, page, video }) => {
   return (

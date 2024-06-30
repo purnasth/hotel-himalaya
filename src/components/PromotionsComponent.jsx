@@ -1,5 +1,5 @@
 import React from "react";
-import EnquiryNow from "./ui/EnquiryNow";
+import { EnquiryNow } from "../constants/data";
 
 const PromotionsComponent = ({ promotionsImages, enquiryFormFields }) => {
   return (

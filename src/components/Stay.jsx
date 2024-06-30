@@ -1,23 +1,14 @@
-import React, { useState, useEffect } from "react";
-import RoomSlider from "./ui/RoomSlider";
+import React, { useState } from "react";
+
 import {
+  withDataFetching,
+  RoomSlider,
   HiOutlineArrowLongLeft,
   HiOutlineArrowLongRight,
-} from "react-icons/hi2";
-import useFetchData from "../hooks/useFetchData";
-import Loader from "./Loader";
+} from "../constants/data";
 
-const Stay = () => {
-  const { data, loading, error } = useFetchData("/api/accommodationData.json");
+const Stay = ({ data }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  if (loading) {
-    return <Loader />;
-  }
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
 
   const { home_slogan, home_title, home_description, roomsCategories } = data;
   const totalItems = roomsCategories.length;
@@ -72,4 +63,4 @@ const Stay = () => {
   );
 };
 
-export default Stay;
+export default withDataFetching(Stay, "/api/accommodationData.json");

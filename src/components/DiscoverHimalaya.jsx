@@ -1,21 +1,13 @@
 import React from "react";
-import { HiArrowLongRight } from "react-icons/hi2";
-import useFetchData from "../hooks/useFetchData";
-import Loader from "./Loader";
 import { Link } from "react-router-dom";
-import IconRenderer from "./IconRenderer";
 
-const DiscoverHimalaya = () => {
-  const { data, loading, error } = useFetchData("/api/discoverHimalaya.json");
+import {
+  withDataFetching,
+  IconRenderer,
+  HiArrowLongRight,
+} from "../constants/data";
 
-  if (loading) {
-    return <Loader />;
-  }
-
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
-
+const DiscoverHimalaya = ({ data }) => {
   const { title, description, facilities, discover } = data;
 
   return (
@@ -80,4 +72,4 @@ const DiscoverHimalaya = () => {
   );
 };
 
-export default DiscoverHimalaya;
+export default withDataFetching(DiscoverHimalaya, "/api/discoverHimalaya.json");

@@ -1,9 +1,12 @@
 import React, { useState } from "react";
-import { FaRegClipboard } from "react-icons/fa";
-import { logo } from "../constants/data";
-import { RiMenu2Fill } from "react-icons/ri";
-import { IoIosCloseCircleOutline } from "react-icons/io";
-import Navigation from "./ui/Navigation";
+
+import {
+  logo,
+  Navigation,
+  FaRegClipboard,
+  RiMenu2Fill,
+  IoIosCloseCircleOutline,
+} from "../constants/data";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

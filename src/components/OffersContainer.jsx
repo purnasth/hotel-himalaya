@@ -1,5 +1,5 @@
 import React from "react";
-import DynamicSlider from "./ui/DynamicSlider";
+import { DynamicSlider } from "../constants/data";
 
 const OffersContainer = () => {
   const offers = [
@@ -14,7 +14,8 @@ const OffersContainer = () => {
       description: "Description of Junior Suite...",
     },
     {
-      image: "https://mayurstay.com/hotelhimalaya/images/slideshow/GDLNu-03.jpg",
+      image:
+        "https://mayurstay.com/hotelhimalaya/images/slideshow/GDLNu-03.jpg",
       title: "Junior Suite",
       description: "Description of Junior Suite...",
     },
@@ -35,7 +36,7 @@ const OffersContainer = () => {
         </div>
       </div>
       <div className="container">
-        <DynamicSlider items={offers} itemsPerSlide={3}/>
+        <DynamicSlider items={offers} itemsPerSlide={3} />
       </div>
     </main>
   );
