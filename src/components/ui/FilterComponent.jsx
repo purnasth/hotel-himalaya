@@ -28,7 +28,7 @@ const FilterComponent = ({ dineImages, contents }) => {
 
   return (
     <div className="flex flex-col gap-24">
-      <div className="sticky top-0 flex justify-between flex-nowrap gap-12 max-w-full overflow-x-auto py-6 z-20">
+      <div className="bg-white sticky top-0 flex justify-between flex-nowrap gap-12 max-w-full overflow-x-auto py-6 z-20">
         {contents.map(({ id, title }) => (
           <button
             key={id}
