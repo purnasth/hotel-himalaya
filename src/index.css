@@ -84,6 +84,19 @@
     text-shadow: 0 0 1px #b399309e; */
     @apply bg-gradient-to-b from-[#f3bf58] from-[27%] via-[#ffecb3] via-[40%] to-[#9a6700] to-[98%] text-transparent bg-clip-text;
   }
+
+  .underline-link {
+    @apply text-white text-base font-semibold no-underline transition-all duration-500 underline-offset-2;
+  }
+
+  .underline-link:hover,
+  .underline-link.active:hover {
+    @apply underline underline-offset-8;
+  }
+
+  .underline-link.active {
+    @apply underline underline-offset-4;
+  }
 }
 
 @layer utilities {
