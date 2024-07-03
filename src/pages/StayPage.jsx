@@ -49,6 +49,7 @@ const StayPage = ({ data }) => {
         </div>
       </main>
       <Summary
+        poster={banner}
         video={video}
         quote="Take a break. Recharge your batteries. Find inspiration."
         link={rojai}

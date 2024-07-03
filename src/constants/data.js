@@ -28,6 +28,7 @@ import {
   MdPhone,
   MdFacebook,
   MdOutlineKeyboardDoubleArrowUp,
+  MdFullscreen,
 } from "react-icons/md";
 import { BiLogoTripAdvisor } from "react-icons/bi";
 import { RiInstagramFill, RiMenu2Fill } from "react-icons/ri";
@@ -58,6 +59,7 @@ export {
   BiLogoTripAdvisor,
   RiMenu2Fill,
   IoIosCloseCircleOutline,
+  MdFullscreen,
 };
 
 // hoc

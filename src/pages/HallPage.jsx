@@ -50,6 +50,7 @@ const HallPage = ({ data }) => {
         <Amenities amenities={amenities} />
       </main>
       <Summary
+        poster={banner}
         video={video}
         quote="Mark the date & Create lasting memories."
         link="#"

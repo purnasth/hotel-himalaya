@@ -44,6 +44,7 @@ const RecreationPage = ({ data }) => {
         <RecreationLayout recreationsData={recreations} />
       </main>
       <Summary
+        poster={banner}
         video={video}
         quote="Experience luxury. Rejuvenate your body & mind."
         link="#"

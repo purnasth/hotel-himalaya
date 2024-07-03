@@ -40,6 +40,7 @@ const DinePage = ({ data }) => {
       </main>
 
       <Summary
+        poster={banner}
         video={video}
         quote="Reserve your table today & elevate your dining experience."
         link="#"
