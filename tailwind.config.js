@@ -39,6 +39,7 @@ module.exports = {
         goldLight: "#ffde96",
         goldDark: "#815f16",
         gold: "#cd9c31",
+        "white-bg": "#ebdccb",
       },
       backgroundImage: {
         gradient:

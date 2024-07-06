@@ -51,12 +51,8 @@
           "title": "Free Wi-Fi"
         },
         {
-          "icon": "MdMonitor",
-          "title": "Television"
-        },
-        {
-          "icon": "MdOutlineHotel",
-          "title": "Comfortable Bed"
+          "icon": "TbAirConditioning",
+          "title": "Air Conditioner"
         },
         {
           "icon": "MdOutlineBathtub",
@@ -67,16 +63,20 @@
           "title": "24 hr Room Service"
         },
         {
+          "icon": "MdMonitor",
+          "title": "Television"
+        },
+        {
+          "icon": "MdOutlineHotel",
+          "title": "Comfortable Bed"
+        },
+        {
           "icon": "TbDesk",
           "title": "Work Desk"
         },
         {
           "icon": "TbToiletPaper",
           "title": "Toiletries"
-        },
-        {
-          "icon": "TbAirConditioning",
-          "title": "Air Conditioner"
         },
         {
           "icon": "TbDeviceLandlinePhone",
@@ -144,12 +144,8 @@
           "title": "Free Wi-Fi"
         },
         {
-          "icon": "MdMonitor",
-          "title": "Television"
-        },
-        {
-          "icon": "MdOutlineHotel",
-          "title": "Comfortable Bed"
+          "icon": "TbAirConditioning",
+          "title": "Air Conditioner"
         },
         {
           "icon": "MdOutlineBathtub",
@@ -160,16 +156,20 @@
           "title": "24 hr Room Service"
         },
         {
+          "icon": "MdMonitor",
+          "title": "Television"
+        },
+        {
+          "icon": "MdOutlineHotel",
+          "title": "Comfortable Bed"
+        },
+        {
           "icon": "TbDesk",
           "title": "Work Desk"
         },
         {
           "icon": "TbToiletPaper",
           "title": "Toiletries"
-        },
-        {
-          "icon": "TbAirConditioning",
-          "title": "Air Conditioner"
         },
         {
           "icon": "TbDeviceLandlinePhone",
@@ -241,12 +241,8 @@
           "title": "Free Wi-Fi"
         },
         {
-          "icon": "MdMonitor",
-          "title": "Television"
-        },
-        {
-          "icon": "MdOutlineHotel",
-          "title": "Comfortable Bed"
+          "icon": "TbAirConditioning",
+          "title": "Air Conditioner"
         },
         {
           "icon": "MdOutlineBathtub",
@@ -257,16 +253,20 @@
           "title": "24 hr Room Service"
         },
         {
+          "icon": "MdMonitor",
+          "title": "Television"
+        },
+        {
+          "icon": "MdOutlineHotel",
+          "title": "Comfortable Bed"
+        },
+        {
           "icon": "TbDesk",
           "title": "Work Desk"
         },
         {
           "icon": "TbToiletPaper",
           "title": "Toiletries"
-        },
-        {
-          "icon": "TbAirConditioning",
-          "title": "Air Conditioner"
         },
         {
           "icon": "TbDeviceLandlinePhone",
