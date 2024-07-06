@@ -6,9 +6,9 @@ import {
   Banner,
   DiscoverHimalaya,
   Socials,
-  Video,
   Nearby,
   ContactForm,
+  VideoPlayer,
 } from "../constants/data";
 
 const ContactPage = ({ data }) => {
@@ -21,6 +21,8 @@ const ContactPage = ({ data }) => {
     subdescription,
     accordian,
     contactFormFields,
+    poster,
+    video,
   } = data;
 
   return (
@@ -44,8 +46,12 @@ const ContactPage = ({ data }) => {
               <Socials />
             </div>
 
-            <div className="col-span-2 outline outline-1 outline-white -outline-offset-[10px]">
-              <Video videoClassName="w-full h-full object-cover" />
+            <div className="col-span-2 group overflow-hidden">
+              <VideoPlayer
+                poster={poster}
+                video={video}
+                videoClassName="w-full h-full object-cover outline outline-1 outline-white -outline-offset-[10px]"
+              />
             </div>
           </div>
         </div>

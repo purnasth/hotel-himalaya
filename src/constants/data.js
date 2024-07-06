@@ -104,6 +104,7 @@ import Facilities from "../components/Facilities";
 import Hall from "../components/Hall";
 import Stay from "../components/Stay";
 import Testimonials from "../components/Testimonials";
+import VideoPlayer from "../components/ui/VideoPlayer";
 
 export {
   AccordianContact,
@@ -137,4 +138,5 @@ export {
   Hall,
   Stay,
   Testimonials,
+  VideoPlayer,
 };

@@ -1,5 +1,7 @@
 {
   "banner": "../images/banner/about.webp",
+  "poster": "../images/about/6.webp",
+  "video": "../video/himalaya.mp4",
   "title": "Contacts",
   "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae quos delectus iusto autem obcaecati?",
   "page": "Contact",

@@ -1,11 +1,11 @@
 import React from "react";
-import Video from "./ui/Video";
+import { VideoPlayer } from "../constants/data";
 
 const About = ({ data }) => {
-  const { slogan, home_title, home_description } = data;
+  const { slogan, home_title, home_description, poster, video } = data;
 
   return (
-    <main>
+    <main className="group overflow-hidden">
       <div className="absolute inset-0 bg-gold/20 size-full h-3/4 -z-10"></div>
       <div className="container">
         <div className="text-center space-y-8 px-12">
@@ -16,7 +16,13 @@ const About = ({ data }) => {
           <p className="text-base">{home_description}</p>
         </div>
 
-        <Video videoClassName="w-full h-full object-cover mt-24" />
+        <div className="overflow-hidden">
+          <VideoPlayer
+            poster={poster}
+            video={video}
+            videoClassName="w-full h-full object-cover mt-24 outline outline-1 outline-white -outline-offset-[10px]"
+          />
+        </div>
       </div>
     </main>
   );
