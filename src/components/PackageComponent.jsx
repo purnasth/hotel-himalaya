@@ -25,21 +25,19 @@ const PackageComponent = ({ content, enquiryFormFields }) => {
             {description}
           </p>
           {details && (
-            <ul>
-              <li className="flex items-center justify-between mt-6 py-2">
-                {Object.entries(details).map(([key, detail]) => (
-                  <span
-                    key={key}
-                    className="flex items-center md:gap-1 text-xs md:text-base"
-                  >
-                    <IconRenderer
-                      iconName={detail.icon}
-                      className="text-xl text-black mr-2"
-                    />
-                    {detail.value}
-                  </span>
-                ))}
-              </li>
+            <ul className="flex items-center justify-between mt-6 py-2">
+              {Object.entries(details).map(([key, detail]) => (
+                <li
+                  key={key}
+                  className="flex items-center md:gap-1 text-xs md:text-base"
+                >
+                  <IconRenderer
+                    iconName={detail.icon}
+                    className="text-xl text-black mr-2"
+                  />
+                  {detail.value}
+                </li>
+              ))}
             </ul>
           )}
         </div>
