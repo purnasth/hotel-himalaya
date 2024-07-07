@@ -8,6 +8,8 @@ import {
   DiscoverHimalaya,
 } from "../constants/data";
 
+import { sata, tripaward } from "../constants/data";
+
 const AboutPage = ({ data }) => {
   const {
     banner,
@@ -64,6 +66,40 @@ const AboutPage = ({ data }) => {
             falseClassName="opacity-0 scale-90 -translate-y-4 -z-10"
           />
         </div>
+
+        <div className="container mt-32 text-center">
+          <div className="px-12 space-y-6">
+            <span class="uppercase">Awards</span>
+            <h6 className="text-5xl leading-snug">
+              37<sup>th</sup> years of passion, dedication, and unforgettable
+              experiences!
+            </h6>
+          </div>
+
+          <div className="mx-auto p-4 flex items-center justify-center gap-16 mt-12">
+            <img
+              src={sata}
+              alt="Winner Sata 2023"
+              className="size-52 object-contain p-4"
+              style={{
+                filter:
+                  "brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7449%) hue-rotate(190deg) brightness(107%) contrast(96%)",
+              }}
+              
+            />
+            <img
+              src={tripaward}
+              alt="Tripadvisor Award 2024"
+              className="size-52 object-contain"
+              style={{
+                filter:
+                  "brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7449%) hue-rotate(190deg) brightness(107%) contrast(96%)",
+              }}
+              
+            />
+          </div>
+        </div>
+
         <DiscoverHimalaya />
       </main>
     </>
