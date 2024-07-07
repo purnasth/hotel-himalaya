@@ -64,9 +64,9 @@ const Socials = () => {
 
         <ul className="flex items-center justify-center gap-4 text-2xl my-6">
           {socialLinks.map((social, index) => (
-            <li key={index}>
+            <li key={index} className="group">
               <a href={social.href}>
-                <social.icon className="text-2xl" />
+                <social.icon className="text-2xl group-hover:scale-125 transition-all duration-300 ease-linear" />
               </a>
             </li>
           ))}

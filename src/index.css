@@ -97,6 +97,15 @@
   .underline-link.active {
     @apply underline underline-offset-4;
   }
+
+  ul:hover li {
+    @apply opacity-50 blur-[0.5px] transition-all duration-300 ease-linear;
+  }
+
+  ul li:hover {
+    @apply opacity-100 blur-0 transition-all duration-300 ease-linear;
+
+  }
 }
 
 @layer utilities {

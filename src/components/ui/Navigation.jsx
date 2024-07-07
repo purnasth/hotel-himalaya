@@ -4,6 +4,7 @@ import {
   TbMailFilled,
   Socials,
   withDataFetching,
+  TbArrowNarrowRight,
 } from "../../constants/data";
 
 const Navigation = ({ data, mainClassName, isFooter }) => {
@@ -18,13 +19,17 @@ const Navigation = ({ data, mainClassName, isFooter }) => {
           <div className="main-link">
             <ul className="space-y-4 md:space-y-20">
               {data.mainLinks?.map((link, index) => (
-                <li key={index}>
+                <li
+                  key={index}
+                  className="group transition-all duration-300 ease-linear"
+                >
                   <a
                     href={link.url}
                     title={link.title}
-                    className="text-xl md:text-4xl"
+                    className="navlinks w-full inline-flex items-center justify-between gap-4 text-xl md:text-4xl group-hover:ml-2 transition-all duration-300 ease-linear"
                   >
                     {link.name}
+                    <TbArrowNarrowRight className="text-base -translate-x-16 group-hover:-translate-x-12 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-linear" />
                   </a>
                 </li>
               ))}
@@ -33,8 +38,17 @@ const Navigation = ({ data, mainClassName, isFooter }) => {
           <div className="secondary-link">
             <ul className="space-y-4 md:space-y-8">
               {data.secondaryLinks?.map((link, index) => (
-                <li key={index}>
-                  <a href={link.url}>{link.name}</a>
+                <li
+                  key={index}
+                  className="group transition-all duration-300 ease-linear"
+                >
+                  <a
+                    href={link.url}
+                    className="navlinks w-full inline-flex items-center justify-between gap-4 text-base group-hover:ml-2 transition-all duration-300 ease-linear"
+                  >
+                    {link.name}
+                    <TbArrowNarrowRight className="text-base -translate-x-16 group-hover:-translate-x-12 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-linear" />
+                  </a>
                 </li>
               ))}
             </ul>

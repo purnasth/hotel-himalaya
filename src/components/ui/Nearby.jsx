@@ -41,7 +41,7 @@ function Nearby({ data: nearbyLocations }) {
           {nearbyLocations.map((location) => (
             <li
               key={location.name}
-              className={`mx-4 my-2 cursor-pointer px-4 py-3 rounded-lg border ${
+              className={`mx-4 my-2 cursor-pointer px-4 py-3 rounded-lg border hover:bg-goldLight transition-all duration-300 ease-linear ${
                 selectedLocation === location ? "bg-goldLight text-black" : ""
               }`}
               onClick={() => handleLocationClick(location)}
