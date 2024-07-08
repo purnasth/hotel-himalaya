@@ -52,6 +52,7 @@ const RoomSlider = ({ items, currentIndex }) => {
                   src={image.src}
                   alt={image.alt}
                   className="w-full h-[28rem] object-cover shadow-lg group-hover:scale-110 transition-all duration-500 ease-linear"
+                  draggable="false"
                 />
                 <div className="pointer-events-none absolute inset-0 size-full bg-gradient-to-t from-black/80 to-black/0 group-hover:from-black/30 group-hover:via-black/60 group-hover:to-black/30 opacity-70 group-hover:opacity-100 z-0 transition-all duration-500 ease-linear" />
                 <div className="z-10 absolute inset-0 size-full flex items-center justify-between flex-col text-white p-4 text-center">

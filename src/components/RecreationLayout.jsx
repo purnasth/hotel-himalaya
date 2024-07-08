@@ -42,6 +42,7 @@ const RecreationLayout = ({ recreationsData }) => {
                         src={image.url}
                         alt={image.alt}
                         className="rounded-2xl"
+                        draggable="false"
                       />
                     </div>
                   ))}
@@ -61,6 +62,7 @@ const RecreationLayout = ({ recreationsData }) => {
                         src={image.url}
                         alt={image.alt}
                         className="rounded-2xl"
+                        draggable="false"
                       />
                     </div>
                   ))}

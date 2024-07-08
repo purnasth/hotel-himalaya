@@ -91,9 +91,9 @@ const Navigation = ({ data, mainClassName, isFooter }) => {
               <Socials />
               <div className="hospitality">
                 <h4 className="text-xl">Hospitality Partners</h4>
-                <div className="mt-6 mb-10 flex items-center justify-center gap-10">
+                <ul className="mt-6 mb-10 flex items-center justify-center gap-10">
                   {data.hospitalityPartners?.map((partner, index) => (
-                    <div
+                    <li
                       key={index}
                       className="flex flex-col items-center gap-3"
                     >
@@ -102,11 +102,12 @@ const Navigation = ({ data, mainClassName, isFooter }) => {
                         alt={partner.name}
                         title={partner.name}
                         className="size-16 object-contain"
+                        draggable="false"
                       />
                       <label className="text-xs scale-75">{partner.name}</label>
-                    </div>
+                    </li>
                   ))}
-                </div>
+                </ul>
               </div>
             </div>
           </div>

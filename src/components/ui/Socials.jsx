@@ -28,14 +28,17 @@ const Socials = () => {
     {
       href: "https://www.facebook.com/HotelHimalayaPatan/",
       icon: MdFacebook,
+      title: "Facebook",
     },
     {
       href: "https://www.instagram.com/hotelhimalaya_lalitpur/",
       icon: RiInstagramFill,
+      title: "Instagram",
     },
     {
       href: "https://www.tripadvisor.com/Hotel_Review-g315764-d316826-Reviews-Hotel_Himalaya-Patan_Lalitpur_Kathmandu_Valley_Bagmati_Zone_Central_Region.html",
       icon: BiLogoTripAdvisor,
+      title: "TripAdvisor",
     },
   ];
 
@@ -65,7 +68,13 @@ const Socials = () => {
         <ul className="flex items-center justify-center gap-4 text-2xl my-6">
           {socialLinks.map((social, index) => (
             <li key={index} className="group">
-              <a href={social.href}>
+              <a
+                href={social.href}
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label={social.title}
+                title={social.title}
+              >
                 <social.icon className="text-2xl group-hover:scale-125 transition-all duration-300 ease-linear" />
               </a>
             </li>

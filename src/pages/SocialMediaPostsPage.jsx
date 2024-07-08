@@ -1,6 +1,12 @@
 import React from "react";
-
 import { withDataFetching } from "../constants/data";
+import {
+  LightGallery,
+  lgZoom,
+  lgVideo,
+  lgThumbnail,
+  lgFullscreen,
+} from "../constants/library";
 
 const SocialMediaPostsPage = ({ data }) => {
   const { socialsPosts } = data;
@@ -18,18 +24,26 @@ const SocialMediaPostsPage = ({ data }) => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-4 gap-6">
+        <LightGallery
+          plugins={[lgZoom, lgVideo, lgThumbnail, lgFullscreen]}
+          mode="lg-fade"
+          elementClassNames="grid grid-cols-4 gap-6"
+        >
           {socialsPosts.map((posts, index) => (
-            <div className="group overflow-hidden">
+            <div
+              key={index}
+              className="group overflow-hidden"
+              data-src={posts.image}
+            >
               <img
-                key={index}
                 src={posts.image}
                 alt={posts.title}
                 className="aspect-square size-full object-cover group-hover:scale-110 cursor-pointer transition-all duration-[1s]"
+                draggable="false"
               />
             </div>
           ))}
-        </div>
+        </LightGallery>
       </main>
     </>
   );

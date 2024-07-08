@@ -12,11 +12,12 @@ const Facilities = ({ data }) => {
             <img
               src={icon}
               alt={title}
-              className="w-full h-screen shadow-md transition duration-700 ease-in-out transform group-hover:scale-150 object-cover"
+              className="w-full h-screen shadow-md transition-all duration-700 ease-linear group-hover:scale-150 object-cover"
+              draggable="false"
             />
-            <div className="absolute inset-0 overlay bg-gradient-to-b from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)] w-full h-full"></div>
-            <div className="group absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.6)] to-[rgba(0,0,0,0.6)] text-white text-center transition-all duration-700 ease-in-out transform translate-y-1/2 group-hover:translate-y-0">
-              <div className="p-4">
+            <div className="pointer-events-none absolute inset-0 overlay bg-gradient-to-b from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)] w-full h-full"></div>
+            <div className="pointer-events-none group absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0.6)] to-[rgba(0,0,0,0.6)] text-white text-center transition-all duration-700 ease-in-out transform translate-y-1/2 group-hover:translate-y-0">
+              <div className="p-4 pointer-events-auto">
                 <h3 className="text-3xl font-medium mb-24 group-hover:mb-0 transition-all duration-300">
                   {title}
                 </h3>

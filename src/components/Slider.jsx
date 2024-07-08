@@ -33,6 +33,7 @@ const Slider = ({
             className={`${imgClassName} ${
               index === currentIndex ? trueClassName : falseClassName
             }`}
+            draggable="false"
           />
           {index === currentIndex && (
             <>

@@ -18,11 +18,11 @@ const Navbar = () => {
   return (
     <>
       <nav className="relative">
-        <div className="absolute top-0 w-full h-64 p-8 text-white bg-gradient-to-b from-black/70 to-black/0 z-20" />
+        <div className="pointer-events-none absolute top-0 w-full h-64 p-8 text-white bg-gradient-to-b from-black/70 to-black/0 z-20" />
         <header className="text-white">
           <a href="/" className="absolute top-0 left-1/2 -translate-x-1/2 z-40">
             <h1>
-              <img src={logo} alt="Logo" className="w-40 h-36 object-contain" />
+              <img src={logo} alt="Hotel Himalaya Logo" className="w-40 h-36 object-contain" />
             </h1>
           </a>
           <div className="fixed h-28 inset-0 p-8 z-50 pointer-events-none">

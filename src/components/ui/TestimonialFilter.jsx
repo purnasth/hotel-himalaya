@@ -38,6 +38,7 @@ const TestimonialFilter = ({ contents }) => {
                 src={image}
                 alt={source}
                 className="w-auto h-8 object-contain p-2"
+                draggable="false"
               />
               <p className="text-sm md:text-base line-clamp-1">- {title}</p>
             </div>

@@ -47,7 +47,7 @@ const GalleryComponent = ({ galleryImages }) => {
             className={`${
               activeCategory === category
                 ? "bg-gradient px-6 py-2 rounded-full hover-outline outline-gold outline-offset-2"
-                : "bg-goldLight/80 opacity-50 hover:opacity-100 px-6 py-2 rounded-full hover-outline"
+                : "bg-goldLight/50 opacity-90 hover:opacity-100 px-6 py-2 rounded-full hover-outline"
             } `}
           >
             {category}
@@ -92,8 +92,9 @@ const GalleryComponent = ({ galleryImages }) => {
                 alt={image.alt}
                 className="contrast-100 group-hover:contrast-125 size-full h-64 object-cover group-hover:scale-110 transition-all duration-300 ease-linear cursor-pointer"
                 loading="lazy"
+                draggable="false"
               />
-              <div className="absolute inset-0 w-full h-full p-8 text-white bg-gradient-to-t from-black/70 to-black/0 z-0 group-hover:opacity-100 transition-all duration-300 ease-linear" />
+              <div className="pointer-events-none absolute inset-0 size-full bg-gradient-to-t from-black/70 to-black/0 z-0 group-hover:opacity-50 transition-all duration-300 ease-linear" />
               <h5 className="absolute bottom-0 text-right w-full p-2 text-white z-10 [text-shadow:1px_1px_2px_#cd9c31] opacity-80 group-hover:opacity-100 -translate-x-0 group-hover:translate-x-1/2 transition-all duration-300 ease-linear">
                 {image.alt}
               </h5>

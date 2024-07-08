@@ -2,10 +2,11 @@
 import logo from "../assets/logo.svg";
 import logoMark from "../assets/logo-mark.svg";
 import sata from "../assets/awards/sata.webp";
+import sataBlack from "../assets/awards/sata_black.webp";
 import tripaward from "../assets/awards/tripaward.webp";
 import himalayaPDF from "../assets/himalaya_booklet.pdf";
 
-export { logo, logoMark, sata, tripaward, himalayaPDF };
+export { logo, logoMark, sata, sataBlack, tripaward, himalayaPDF };
 
 // icons
 import {

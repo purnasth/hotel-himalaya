@@ -13,7 +13,7 @@ const HallComponent = ({ content, enquiryFormFields }) => {
           buttonClassName="stay-slider-button hover-outline"
           imgClassName="outline outline-1 outline-white -outline-offset-[12px] group-hover:outline-offset-0 w-full h-full object-cover absolute inset-0 transition-all duration-[2s]"
           trueClassName="opacity-100"
-          falseClassName="opacity-0"
+          falseClassName="opacity-0 -z-10"
           className="h-96"
         />
       )}

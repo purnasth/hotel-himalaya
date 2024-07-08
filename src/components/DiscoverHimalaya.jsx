@@ -51,6 +51,7 @@ const DiscoverHimalaya = ({ data }) => {
                   src={imageUrl}
                   alt={title}
                   className={`object-cover rounded-2xl ${imageHeightClass}`}
+                  draggable="false"
                 />
                 <div className="flex items-center justify-center">
                   <Link
