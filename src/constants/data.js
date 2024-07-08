@@ -70,8 +70,14 @@ export { withDataFetching };
 
 // hoooks
 import useFetchData from "../hooks/useFetchData";
+import useLenisScroll from "../hooks/useLenisScroll";
 
-export { useFetchData };
+export { useFetchData, useLenisScroll };
+
+// utils
+import RouterToTop from "../utils/RouterToTop";
+
+export { RouterToTop };
 
 // components
 import AccordianContact from "../components/ui/AccordianContact";
@@ -107,7 +113,21 @@ import Stay from "../components/Stay";
 import Testimonials from "../components/Testimonials";
 import VideoPlayer from "../components/ui/VideoPlayer";
 
+import Navbar from "../components/Navbar";
+import BackToTop from "../components/ui/BackToTop";
+import WhatsApp from "../components/ui/WhatsApp";
+
+import Awards from "../components/Awards";
+import Footer from "../components/Footer";
+import BrochurePDF from "../components/BrochurePDF";
+
 export {
+  Navbar,
+  BackToTop,
+  WhatsApp,
+  Footer,
+  BrochurePDF,
+  Awards,
   AccordianContact,
   Banner,
   IconRenderer,
@@ -140,4 +160,32 @@ export {
   Stay,
   Testimonials,
   VideoPlayer,
+};
+
+// pages
+
+import GalleryPage from "../pages/GalleryPage";
+import AboutPage from "../pages/AboutPage";
+import HallPage from "../pages/HallPage";
+import Home from "../pages/Home";
+import DinePage from "../pages/DinePage";
+import StayPage from "../pages/StayPage";
+import NearbyPage from "../pages/NearbyPage";
+import Promotions from "../pages/Promotions";
+import RecreationPage from "../pages/RecreationPage";
+import ContactPage from "../pages/ContactPage";
+import SocialMediaPostsPage from "../pages/SocialMediaPostsPage";
+
+export {
+  GalleryPage,
+  AboutPage,
+  HallPage,
+  Home,
+  DinePage,
+  StayPage,
+  NearbyPage,
+  Promotions,
+  RecreationPage,
+  ContactPage,
+  SocialMediaPostsPage,
 };

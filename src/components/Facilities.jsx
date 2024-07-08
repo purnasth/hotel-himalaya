@@ -1,5 +1,6 @@
 import React from "react";
 import { withDataFetching } from "../constants/data";
+import { Link } from "react-router-dom";
 
 const Facilities = ({ data }) => {
   const { hotelFacilities } = data;
@@ -25,12 +26,12 @@ const Facilities = ({ data }) => {
                   {subtitle}
                 </h4>
                 <p className="text-white mt-4 mb-12">{description}</p>
-                <a
-                  href={router}
+                <Link
+                  to={router}
                   className="text-black bg-gradient px-6 py-2 rounded-full hover-outline"
                 >
                   View More
-                </a>
+                </Link>
               </div>
             </div>
           </div>

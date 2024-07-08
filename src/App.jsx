@@ -5,25 +5,28 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import BackToTop from "./components/ui/BackToTop";
-import WhatsApp from "./components/ui/WhatsApp";
-import Awards from "./components/Awards";
-import GalleryPage from "./pages/GalleryPage";
-import AboutPage from "./pages/AboutPage";
-import HallPage from "./pages/HallPage";
-import Home from "./pages/Home";
-import Footer from "./components/Footer";
-import DinePage from "./pages/DinePage";
-import StayPage from "./pages/StayPage";
-import NearbyPage from "./pages/NearbyPage";
-import Promotions from "./pages/Promotions";
-import RecreationPage from "./pages/RecreationPage";
-import BrochurePDF from "./components/BrochurePDF";
-import ContactPage from "./pages/ContactPage";
-import SocialMediaPostsPage from "./pages/SocialMediaPostsPage";
-import useLenisScroll from "./hooks/useLenisScroll";
-import SocialPosts from "./components/SocialPosts";
+
+import {
+  Navbar,
+  BackToTop,
+  WhatsApp,
+  Footer,
+  BrochurePDF,
+  Awards,
+  Home,
+  AboutPage,
+  GalleryPage,
+  HallPage,
+  DinePage,
+  StayPage,
+  NearbyPage,
+  Promotions,
+  RecreationPage,
+  ContactPage,
+  SocialMediaPostsPage,
+  useLenisScroll,
+  RouterToTop,
+} from "./constants/data";
 
 const App = () => {
   useLenisScroll();
@@ -31,6 +34,8 @@ const App = () => {
     <>
       <Router>
         <Navbar />
+        <RouterToTop />
+
         <Routes>
           <Route path="/" element={<Home />} />
 
@@ -58,6 +63,7 @@ const App = () => {
 
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
+
         <Footer />
         <BackToTop />
         <WhatsApp />
