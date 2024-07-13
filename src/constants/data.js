@@ -76,8 +76,9 @@ export { useFetchData, useLenisScroll };
 
 // utils
 import RouterToTop from "../utils/RouterToTop";
+import { ClickableNavLink, ClickableLink } from "../utils/createClickableLink";
 
-export { RouterToTop };
+export { RouterToTop, ClickableNavLink, ClickableLink };
 
 // components
 import AccordianContact from "../components/ui/AccordianContact";

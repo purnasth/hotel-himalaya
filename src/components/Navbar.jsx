@@ -7,6 +7,7 @@ import {
   RiMenu2Fill,
   IoIosCloseCircleOutline,
 } from "../constants/data";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,11 +21,18 @@ const Navbar = () => {
       <nav className="relative">
         <div className="pointer-events-none absolute top-0 w-full h-64 p-8 text-white bg-gradient-to-b from-black/70 to-black/0 z-20" />
         <header className="text-white">
-          <a href="/" className="absolute top-0 left-1/2 -translate-x-1/2 z-40">
+          <Link
+            to="/"
+            className="absolute top-0 left-1/2 -translate-x-1/2 z-40"
+          >
             <h1>
-              <img src={logo} alt="Hotel Himalaya Logo" className="w-40 h-36 object-contain" />
+              <img
+                src={logo}
+                alt="Hotel Himalaya Logo"
+                className="w-40 h-36 object-contain"
+              />
             </h1>
-          </a>
+          </Link>
           <div className="fixed h-28 inset-0 p-8 z-50 pointer-events-none">
             <div className="flex items-center justify-between">
               <button
@@ -43,13 +51,13 @@ const Navbar = () => {
                 />
                 <span className="ml-6">Menu</span>
               </button>
-              <a
-                href="https://hotelhimalaya.com//result.php?hotel_code=q7x6fU"
+              <Link
+                to="https://hotelhimalaya.com//result.php?hotel_code=q7x6fU"
                 target="_blank"
                 className="py-2 px-5 rounded-full flex items-center gap-2 bg-goldDark text-goldLight outline outline-2 outline-goldLight pointer-events-auto hover-outline"
               >
                 Book <TbClipboard className="text-lg" />
-              </a>
+              </Link>
             </div>
           </div>
         </header>
@@ -64,6 +72,7 @@ const Navbar = () => {
           <Navigation
             mainClassName="h-screen overflow-y-auto"
             isFooter={false}
+            toggleMenu={toggleMenu}
           />
         </div>
       </nav>

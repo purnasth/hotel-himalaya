@@ -5,9 +5,11 @@ import {
   Socials,
   withDataFetching,
   TbArrowNarrowRight,
+  ClickableNavLink,
+  ClickableLink,
 } from "../../constants/data";
 
-const Navigation = ({ data, mainClassName, isFooter }) => {
+const Navigation = ({ data, mainClassName, isFooter, toggleMenu }) => {
   const year = new Date().getFullYear();
 
   return (
@@ -23,14 +25,15 @@ const Navigation = ({ data, mainClassName, isFooter }) => {
                   key={index}
                   className="group transition-all duration-300 ease-linear"
                 >
-                  <a
-                    href={link.url}
+                  <ClickableNavLink
+                    to={link.url}
                     title={link.title}
                     className="navlinks w-full inline-flex items-center justify-between gap-4 text-xl md:text-4xl group-hover:ml-2 transition-all duration-300 ease-linear"
+                    onClick={toggleMenu}
                   >
                     {link.name}
                     <TbArrowNarrowRight className="text-base -translate-x-16 group-hover:-translate-x-12 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-linear" />
-                  </a>
+                  </ClickableNavLink>
                 </li>
               ))}
             </ul>
@@ -42,13 +45,14 @@ const Navigation = ({ data, mainClassName, isFooter }) => {
                   key={index}
                   className="group transition-all duration-300 ease-linear"
                 >
-                  <a
-                    href={link.url}
+                  <ClickableNavLink
+                    to={link.url}
                     className="navlinks w-full inline-flex items-center justify-between gap-4 text-base group-hover:ml-2 transition-all duration-300 ease-linear"
+                    onClick={toggleMenu}
                   >
                     {link.name}
                     <TbArrowNarrowRight className="text-base -translate-x-16 group-hover:-translate-x-12 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-linear" />
-                  </a>
+                  </ClickableNavLink>
                 </li>
               ))}
             </ul>
@@ -62,7 +66,12 @@ const Navigation = ({ data, mainClassName, isFooter }) => {
                     {info.phone && (
                       <div className="flex items-center gap-2">
                         <MdPhone className="icon" />
-                        <a href={`tel:${info.phone}`}>{info.phone}</a>
+                        <ClickableLink
+                          to={`tel:${info.phone}`}
+                          onClick={toggleMenu}
+                        >
+                          {info.phone}
+                        </ClickableLink>
                       </div>
                     )}
                     {info.phones && (
@@ -71,7 +80,12 @@ const Navigation = ({ data, mainClassName, isFooter }) => {
                         <ul className="flex items-center gap-3">
                           {info.phones.map((phone, index) => (
                             <li key={index}>
-                              <a href={`tel:${phone}`}>{phone}</a>
+                              <ClickableLink
+                                to={`tel:${phone}`}
+                                onClick={toggleMenu}
+                              >
+                                {phone}
+                              </ClickableLink>
                             </li>
                           ))}
                         </ul>
@@ -79,7 +93,12 @@ const Navigation = ({ data, mainClassName, isFooter }) => {
                     )}
                     <div className="flex items-center gap-2">
                       <TbMailFilled className="icon" />
-                      <a href={`mailto:${info.email}`}>{info.email}</a>
+                      <ClickableLink
+                        to={`mailto:${info.email}`}
+                        onClick={toggleMenu}
+                      >
+                        {info.email}
+                      </ClickableLink>
                     </div>
                   </div>
                 </div>
@@ -88,7 +107,7 @@ const Navigation = ({ data, mainClassName, isFooter }) => {
           </div>
           <div className="intro">
             <div className="flex flex-col items-center text-center gap-4">
-              <Socials />
+              <Socials toggleMenu={toggleMenu} />
               <div className="hospitality">
                 <h4 className="text-xl">Hospitality Partners</h4>
                 <ul className="mt-6 mb-10 flex items-center justify-center gap-10">
@@ -121,12 +140,14 @@ const Navigation = ({ data, mainClassName, isFooter }) => {
               </p>
               <p className="mr-12">
                 Developed by:
-                <a
+                <ClickableLink
                   className="ml-2 font-semibold"
-                  href={data.copyright?.developerLink}
+                  to={data.copyright?.developerLink}
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   {data.copyright?.developer}
-                </a>
+                </ClickableLink>
               </p>
             </div>
           </>

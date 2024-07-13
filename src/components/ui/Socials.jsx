@@ -4,9 +4,11 @@ import {
   MdFacebook,
   RiInstagramFill,
   BiLogoTripAdvisor,
+  ClickableLink,
 } from "../../constants/data";
+import { Link } from "react-router-dom";
 
-const Socials = () => {
+const Socials = ({ toggleMenu }) => {
   const contactInfo = [
     {
       id: "location",
@@ -45,7 +47,7 @@ const Socials = () => {
   return (
     <>
       <div className="col-span-1 flex flex-col items-center text-center gap-4">
-        <a href="/">
+        <ClickableLink to="/" onClick={toggleMenu}>
           <img
             src={logo}
             alt="Hotel Himalaya"
@@ -55,12 +57,19 @@ const Socials = () => {
                 "brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7449%) hue-rotate(190deg) brightness(107%) contrast(96%)",
             }}
           />
-        </a>
+        </ClickableLink>
 
         <ul className="space-y-1">
           {contactInfo.map((contact, index) => (
             <li key={index}>
-              <a href={contact.href}>{contact.title}</a>
+              <Link
+                to={contact.href}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="text-sm"
+              >
+                {contact.title}
+              </Link>
             </li>
           ))}
         </ul>
@@ -68,15 +77,15 @@ const Socials = () => {
         <ul className="flex items-center justify-center gap-4 text-2xl my-6">
           {socialLinks.map((social, index) => (
             <li key={index} className="group">
-              <a
-                href={social.href}
+              <Link
+                to={social.href}
                 target="_blank"
                 rel="noreferrer noopener"
                 aria-label={social.title}
                 title={social.title}
               >
                 <social.icon className="text-2xl group-hover:scale-125 transition-all duration-300 ease-linear" />
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
