@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
+import { yupResolver } from "../constants/library";
 
 const useCustomForm = (schema) => {
   const methods = useForm({

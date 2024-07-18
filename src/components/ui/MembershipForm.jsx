@@ -3,15 +3,20 @@ import {
   FloatingButtonWithNavbar,
   IconRenderer,
   MdOutlineCardMembership,
+  useCustomForm,
+  useFormSubmit,
+  generateValidationSchema,
 } from "../../constants/data";
-import { ToastContainer } from "react-toastify";
-import useCustomForm from "../../hooks/useCustomForm";
-import useFormSubmit from "../../hooks/useFormSubmit";
-import generateValidationSchema from "../../utils/generateValidationSchema";
+import { ToastContainer } from "../../constants/library";
 
 const MembershipForm = ({ enquiryFormFields }) => {
   const schema = generateValidationSchema(enquiryFormFields);
-  const { register, handleSubmit, formState: { errors }, reset } = useCustomForm(schema);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useCustomForm(schema);
   const { isSubmitting, handleSubmit: handleFormSubmit } = useFormSubmit();
 
   const onSubmit = (data) => {
@@ -95,7 +100,7 @@ const MembershipForm = ({ enquiryFormFields }) => {
           </div>
         </form>
       </FloatingButtonWithNavbar>
-      <ToastContainer position="top-center" autoClose={3000} />
+      <ToastContainer position="top-center" autoClose={5000} />
     </>
   );
 };

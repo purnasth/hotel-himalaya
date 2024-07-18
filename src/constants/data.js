@@ -71,14 +71,22 @@ export { withDataFetching };
 // hoooks
 import useFetchData from "../hooks/useFetchData";
 import useLenisScroll from "../hooks/useLenisScroll";
+import useCustomForm from "../hooks/useCustomForm";
+import useFormSubmit from "../hooks/useFormSubmit";
 
-export { useFetchData, useLenisScroll };
+export { useFetchData, useLenisScroll, useCustomForm, useFormSubmit };
 
 // utils
 import RouterToTop from "../utils/RouterToTop";
 import { ClickableNavLink, ClickableLink } from "../utils/createClickableLink";
+import generateValidationSchema from "../utils/generateValidationSchema";
 
-export { RouterToTop, ClickableNavLink, ClickableLink };
+export {
+  RouterToTop,
+  ClickableNavLink,
+  ClickableLink,
+  generateValidationSchema,
+};
 
 // components
 import AccordianContact from "../components/ui/AccordianContact";
