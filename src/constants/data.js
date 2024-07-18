@@ -21,6 +21,7 @@ import {
   TbMailFilled,
   TbArrowNarrowLeft,
   TbArrowNarrowRight,
+  TbLoader,
 } from "react-icons/tb";
 import {
   MdKeyboardDoubleArrowRight,
@@ -52,6 +53,7 @@ export {
   TbUsersGroup,
   TbClock,
   TbTrophy,
+  TbLoader,
   MdOutlineBrunchDining,
   MdOutlineCardMembership,
   MdOutlineKeyboardDoubleArrowUp,
@@ -184,6 +186,7 @@ import Promotions from "../pages/Promotions";
 import RecreationPage from "../pages/RecreationPage";
 import ContactPage from "../pages/ContactPage";
 import SocialMediaPostsPage from "../pages/SocialMediaPostsPage";
+import EnquiryReview from "../pages/EnquiryReview";
 
 export {
   GalleryPage,
@@ -197,4 +200,5 @@ export {
   RecreationPage,
   ContactPage,
   SocialMediaPostsPage,
+  EnquiryReview,
 };

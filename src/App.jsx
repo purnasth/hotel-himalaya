@@ -87,6 +87,7 @@ import {
   SocialMediaPostsPage,
   useLenisScroll,
   RouterToTop,
+  EnquiryReview,
 } from "./constants/data";
 
 const App = () => {
@@ -109,6 +110,7 @@ const App = () => {
           <Route path="/recreation" element={<RecreationPage />} />
           <Route path="/social-offer" element={<SocialMediaPostsPage />} />
           <Route path="/brochure" element={<BrochurePDF />} />
+          <Route path="/enquiry-review" element={<EnquiryReview />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
