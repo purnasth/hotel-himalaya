@@ -43,7 +43,7 @@ const DinePage = ({ data }) => {
         poster={banner}
         video={video}
         quote="Reserve your table today & elevate your dining experience."
-        link="#"
+        link="/enquiry-review"
       />
     </>
   );

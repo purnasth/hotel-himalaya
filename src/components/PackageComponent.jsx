@@ -1,8 +1,9 @@
 import React from "react";
 
 import { Slider, IconRenderer } from "../constants/data";
+import { Link } from "react-router-dom";
 
-const PackageComponent = ({ content, enquiryFormFields }) => {
+const PackageComponent = ({ content, exelyRoom }) => {
   const { title, description, image, details, amenities } = content;
 
   return (
@@ -43,13 +44,16 @@ const PackageComponent = ({ content, enquiryFormFields }) => {
         </div>
 
         <div className="relative z-auto col-span-1 bg-amber-100 p-4 pb-8 px-8 -mt-28 outline outline-black/0 outline-1 -outline-offset-8">
-          <button
+          <Link
+            to={exelyRoom}
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full scale-100 translate-y-0 bg-gradient px-6 py-2 rounded-full hover-outline flex items-center justify-center gap-2 transition-all duration-500 ease-in-out"
             title="Reserve"
             aria-label="Reserve"
           >
             Reserve
-          </button>
+          </Link>
 
           {/* <Reservation
             enquiryFormFields={enquiryFormFields}

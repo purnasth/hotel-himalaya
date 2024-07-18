@@ -47,7 +47,7 @@ const RecreationPage = ({ data }) => {
         poster={banner}
         video={video}
         quote="Experience luxury. Rejuvenate your body & mind."
-        link="#"
+        link="/enquiry-review"
       />
     </>
   );

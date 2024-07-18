@@ -53,7 +53,7 @@ const HallPage = ({ data }) => {
         poster={banner}
         video={video}
         quote="Mark the date & Create lasting memories."
-        link="#"
+        link="/enquiry-review"
       />
     </>
   );
