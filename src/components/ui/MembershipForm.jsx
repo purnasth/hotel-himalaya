@@ -1,48 +1,21 @@
-import React, { useState } from "react";
-
+import React from "react";
 import {
   FloatingButtonWithNavbar,
   IconRenderer,
   MdOutlineCardMembership,
 } from "../../constants/data";
-
-import {
-  useForm,
-  yupResolver,
-  yup,
-  toast,
-  ToastContainer,
-} from "../../constants/library";
-
-const schema = yup.object().shape({
-  name: yup.string().required("Name is required"),
-  email: yup
-    .string()
-    .email("Invalid email format")
-    .required("Email is required"),
-  phone: yup.string().required("Phone is required"),
-  message: yup.string().required("Message is required"),
-});
+import { ToastContainer } from "react-toastify";
+import useCustomForm from "../../hooks/useCustomForm";
+import useFormSubmit from "../../hooks/useFormSubmit";
+import generateValidationSchema from "../../utils/generateValidationSchema";
 
 const MembershipForm = ({ enquiryFormFields }) => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors, isSubmitting },
-    reset,
-  } = useForm({
-    resolver: yupResolver(schema),
-  });
+  const schema = generateValidationSchema(enquiryFormFields);
+  const { register, handleSubmit, formState: { errors }, reset } = useCustomForm(schema);
+  const { isSubmitting, handleSubmit: handleFormSubmit } = useFormSubmit();
 
-  const onSubmit = async (data) => {
-    try {
-      await new Promise((resolve) => setTimeout(resolve, 2000));
-      console.log(data);
-      toast.success("Form submitted successfully!");
-      reset();
-    } catch (error) {
-      toast.error("Failed to submit form. Please try again later.");
-    }
+  const onSubmit = (data) => {
+    handleFormSubmit(data, reset);
   };
 
   const getTodayDate = () => {
@@ -71,6 +44,7 @@ const MembershipForm = ({ enquiryFormFields }) => {
         navbarStyles="bg-white px-2"
         title="Membership"
         ariaLabel="Membership"
+        buttonId="membership-button"
       >
         <form className="mt-4" onSubmit={handleSubmit(onSubmit)}>
           <div className="grid sm:grid-cols-1 gap-8">
