@@ -2,14 +2,22 @@ import React from "react";
 
 import { TbCircleArrowRight, TbLoader } from "../../constants/data";
 import {
+  withDataFetching,
   useCustomForm,
   useFormSubmit,
   generateValidationSchema,
 } from "../../constants/data";
 import { ToastContainer } from "../../constants/library";
 
-const ContactForm = ({ enquiryFormFields }) => {
-  const schema = generateValidationSchema(enquiryFormFields);
+const ContactForm = ({
+  data,
+  hiddenEnquiry,
+  paddingEnquiry,
+  paddingContact,
+}) => {
+  const { contactFormFields } = data;
+
+  const schema = generateValidationSchema(contactFormFields);
   const {
     register,
     handleSubmit,
@@ -23,8 +31,10 @@ const ContactForm = ({ enquiryFormFields }) => {
   };
   return (
     <>
-      <div className="bg-goldLight/20 p-20 border border-gold">
-        <p className="text-lg mb-12">
+      <div
+        className={`bg-goldLight/20 ${paddingEnquiry} ${paddingContact} border border-gold`}
+      >
+        <p className={`text-lg mb-12 ${hiddenEnquiry}`}>
           Can't find the contact and information you're looking for? Write to us
           via this quick form.
         </p>
@@ -32,7 +42,7 @@ const ContactForm = ({ enquiryFormFields }) => {
           className="flex flex-wrap justify-between"
           onSubmit={handleSubmit(onSubmit)}
         >
-          {enquiryFormFields.map((field) => (
+          {contactFormFields.map((field) => (
             <div key={field.id} className="relative w-full md:w-1/2">
               <ul className="py-8 flex flex-col gap-4">
                 <li className="w-full pr-2">
@@ -47,7 +57,7 @@ const ContactForm = ({ enquiryFormFields }) => {
                       {...register(field.id)}
                       id={field.id}
                       name={field.id}
-                      rows="4"
+                      rows="2"
                       // placeholder={field.placeholder}
                       className={`text-xl w-[200%] mt-2 py-2 border-b border-black/30 focus:outline-none focus:border-gold bg-transparent text-black ${
                         errors[field.id] ? "border-red-600" : ""
@@ -77,7 +87,7 @@ const ContactForm = ({ enquiryFormFields }) => {
           <div className="w-full mt-4 group">
             <button
               type="submit"
-              className={`mt-12 w-full bg-gradient px-6 py-4 rounded-full hover-outline text-lg ${
+              className={`w-full bg-gradient px-6 py-4 rounded-full hover-outline text-lg ${
                 isSubmitting ? "opacity-75 cursor-not-allowed" : ""
               }`}
               disabled={isSubmitting}
@@ -104,4 +114,4 @@ const ContactForm = ({ enquiryFormFields }) => {
   );
 };
 
-export default ContactForm;
+export default withDataFetching(ContactForm, "/api/contactData.json");
