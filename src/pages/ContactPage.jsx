@@ -60,10 +60,7 @@ const ContactPage = ({ data }) => {
           <Accordian accordians={accordian} />
 
           <div className="max-w-5xl mx-auto my-32 border border-gold p-3">
-            <ContactForm
-              enquiryFormFields={contactFormFields}
-              paddingContact="p-20"
-            />
+            <ContactForm paddingContact="p-20" />
           </div>
         </div>
         <Nearby />
