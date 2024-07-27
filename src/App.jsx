@@ -89,6 +89,7 @@ import {
   RouterToTop,
   EnquiryReview,
 } from "./constants/data";
+import { ToastContainer } from "./constants/library";
 
 const App = () => {
   useLenisScroll();
@@ -117,6 +118,7 @@ const App = () => {
         <BackToTop />
         <WhatsApp />
         <Awards />
+        <ToastContainer position="top-center" autoClose={5000} />
       </Router>
     </>
   );

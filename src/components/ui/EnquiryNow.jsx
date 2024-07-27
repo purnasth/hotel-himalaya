@@ -7,7 +7,6 @@ import {
   useFormSubmit,
   generateValidationSchema,
 } from "../../constants/data";
-import { ToastContainer } from "../../constants/library";
 
 const EnquiryNow = ({ prefill, enquiryFormFields }) => {
   const schema = generateValidationSchema(enquiryFormFields);
@@ -114,7 +113,6 @@ const EnquiryNow = ({ prefill, enquiryFormFields }) => {
           </div>
         </form>
       </FloatingButtonWithNavbar>
-      <ToastContainer position="top-center" autoClose={5000} />
     </>
   );
 };
