@@ -87,7 +87,9 @@ import {
   SocialMediaPostsPage,
   useLenisScroll,
   RouterToTop,
+  EnquiryReview,
 } from "./constants/data";
+import { ToastContainer } from "./constants/library";
 
 const App = () => {
   useLenisScroll();
@@ -109,12 +111,14 @@ const App = () => {
           <Route path="/recreation" element={<RecreationPage />} />
           <Route path="/social-offer" element={<SocialMediaPostsPage />} />
           <Route path="/brochure" element={<BrochurePDF />} />
+          <Route path="/enquiry-review" element={<EnquiryReview />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
         <BackToTop />
         <WhatsApp />
         <Awards />
+        <ToastContainer position="top-center" autoClose={5000} />
       </Router>
     </>
   );

@@ -38,6 +38,8 @@
     @apply font-notoSerif;
   } */
 
+  *,
+  html,
   body {
     @apply font-notoSerif;
   }

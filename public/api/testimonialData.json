@@ -3,34 +3,105 @@
     "subheading": "Making 10,000+ happy faces",
     "title": "Valued Guest Feedbacks",
     "description": "We are proud to have received positive feedback from our guests. Here are some of the testimonials from our valued guests.",
+    "routePage": "/enquiry-review",
+    "slides": [
+        {
+            "url": "../images/about/1.webp",
+            "title": "Hotel Himalaya"
+        },
+        {
+            "url": "../images/banner/about.webp",
+            "title": "Hotel Himalaya"
+        },
+        {
+            "url": "../images/about/3.webp",
+            "title": "Hotel Himalaya"
+        },
+        {
+            "url": "../images/about/4.webp",
+            "title": "Hotel Himalaya"
+        },
+        {
+            "url": "../images/about/5.webp",
+            "title": "Hotel Himalaya"
+        },
+        {
+            "url": "../images/about/6.webp",
+            "title": "Hotel Himalaya"
+        }
+    ],
     "contents": [
         {
             "id": 1,
-            "title": "Tim",
-            "description": "The location is excellent for tourist visits to Kathmandu. That is, it is relaxing place away from noise of Tourist locations but easy access to touring. Going out for tour days and returning in the afternoon to relax and refresh is better than stays in tourist places.",
-            "image": "../images/ota/bookingcom.webp",
-            "source": "Booking.com"
+            "title": "Siam Hussain",
+            "description": "A beautiful quaint hotel located a little bit away from the heart of Kathmandu. A little bit pricy compared to the other options nearby but is definitely worth it. The hotel has a nice pool and a lounge area as well. Perhaps the best thing about the hotel is the customer service. The staff were extremely polite, cordial and helpful during my visit.",
+            "image": "../images/ota/google-reviews.webp",
+            "source": "Google Reviews",
+            "totalReviews": 2923,
+            "sourceUrl": "https://www.google.com.np/travel/hotels/entity/ChgIn-ff343l28OBARoLL2cvMXRtcWs1dHoQAQ/reviews?g2lb=4207876%2C4208993%2C4223281%2C4242898%2C4248641%2C4251619%2C4253230%2C4250436%2C4253015&hl=en&gl=np&un=0&rp=OAJAAEgC&ictx=1&tcfs=EhoaGAoKMjAxOS0wNC0yMhIKMjAxOS0wNC0yM1IA&utm_campaign=sharing&utm_medium=link&utm_source=htls&ap=MAA&sa=X&ts=CAEaUwo1EjEyJTB4MzllYjE5ZDNjZjE4Y2E1MToweGQxMGVjM2Q1MzY1NmUxOGY6CExhbGl0cHVyGgASGhIUCgcI6A8QBxgdEgcI6A8QBxgeGAEyAhAAKgkKBToDTlBSGgA&ei=jfPsYqanKaGYrcUPwPCXoAo&ved=0CAAQ5JsGahcKEwjwxdjmr7CHAxUAAAAAHQAAAAAQBA"
         },
         {
             "id": 2,
             "title": "Karla B",
             "description": "Me and my husband stayed 3 nights at Hotel Himalaya. Great location! Just 5 min walk to Patan Durban Square. The deluxe room was big with a super comfortable bed. Great laundry service available. Breakfast buffet was delicious. Dinner restaurant was great!!! Service was 100 points. The only “bad” think was that the wifi was only available at the lobby, not in the room.",
             "image": "../images/ota/tripadvisor.webp",
-            "source": "TripAdvisor"
+            "source": "TripAdvisor",
+            "totalReviews": 495,
+            "sourceUrl": "https://www.tripadvisor.com/Hotel_Review-g660548-d735808-Reviews-Hotel_Himalaya-Nainital_Nainital_District_Uttarakhand.html"
         },
         {
             "id": 3,
-            "title": "Yogesh",
-            "description": "Himalaya Hotel is my most favoured place to stay when I arrive at Kathmandu for various reasons. First, it's one of the cleanest property around, with great ambience - including clean rooms, toilets and swimming pool. Secondly, the staff is extremely polite and helpful. They are always so homecoming and supportive. They will talk to you and connect on a personal level - be it the security staff at gate or restaurant staff or reception. Food is excellent, the breakfast has a lot of varieties.",
-            "image": "../images/ota/expedia.webp",
-            "source": "Expedia"
+            "title": "Tim",
+            "description": "The location is excellent for tourist visits to Kathmandu. That is, it is relaxing place away from noise of Tourist locations but easy access to touring. Going out for tour days and returning in the afternoon to relax and refresh is better than stays in tourist places.",
+            "image": "../images/ota/bookingcom.webp",
+            "source": "Booking.com",
+            "totalReviews": 237,
+            "sourceUrl": "https://www.booking.com/hotel/np/himalaya-kathmandu.en-gb.html?aid=356980&label=gog235jc-1DCAsoqwFCEmhpbWFsYXlhLWthdGhtYW5kdUgzWANoqwGIAQGYAQm4ARfIAQzYAQPoAQGIAgGoAgO4AonV47QGwAIB0gIkZWYzNGQxZmMtZDFkMi00MGZhLTk3ZTYtZjVkODc5YWU2YjBi2AIE4AIB&sid=92d4f646b70df7ccf9096a36f66af01e&dist=0&keep_landing=1&sb_price_type=total&type=total&#tab-reviews"
         },
         {
             "id": 4,
+            "title": "Yogesh",
+            "description": "Himalaya Hotel is my most favoured place to stay when I arrive at Kathmandu for various reasons. First, it's one of the cleanest property around, with great ambience - including clean rooms, toilets and swimming pool. Secondly, the staff is extremely polite and helpful. They are always so homecoming and supportive. They will talk to you and connect on a personal level - be it the security staff at gate or restaurant staff or reception. Food is excellent, the breakfast has a lot of varieties.",
+            "image": "../images/ota/expedia.webp",
+            "source": "Expedia",
+            "totalReviews": 150,
+            "sourceUrl": "https://www.expedia.com/Haldwani-Hotels-Hotel-Himalaya.h3138350.Hotel-Information"
+        },
+        {
+            "id": 5,
             "title": "Siam Hussain",
             "description": "A beautiful quaint hotel located a little bit away from the heart of Kathmandu. A little bit pricy compared to the other options nearby but is definitely worth it. The hotel has a nice pool and a lounge area as well. Perhaps the best thing about the hotel is the customer service. The staff were extremely polite, cordial and helpful during my visit.",
             "image": "../images/ota/google-reviews.webp",
-            "source": "Google Reviews"
+            "source": "Google Reviews",
+            "totalReviews": 2923,
+            "sourceUrl": "https://www.google.com.np/travel/hotels/entity/ChgIn-ff343l28OBARoLL2cvMXRtcWs1dHoQAQ/reviews?g2lb=4207876%2C4208993%2C4223281%2C4242898%2C4248641%2C4251619%2C4253230%2C4250436%2C4253015&hl=en&gl=np&un=0&rp=OAJAAEgC&ictx=1&tcfs=EhoaGAoKMjAxOS0wNC0yMhIKMjAxOS0wNC0yM1IA&utm_campaign=sharing&utm_medium=link&utm_source=htls&ap=MAA&sa=X&ts=CAEaUwo1EjEyJTB4MzllYjE5ZDNjZjE4Y2E1MToweGQxMGVjM2Q1MzY1NmUxOGY6CExhbGl0cHVyGgASGhIUCgcI6A8QBxgdEgcI6A8QBxgeGAEyAhAAKgkKBToDTlBSGgA&ei=jfPsYqanKaGYrcUPwPCXoAo&ved=0CAAQ5JsGahcKEwjwxdjmr7CHAxUAAAAAHQAAAAAQBA"
+        },
+        {
+            "id": 6,
+            "title": "Karla B",
+            "description": "Me and my husband stayed 3 nights at Hotel Himalaya. Great location! Just 5 min walk to Patan Durban Square. The deluxe room was big with a super comfortable bed. Great laundry service available. Breakfast buffet was delicious. Dinner restaurant was great!!! Service was 100 points. The only “bad” think was that the wifi was only available at the lobby, not in the room.",
+            "image": "../images/ota/tripadvisor.webp",
+            "source": "TripAdvisor",
+            "totalReviews": 495,
+            "sourceUrl": "https://www.tripadvisor.com/Hotel_Review-g660548-d735808-Reviews-Hotel_Himalaya-Nainital_Nainital_District_Uttarakhand.html"
+        },
+        {
+            "id": 7,
+            "title": "Tim",
+            "description": "The location is excellent for tourist visits to Kathmandu. That is, it is relaxing place away from noise of Tourist locations but easy access to touring. Going out for tour days and returning in the afternoon to relax and refresh is better than stays in tourist places.",
+            "image": "../images/ota/bookingcom.webp",
+            "source": "Booking.com",
+            "totalReviews": 237,
+            "sourceUrl": "https://www.booking.com/hotel/np/himalaya-kathmandu.en-gb.html?aid=356980&label=gog235jc-1DCAsoqwFCEmhpbWFsYXlhLWthdGhtYW5kdUgzWANoqwGIAQGYAQm4ARfIAQzYAQPoAQGIAgGoAgO4AonV47QGwAIB0gIkZWYzNGQxZmMtZDFkMi00MGZhLTk3ZTYtZjVkODc5YWU2YjBi2AIE4AIB&sid=92d4f646b70df7ccf9096a36f66af01e&dist=0&keep_landing=1&sb_price_type=total&type=total&#tab-reviews"
+        },
+        {
+            "id": 8,
+            "title": "Yogesh",
+            "description": "Himalaya Hotel is my most favoured place to stay when I arrive at Kathmandu for various reasons. First, it's one of the cleanest property around, with great ambience - including clean rooms, toilets and swimming pool. Secondly, the staff is extremely polite and helpful. They are always so homecoming and supportive. They will talk to you and connect on a personal level - be it the security staff at gate or restaurant staff or reception. Food is excellent, the breakfast has a lot of varieties.",
+            "image": "../images/ota/expedia.webp",
+            "source": "Expedia",
+            "totalReviews": 150,
+            "sourceUrl": "https://www.expedia.com/Haldwani-Hotels-Hotel-Himalaya.h3138350.Hotel-Information"
         }
     ]
 }

@@ -15,9 +15,8 @@ const StayPage = ({ data }) => {
     description,
     slogan,
     roomsCategories,
-    accommodationFormFields,
     video,
-    rojai,
+    exely,
   } = data;
 
   return (
@@ -39,12 +38,14 @@ const StayPage = ({ data }) => {
         </div>
         <div className="container space-y-32">
           {roomsCategories.map((room) => (
-            <PackageComponent
-              key={room.id}
-              page="Stay"
-              content={room}
-              enquiryFormFields={accommodationFormFields}
-            />
+            <>
+              <PackageComponent
+                key={room.id}
+                page="Stay"
+                content={room}
+                exelyRoom={room.exelyRoom}
+              />
+            </>
           ))}
         </div>
       </main>
@@ -52,7 +53,7 @@ const StayPage = ({ data }) => {
         poster={banner}
         video={video}
         quote="Take a break. Recharge your batteries. Find inspiration."
-        link={rojai}
+        link={exely}
       />
     </>
   );

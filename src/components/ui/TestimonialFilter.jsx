@@ -20,7 +20,7 @@ const TestimonialFilter = ({ contents }) => {
 
   return (
     <div className="flex flex-col gap-24">
-      <div className="sticky top-0 flex justify-between flex-nowrap gap-12 max-w-full overflow-x-auto p-8 z-20">
+      <div className="sticky top-0 flex justify-between flex-nowrap gap-12 max-w-full overflow-x-auto p-8 z-20 bg-white">
         {contents.map(({ id, title, image, source }) => (
           <button
             key={id}
