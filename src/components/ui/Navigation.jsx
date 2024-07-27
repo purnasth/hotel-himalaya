@@ -9,6 +9,8 @@ import {
   ClickableLink,
 } from "../../constants/data";
 
+import { TbCrown, TbUser, TbCalendarEvent } from "react-icons/tb";
+
 const Navigation = ({ data, mainClassName, isFooter, toggleMenu }) => {
   const year = new Date().getFullYear();
 
@@ -131,6 +133,77 @@ const Navigation = ({ data, mainClassName, isFooter, toggleMenu }) => {
             </div>
           </div>
         </div>
+        {!isFooter && (
+          <>
+            <div className="backdrop-blur-sm h-auto w-full absolute left-0 bottom-0 border-t border-black/0 p-6 md:px-12">
+              <div className="grid grid-cols-5 gap-0 content-center items-center place-self-center">
+                <div className="col-span-2 flex items-center justify-items-center gap-10">
+                  <div className="space-y-2">
+                    <div className="flex gap-12">
+                      <div className="relative z-0 flex items-center gap-6 text-sm">
+                        <h4>Check in/out</h4>
+                        <TbCalendarEvent className="text-xl" />
+                      </div>
+
+                      <div className="relative z-0 flex items-center gap-6 text-sm">
+                        <h4>No. of Pax</h4>
+                        <TbUser className="text-xl" />
+                      </div>
+                    </div>
+                    <p className="mt-5 font-inria-sans text-sm">
+                      Call us at
+                      <a href="tel:+977015423900" className="font-bold mx-2">
+                        +977 01-5423900
+                      </a>
+                      for direct booking.
+                    </p>
+                  </div>
+
+                  <div className="place-self-center">
+                    <a
+                      className="py-2 px-8 rounded-full bg-goldDark text-goldLight outline outline-2 outline-goldLight pointer-events-auto hover-outline"
+                      href="#"
+                    >
+                      Check Availability
+                    </a>
+                  </div>
+                </div>
+
+                <div className="col-span-1 border-x border-black/20">
+                  <div className="flex items-center justify-center gap-4">
+                    <h5 className="text-4xl font-bold">
+                      4.9/<span className="text-xl">5</span>
+                    </h5>
+                    <div className="space-y-1">
+                      <h6 className="font-semibold">Travelers Favorite</h6>
+                      <span className="text-xs">based on 1000+ reviews</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-span-1 border-x border-black/20">
+                  <div className="flex items-center justify-center gap-4">
+                    <TbCrown className="text-5xl" />
+                    <div className="space-y-1">
+                      <h6 className="font-semibold text-sm">
+                        True Nepalese Hospitality
+                      </h6>
+                      <span className="text-xs">best in the country</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="sol-span-1 place-self-center">
+                  <a
+                    // className="py-2 px-8 rounded-full bg-transparent text-center text-black outline outline-2 outline-black/50 pointer-events-auto hover-outline"
+                    className="py-2 px-8 rounded-full bg-goldDark/20 text-goldDark outline outline-2 outline-goldDark pointer-events-auto hover-outline"
+                    href="#"
+                  >
+                    Read Reviews
+                  </a>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
         {isFooter && (
           <>
             {/* <hr className="my-8 border-gray-300" /> */}
