@@ -45,7 +45,7 @@ const Stay = ({ data }) => {
           </div>
         </div>
       </div>
-      <div className="translate-x-36">
+      <div className="translate-x-24">
         <RoomSlider items={sliderItems} currentIndex={currentIndex} />
       </div>
     </main>

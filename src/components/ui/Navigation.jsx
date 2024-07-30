@@ -135,7 +135,7 @@ const Navigation = ({ data, mainClassName, isFooter, toggleMenu }) => {
         </div>
         {!isFooter && (
           <>
-            <div className="backdrop-blur-sm h-auto w-full absolute left-0 bottom-0 border-t border-black/0 p-6 md:px-12">
+            <div className="hidden backdrop-blur-sm h-auto w-full absolute left-0 bottom-0 border-t border-black/0 p-6 md:px-12">
               <div className="grid grid-cols-5 gap-0 content-center items-center place-self-center">
                 <div className="col-span-2 flex items-center justify-items-center gap-10">
                   <div className="space-y-2">
