@@ -228,11 +228,15 @@ const GalleryPage = () => {
   return (
     <>
       <main className="">
-        <div className="container mt-12">
-          <div className="text-center space-y-6 px-24 mb-12">
-            <span className="uppercase">Making 10,000+ happy faces</span>
-            <h3 className="text-5xl leading-snug">Glimpse of Hotel</h3>
-            <p className="text-base max-w-lg mx-auto">
+        <div className="md:container mt-12">
+          <div className="text-center space-y-3 md:space-y-6 px-3 md:px-24 mb-12">
+            <span className="text-xs md:text-base uppercase">
+              Making 10,000+ happy faces
+            </span>
+            <h3 className="text-2xl sm:text-2xl md:text-4xl lg:text-5xl leading-snug lg:leading-snug">
+              Glimpse of Hotel
+            </h3>
+            <p className="text-sm text-justify md:text-base md:text-center max-w-lg mx-auto">
               Where fleeting moments are captured and cherished. It's a
               sanctuary for the past, holding echoes of laughter and whispers of
               dreams.
