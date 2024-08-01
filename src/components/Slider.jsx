@@ -41,7 +41,7 @@ const Slider = ({
               <h4
                 className={`${
                   index === currentIndex ? trueClassName : falseClassName
-                } pointer-events-none w-full h-24 pt-20 pl-12 pr-6 pb-10 md:py-20 md:px-12 absolute bottom-0 text-right text-white z-20 [text-shadow:2px_2px_#815f16]`}
+                } hidden sm:block pointer-events-none w-full h-24 pt-20 pl-12 pr-6 pb-10 md:py-20 md:px-12 absolute bottom-0 text-right text-white z-20 [text-shadow:2px_2px_#815f16]`}
               >
                 {slide.title}
               </h4>
