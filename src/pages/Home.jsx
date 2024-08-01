@@ -4,11 +4,11 @@ import {
   useFetchData,
   Loader,
   Slider,
-  About,
-  Stay,
-  Facilities,
-  Hall,
-  Testimonials,
+  // About,
+  // Stay,
+  // Facilities,
+  // Hall,
+  // Testimonials,
 } from "../constants/data";
 
 const Home = () => {
@@ -44,11 +44,11 @@ const Home = () => {
         trueClassName="opacity-100"
         falseClassName="opacity-0"
       />
-      <About data={aboutData} />
+      {/* <About data={aboutData} />
       <Stay />
       <Facilities />
       <Hall />
-      <Testimonials />
+      <Testimonials /> */}
     </>
   );
 };

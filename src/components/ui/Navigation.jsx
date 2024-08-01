@@ -20,7 +20,11 @@ const Navigation = ({ data, mainClassName, isFooter, toggleMenu }) => {
     >
       <div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
-          <div className="main-link order-2 md:order-1">
+          <div
+            className={`${
+              isFooter ? "hidden md:block" : ""
+            } main-link order-2 md:order-1`}
+          >
             <ul className="space-y-4 md:space-y-20">
               {data.mainLinks?.map((link, index) => (
                 <li
@@ -40,7 +44,11 @@ const Navigation = ({ data, mainClassName, isFooter, toggleMenu }) => {
               ))}
             </ul>
           </div>
-          <div className="secondary-link order-3 md:order-2">
+          <div
+            className={`${
+              isFooter ? "hidden md:block" : ""
+            } secondary-link order-3 md:order-2`}
+          >
             <ul className="space-y-4 md:space-y-8">
               {data.secondaryLinks?.map((link, index) => (
                 <li
@@ -61,7 +69,7 @@ const Navigation = ({ data, mainClassName, isFooter, toggleMenu }) => {
           </div>
           <div
             className={`${
-              isFooter ? "" : "hidden xl:block"
+              isFooter ? "md:hidden xl:block" : "hidden xl:block"
             } booking order-4 md:order-3`}
           >
             {Object.entries(data.bookingInfo || {}).map(
@@ -142,7 +150,7 @@ const Navigation = ({ data, mainClassName, isFooter, toggleMenu }) => {
         {isFooter && (
           <>
             {/* <hr className="my-8 border-gray-300" /> */}
-            <div className="text-sm flex items-center justify-between gap-16 -translate-y-6">
+            <div className="text-sm flex items-center justify-between flex-col md:flex-row gap-6 md:gap-16 md:-translate-y-6 mt-8 md:mt-0">
               <p>
                 &copy; {year} {data.copyright?.owner}. All Rights Reserved.
               </p>
