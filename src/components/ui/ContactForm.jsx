@@ -59,7 +59,7 @@ const ContactForm = ({
                       name={field.id}
                       rows="2"
                       // placeholder={field.placeholder}
-                      className={`text-xl w-[200%] mt-2 py-2 border-b border-black/30 focus:outline-none focus:border-gold bg-transparent text-black ${
+                      className={`text-xl w-full lg:w-[200%] mt-2 py-2 border-b border-black/30 focus:outline-none focus:border-gold bg-transparent text-black ${
                         errors[field.id] ? "border-red-600" : ""
                       }`}
                     ></textarea>

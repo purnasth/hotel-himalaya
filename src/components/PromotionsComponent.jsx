@@ -33,7 +33,7 @@ const PromotionsComponent = ({ promotionsImages, enquiryFormFields }) => {
             </LightGallery>
             <div className="flex items-center justify-between gap-4 py-6">
               <div className="space-y-4">
-                <h4 className="text-base sm:text-xl font-bold sm:font-medium">
+                <h4 className="text-base sm:text-lg xl:text-xl font-bold md:font-medium">
                   {promotion.label}
                 </h4>
                 <span className="text-sm">Get 3 for the price of 2</span>
