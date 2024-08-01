@@ -19,8 +19,8 @@ const TestimonialFilter = ({ contents }) => {
   };
 
   return (
-    <div className="flex flex-col gap-24">
-      <div className="sticky top-0 flex justify-between flex-nowrap gap-12 max-w-full overflow-x-auto p-8 z-20 bg-white">
+    <div className="flex flex-col gap-16 md:gap-24">
+      <div className="sticky top-0 flex justify-between flex-nowrap gap-12 max-w-full overflow-x-auto mt-5 md:mt-0 p-1 md:p-8 z-20 bg-white">
         {contents.map(({ id, title, image, source }) => (
           <button
             key={id}
@@ -53,7 +53,7 @@ const TestimonialFilter = ({ contents }) => {
           } transition-all duration-700 scroll-mt-0 md:scroll-mt-80`}
         >
           <div key={selectedItem.id} className="md:px-6">
-            <p className="text-justify md:text-pretty text-xl">
+            <p className="text-justify md:text-pretty text-base md:text-xl">
               {selectedItem.description}
             </p>
             <div className="flex items-center justify-between gap-12 mt-12">
