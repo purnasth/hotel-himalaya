@@ -45,7 +45,7 @@ const RoomSlider = ({ items, currentIndex }) => {
           const startingPrice = details["Starting Price"]?.value || "";
 
           return (
-            <div key={index} className="w-1/3 px-2 flex-shrink-0">
+            <div key={index} className="w-full lg:w-1/3 px-2 flex-shrink-0">
               <div className="relative group cursor-pointer overflow-hidden">
                 <div className="absolute inset-0 size-full outline outline-1 outline-white group-hover:outline-white/20 -outline-offset-[10px] group-hover:-outline-offset-[30px] z-10  transition-all duration-500 ease-linear" />
                 <img

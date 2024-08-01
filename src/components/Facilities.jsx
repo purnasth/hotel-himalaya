@@ -6,14 +6,14 @@ const Facilities = ({ data }) => {
   const { hotelFacilities } = data;
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 mt-28">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 mt-28">
       {hotelFacilities.map(
         ({ id, title, subtitle, description, icon, router }) => (
           <div key={id} className="relative overflow-hidden group">
             <img
               src={icon}
               alt={title}
-              className="w-full h-screen shadow-md transition-all duration-700 ease-linear group-hover:scale-150 object-cover"
+              className="w-full min-h-96 h-[60vh] sm:h-96 md:h-[32rem] lg:h-screen shadow-md transition-all duration-700 ease-linear group-hover:scale-150 object-cover"
               draggable="false"
             />
             <div className="pointer-events-none absolute inset-0 overlay bg-gradient-to-b from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.2)] w-full h-full"></div>

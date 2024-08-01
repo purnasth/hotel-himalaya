@@ -29,11 +29,17 @@ const Stay = ({ data }) => {
   return (
     <main className="pt-8 px-0">
       <div className="container pb-16">
-        <div className="flex items-center justify-between gap-8">
-          <div className="space-y-2">
-            <span className="uppercase">{home_slogan}</span>
-            <h3 className="text-5xl leading-snug">{home_title}</h3>
-            <p className="text-base">{home_description}</p>
+        <div className="flex items-center justify-between flex-col md:flex-row gap-8">
+          <div className="text-left space-y-2">
+            <span className="text-xs md:text-base uppercase">
+              {home_slogan}
+            </span>
+            <h3 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl leading-snug lg:leading-snug">
+              {home_title}
+            </h3>
+            <p className="text-sm text-justify md:text-base">
+              {home_description}
+            </p>
           </div>
 
           <div className="flex items-center gap-2">
@@ -45,7 +51,7 @@ const Stay = ({ data }) => {
           </div>
         </div>
       </div>
-      <div className="translate-x-24">
+      <div className="lg:translate-x-24 2xl:translate-x-48">
         <RoomSlider items={sliderItems} currentIndex={currentIndex} />
       </div>
     </main>
