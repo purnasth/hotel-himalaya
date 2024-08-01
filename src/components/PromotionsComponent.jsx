@@ -11,7 +11,7 @@ import {
 const PromotionsComponent = ({ promotionsImages, enquiryFormFields }) => {
   return (
     <>
-      <div className="grid grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
         {promotionsImages.map((promotion) => (
           <div key={promotion.id} className="aspect-square size-full">
             <LightGallery
@@ -33,7 +33,9 @@ const PromotionsComponent = ({ promotionsImages, enquiryFormFields }) => {
             </LightGallery>
             <div className="flex items-center justify-between gap-4 py-6">
               <div className="space-y-4">
-                <h4 className="text-xl font-medium">{promotion.label}</h4>
+                <h4 className="text-base sm:text-xl font-bold sm:font-medium">
+                  {promotion.label}
+                </h4>
                 <span className="text-sm">Get 3 for the price of 2</span>
               </div>
 
