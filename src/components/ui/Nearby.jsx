@@ -35,13 +35,13 @@ function Nearby({ data: nearbyLocations }) {
   };
 
   return (
-    <div className="grid grid-cols-4 items-center gap-8">
-      <div className="col-span-1 lg:h-[90vh] overflow-y-auto">
+    <div className="grid grid-cols-1 lg:grid-cols-4 items-center gap-8">
+      <div className="lg:col-span-1 h-80 md:h-96 lg:h-[90vh] overflow-y-auto">
         <ul>
           {nearbyLocations.map((location) => (
             <li
               key={location.name}
-              className={`mx-4 my-2 cursor-pointer px-4 py-3 rounded-lg border hover:bg-goldLight transition-all duration-300 ease-linear ${
+              className={`md:mx-4 my-2 cursor-pointer px-4 py-3 rounded-lg border hover:bg-goldLight transition-all duration-300 ease-linear ${
                 selectedLocation === location ? "bg-goldLight text-black" : ""
               }`}
               onClick={() => handleLocationClick(location)}
@@ -64,7 +64,7 @@ function Nearby({ data: nearbyLocations }) {
           ))}
         </ul>
       </div>
-      <div className="col-span-3">
+      <div className="lg:col-span-3">
         {isMapOpen && (
           <div
             id="mapSection"
