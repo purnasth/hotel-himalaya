@@ -29,9 +29,9 @@ const AboutPage = ({ data }) => {
             url: slide.url,
             title: slide.title,
           }))}
-          containerClassName="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen"
+          containerClassName="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-[36rem] xl:h-screen"
           buttonClassName="hero-slider-button"
-          imgClassName="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-screen object-cover absolute inset-0 transition-all duration-[2s]"
+          imgClassName="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-[36rem] xl:h-screen object-cover absolute inset-0 transition-all duration-[2s]"
           trueClassName="opacity-100"
           falseClassName="opacity-0 -z-10"
         />
@@ -65,16 +65,16 @@ const AboutPage = ({ data }) => {
               url: slide.url,
               title: slide.title,
             }))}
-            containerClassName="w-full h-64 sm:h-[50vh] sm:min-h-96 lg:h-[90vh] overflow-hidden relative mx-auto mt-10 group"
+            containerClassName="w-full h-64 sm:h-96 lg:h-[36rem] xl:h-[90vh] overflow-hidden relative mx-auto mt-10 group"
             buttonClassName="stay-slider-button"
-            imgClassName="w-full h-64 sm:h-[50vh] sm:min-h-96 lg:h-full object-cover absolute inset-0 transition-all duration-[1s]"
+            imgClassName="w-full h-64 sm:h-96 lg:h-[36rem] xl:h-[90vh] object-cover absolute inset-0 transition-all duration-[1s]"
             trueClassName="opacity-100 scale-100 translate-y-0"
             falseClassName="opacity-0 scale-90 -translate-y-4 -z-10"
           />
         </div>
 
         <div className="md:container mt-32 text-center">
-          <div className="md:px-12 space-y-6">
+          <div className="md:px-12 space-y-6 max-w-5xl mx-auto">
             <span class="uppercase">Awards</span>
             <h6 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl leading-snug lg:leading-snug">
               37<sup>th</sup> years of passion, dedication, and unforgettable
