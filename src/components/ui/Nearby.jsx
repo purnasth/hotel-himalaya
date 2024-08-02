@@ -35,7 +35,7 @@ function Nearby({ data: nearbyLocations }) {
   };
 
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-4 items-center gap-y-24 xl:gap-8">
+    <div className="grid grid-cols-1 xl:grid-cols-4 items-center gap-y-12 sm:gap-y-24 xl:gap-8">
       <div className="xl:col-span-1 h-80 md:h-96 lg:h-[36rem] xl:h-[90vh] overflow-y-auto">
         <ul>
           {nearbyLocations.map((location) => (

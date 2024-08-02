@@ -34,15 +34,17 @@ const ContactPage = ({ data }) => {
         page={page}
       />
 
-      <main className="font -serif">
-        <div className="container mt-12">
-          <div className="text-center space-y-6 px-24">
-            <span className="uppercase">{slogan}</span>
-            <h3 className="text-3xl leading-snug">{subdescription}</h3>
+      <main>
+        <div className="md:container md:mt-12">
+          <div className="text-center space-y-3 md:space-y-6 px-3 md:px-24 mb-12">
+            <span className="text-xs md:text-base uppercase">{slogan}</span>
+            <h3 className="text-xl md:text-2xl xl:text-3xl leading-snug xl:leading-snug text-justify xl:text-center">
+              {subdescription}
+            </h3>
           </div>
 
-          <div className="grid grid-cols-3 items-center content-center gap-12 my-40">
-            <div className="col-span-1 flex flex-col items-center text-center gap-4">
+          <div className="grid grid-cols-1 lg:grid-cols-3 items-center content-center gap-y-12 lg:gap-12 my-16 xl:my-40">
+            <div className="col-span-1">
               <Socials />
             </div>
 
@@ -56,11 +58,11 @@ const ContactPage = ({ data }) => {
           </div>
         </div>
 
-        <div className="container">
+        <div className="md:container">
           <Accordian accordians={accordian} />
 
-          <div className="max-w-5xl mx-auto my-32 border border-gold p-3">
-            <ContactForm paddingContact="p-20" />
+          <div className="max-w-5xl mx-auto my-24 md:my-32 border border-gold p-2 md:p-3">
+            <ContactForm paddingContact="p-8 md:p-20" />
           </div>
         </div>
         <Nearby />
