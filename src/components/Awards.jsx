@@ -10,8 +10,8 @@ import {
 const Awards = () => {
   return (
     <FloatingButtonWithNavbar
-      buttonIcon={<TbTrophy className="w-6 h-6 text-navy" />}
-      buttonStyles="fixed bottom-8 left-8 size-11 z-20 bg-goldDark text-goldLight outline outline-2 outline-offset-2 outline-goldLight rounded-full shadow-lg flex items-center justify-center"
+      buttonIcon={<TbTrophy className="size-6" />}
+      buttonStyles="fixed bottom-4 md:bottom-8 left-4 md:left-8 size-11 scale-75 sm:scale-100 z-20 bg-goldDark text-goldLight outline outline-2 outline-offset-2 outline-goldLight rounded-full shadow-lg flex items-center justify-center"
       afterHomeClass="scale-0 translate-y-20"
       navbarStyles="bg-white px-2"
       title="Awards"

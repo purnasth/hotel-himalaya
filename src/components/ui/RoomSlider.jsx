@@ -33,7 +33,7 @@ import { IconRenderer } from "../../constants/data";
 const RoomSlider = ({ items, currentIndex }) => {
   return (
     <div className="relative w-full overflow-hidden">
-      <Link
+      <div
         to={`/stay`}
         className="flex transition-transform duration-500"
         style={{
@@ -51,7 +51,7 @@ const RoomSlider = ({ items, currentIndex }) => {
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-[28rem] object-cover shadow-lg group-hover:scale-110 transition-all duration-500 ease-linear"
+                  className="w-full h-96 md:h-[28rem] object-cover shadow-lg group-hover:scale-110 transition-all duration-500 ease-linear"
                   draggable="false"
                 />
                 <div className="pointer-events-none absolute inset-0 size-full bg-gradient-to-t from-black/80 to-black/0 group-hover:from-black/30 group-hover:via-black/60 group-hover:to-black/30 opacity-70 group-hover:opacity-100 z-0 transition-all duration-500 ease-linear" />
@@ -82,7 +82,7 @@ const RoomSlider = ({ items, currentIndex }) => {
             </div>
           );
         })}
-      </Link>
+      </div>
     </div>
   );
 };

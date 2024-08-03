@@ -10,7 +10,7 @@ const Hall = ({ data }) => {
   return (
     <>
       <main className="pb-0 px-0">
-        <div className="md:container md:px-24 pb-24">
+        <div className="md:container pb-16 md:px-24">
           <div className="text-left md:text-center space-y-5 md:space-y-8 px-6 sm:px-12">
             <span className="text-xs md:text-base uppercase">{slogan}</span>
 

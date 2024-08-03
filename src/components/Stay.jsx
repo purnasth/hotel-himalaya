@@ -28,7 +28,7 @@ const Stay = ({ data }) => {
 
   return (
     <main className="pt-8 px-0">
-      <div className="container pb-16">
+      <div className="container pb-12 md:pb-16">
         <div className="flex items-center justify-between flex-col md:flex-row gap-8">
           <div className="text-left space-y-2">
             <span className="text-xs md:text-base uppercase">
