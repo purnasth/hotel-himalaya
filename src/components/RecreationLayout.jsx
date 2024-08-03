@@ -1,4 +1,11 @@
 import React from "react";
+import {
+  LightGallery,
+  lgZoom,
+  lgVideo,
+  lgThumbnail,
+  lgFullscreen,
+} from "../constants/library";
 
 const RecreationLayout = ({ recreationsData }) => {
   return (
@@ -35,8 +42,14 @@ const RecreationLayout = ({ recreationsData }) => {
                 ))}
               </ul>
             </div>
-            <div
-              className={`col-span-2 grid grid-cols-5 gap-4 md:gap-8 ${
+            <LightGallery
+              plugins={[lgZoom, lgVideo, lgThumbnail, lgFullscreen]}
+              mode="lg-fade"
+              options={{
+                thumbnail: true,
+                autoplay: true,
+              }}
+              elementClassNames={`col-span-2 grid grid-cols-5 gap-4 md:gap-8 ${
                 index % 2 === 0 ? "" : "xl:order-first"
               } md:mt-16 xl:mt-24 ${
                 index === recreationsData.length - 1
@@ -47,19 +60,20 @@ const RecreationLayout = ({ recreationsData }) => {
               {recreation.images.map((image, imageIndex) => (
                 <div
                   key={imageIndex}
+                  data-src={image.url}
                   className={`col-span-${image.colSpan || 1} ${
                     imageIndex % 2 === 0 ? "content-end" : ""
-                  }`}
+                  } group overflow-hidden transition-all duration-200 ease-linear cursor-pointer`}
                 >
                   <img
                     src={image.url}
                     alt={image.alt}
-                    className="rounded-2xl"
+                    className="contrast-100 group-hover:contrast-150 object-cover rounded-2xl transition-all duration-300 ease-linear cursor-pointer"
                     draggable="false"
                   />
                 </div>
               ))}
-            </div>
+            </LightGallery>
           </div>
         ))}
       </section>
