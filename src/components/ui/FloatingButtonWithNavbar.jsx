@@ -95,7 +95,7 @@ const Navbar = ({ showNavbar, onClose, children, navbarStyles, formTitle }) => {
             title="Close"
             aria-label="Close"
           >
-            <IoClose className="text-2xl" />
+            <IoClose className="text-2xl mr-4" />
           </button>
         </div>
         <div className="mx-auto p-4">{children}</div>

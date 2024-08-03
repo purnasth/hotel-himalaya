@@ -14,14 +14,14 @@ const BreadCrumb = ({ page }) => {
             <Link
               to="/"
               // className="inline-flex items-center justify-center text-sm md:text-base font-medium font-title tracking-wider bg-gradient text-black transition-linear px-3 py-1 rounded-full"
-              className="py-1 px-3 rounded-full flex items-center gap-2 bg-goldDark text-goldLight outline outline-2 outline-goldLight pointer-events-auto hover-outline"
+              className="py-1 px-3 rounded-full flex items-center gap-2 bg-goldDark text-goldLight outline outline-2 outline-goldLight pointer-events-auto hover-outline text-sm md:text-lg"
             >
               <IoHome className="text-sm md:text-lg -mt-[5px]" />
               Home
             </Link>
           </li>
           <li aria-current="page">
-            <h2 className="text-gradient inline-flex items-center justify-center text-sm md:text-base font-title tracking-wider ">
+            <h2 className="text-gradient inline-flex items-center justify-center text-sm md:text-base font-title tracking-wider font-bold">
               <MdKeyboardDoubleArrowRight className="text-goldLight text-lg me-2.5" />
               {page}
             </h2>

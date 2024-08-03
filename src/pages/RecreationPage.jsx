@@ -30,10 +30,10 @@ const RecreationPage = ({ data }) => {
         page="Recreation"
       />
       <main className="z-auto">
-        <div className="container">
-          <div className="text-center">
-            <span className="uppercase">{slogan}</span>
-            <h5 className="text-2xl text-center leading-snug mt-6 mb-12">
+        <div className="">
+          <div className="md:container text-center mb-0 sm:mb-8 md:mb-12">
+            <span className="text-xs md:text-base uppercase">{slogan}</span>
+            <h5 className="text-base sm:text-lg md:text-xl xl:text-2xl leading-snug xl:leading-snug text-justify xl:text-center mt-6 mb-12">
               {page_description}
             </h5>
           </div>

@@ -12,40 +12,45 @@ const DiscoverHimalaya = ({ data }) => {
 
   return (
     <>
-      <div className="grid grid-cols-3 content-center gap-16 mt-28 p-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 content-center gap-y-12 lg:gap-16 mt-20 md:mt-28 lg:p-8">
         <div className="col-span-1 content-center w-full">
-          <h3 className="text-3xl leading-snug">{title}</h3>
-          <p className="text-justify md:text-pretty text-base mt-4 mb-20">
+          <h3 className="text-xl md:text-2xl lg:text-3xl md:leading-normal lg:leading-snug xl:leading-relaxed">
+            {title}
+          </h3>
+          <p className="text-sm text-justify md:text-base mt-4 mb-12 md:mb-20">
             {description}
           </p>
-          <h3 className="text-2xl mb-6">Facilities</h3>
-          <ul className="flex items-center gap-6 flex-wrap">
+          <h3 className="text-xl md:text-2xl mb-6">Facilities</h3>
+          <ul className="flex items-center gap-3 md:gap-6 flex-wrap">
             {facilities.map(({ id, title, icon }) => (
               <li
                 key={id}
-                className="bg-goldLight/50 px-4 py-2 rounded-2xl flex items-center gap-2"
+                className="bg-goldLight/50 px-4 py-2 rounded-2xl flex items-center gap-2 text-xs md:text-base"
               >
-                <IconRenderer
-                  iconName={icon}
-                  className="text-base text-black"
-                />
+                <IconRenderer iconName={icon} className="text-black" />
                 {title}
               </li>
             ))}
           </ul>
         </div>
-        <div className="col-span-2 grid grid-cols-5 gap-8 p-8">
+        <div className="lg:col-span-2 grid grid-cols-1 xl:grid-cols-5 gap-8 xl:p-8">
           {discover.map(({ id, title, imageUrl, route }) => {
             const colSpanClass =
-              id === 1 || id === 4 ? "col-span-2" : "col-span-3";
+              id === 1 || id === 4 ? "xl:col-span-2" : "xl:col-span-3";
             const contentClass =
-              id === 1 ? "content-end" : id === 4 ? "content-start" : "";
+              id === 1
+                ? "content-center xl:content-end"
+                : id === 4
+                ? "content-center xl:content-start"
+                : "";
             const imageHeightClass =
-              colSpanClass === "col-span-3" ? "h-80" : "h-52";
+              colSpanClass === "xl:col-span-3"
+                ? "h-80 3xl:h-96"
+                : "h-52 3xl:h-72";
             return (
               <div
                 key={id}
-                className={`${colSpanClass} ${contentClass} relative`}
+                className={`${colSpanClass} ${contentClass} relative justify-self-center xl:justify-self-auto `}
               >
                 <img
                   src={imageUrl}

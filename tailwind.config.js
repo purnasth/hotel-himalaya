@@ -2,10 +2,6 @@ module.exports = {
   darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-    },
     extend: {
       fontFamily: {
         luxury: ['"Kaftan Serif"', "Georgia", "Cambria", "serif"],
@@ -45,7 +41,17 @@ module.exports = {
         gradient:
           "linear-gradient(121.21deg, #c79d4f 13.03%, #fad694 48.04%, #e9c279 81.98%)",
       },
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+        "3xl": "1920px",
+      },
       container: {
+        center: true,
+        padding: "2rem",
         screens: {
           sm: "100%",
           md: "100%",

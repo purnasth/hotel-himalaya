@@ -38,9 +38,9 @@ const Home = () => {
     <>
       <Slider
         slides={slides}
-        containerClassName="w-full h-screen"
+        containerClassName="w-full h-64 sm:h-[50vh] sm:min-h-96 lg:h-screen"
         buttonClassName="hero-slider-button"
-        imgClassName="w-full h-screen object-cover absolute inset-0 transition-all duration-[2s]"
+        imgClassName="w-full h-64 sm:h-[50vh] sm:min-h-96 lg:h-screen object-cover absolute inset-0 transition-all duration-[2s]"
         trueClassName="opacity-100"
         falseClassName="opacity-0"
       />

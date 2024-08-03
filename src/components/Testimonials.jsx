@@ -10,15 +10,19 @@ const Testimonials = ({ data }) => {
 
   return (
     <main id="testimonials">
-      <div className="container">
-        <div className="text-center space-y-6 px-24 mb-12">
-          <span className="uppercase">{subheading}</span>
-          <h3 className="text-5xl leading-snug">{title}</h3>
-          <p className="text-base max-w-lg mx-auto">{description}</p>
+      <div className="md:container">
+        <div className="text-left md:text-center space-y-5 md:space-y-6 px-2 sm:px-12 md:px-24 md:mb-12">
+          <span className="text-xs md:text-base uppercase">{subheading}</span>
+          <h3 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl leading-snug lg:leading-snug">
+            {title}
+          </h3>
+          <p className="text-sm text-justify md:text-base md:text-center max-w-lg mx-auto">
+            {description}
+          </p>
         </div>
         <TestimonialFilter contents={limitedContents} />
       </div>
-      <div class="text-center mt-16">
+      <div class="text-center mt-10 md:mt-16 mb-4">
         <Link
           to={routePage}
           className="text-black bg-gradient px-8 py-2 rounded-full hover-outline"

@@ -44,11 +44,12 @@ const GalleryComponent = ({ galleryImages }) => {
           <button
             key={category}
             onClick={() => handleCategoryClick(category)}
-            className={`${
-              activeCategory === category
-                ? "bg-gradient px-6 py-2 rounded-full hover-outline outline-gold outline-offset-2"
-                : "bg-goldLight/50 opacity-90 hover:opacity-100 px-6 py-2 rounded-full hover-outline"
-            } `}
+            className={`text-xs lg:text-base px-3 py-1 md:px-6 md:py-2 rounded-full hover-outline
+              ${
+                activeCategory === category
+                  ? "bg-gradient outline-gold outline-offset-2"
+                  : "bg-goldLight/50 opacity-90 hover:opacity-100"
+              } `}
           >
             {category}
           </button>
@@ -66,7 +67,7 @@ const GalleryComponent = ({ galleryImages }) => {
         <LightGallery
           plugins={[lgZoom, lgVideo, lgThumbnail, lgFullscreen]}
           mode="lg-fade"
-          elementClassNames={`w-full grid grid-cols-2 lg:grid-cols-4 gap-4 transition-linear ${
+          elementClassNames={`w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 transition-linear ${
             isTransitioning ? "opacity-0" : "opacity-100"
           }`}
           options={{

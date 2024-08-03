@@ -51,7 +51,7 @@ const Socials = ({ toggleMenu }) => {
           <img
             src={logo}
             alt="Hotel Himalaya"
-            className="w-44 h-32 object-contain"
+            className="w-28 h-20 md:w-44 md:h-32 object-contain"
             style={{
               filter:
                 "brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7449%) hue-rotate(190deg) brightness(107%) contrast(96%)",

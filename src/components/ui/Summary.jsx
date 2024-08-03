@@ -8,14 +8,15 @@ const Summary = ({ poster, video, quote, link }) => {
       <VideoPlayer
         poster={poster}
         video={video}
-        videoClassName="h-[70vh] w-full object-cover z-10"
+        // videoClassName="h-[70vh] w-full object-cover z-10"
+        videoClassName="w-full min-h-96 sm:h-96 lg:h-[36rem] xl:h-[70vh] w-full object-cover z-10"
         withGradient={true}
       />
       <div className="font-luxury text-center absolute inset-0 flex items-center justify-center flex-col gap-3 size-full container text-custom-white z-20">
-        <span className="font-bold text-2xl text-gradient font-luxury">
+        <span className="text-base md:text-xl xl:text-2xl capitalize md:uppercase font-bold text-gradient font-luxury">
           Hotel Himalaya
         </span>
-        <h5 className="font-light text-4xl leading-snug font-luxury">
+        <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-snug font-light font-luxury">
           {quote}
         </h5>
         <Link
@@ -26,27 +27,27 @@ const Summary = ({ poster, video, quote, link }) => {
           title="Reserve"
           aria-label="Reserve"
         >
-          <span className="font-merriweather-sans text-gradient text-lg font-bold flex items-center justify-center gap-4 z-auto ">
+          <span className="font-merriweather-sans text-gradient text-sm sm:text-base md:text-lg font-bold flex items-center justify-center gap-4 z-auto ">
             <img
               src={logoMark}
               alt="Logo"
-              className="size-6 transition-all duration-200 ease-linear "
+              className="size-4 md:size-6 transition-all duration-200 ease-linear "
             />
             Reservation
             <img
               src={logoMark}
               alt="Logo"
-              className="size-6 transition-all duration-200 ease-linear"
+              className="size-4 md:size-6 transition-all duration-200 ease-linear"
             />
           </span>
         </Link>
 
         <div className="flex items-center justify-center flex-col gap-2 font-merriweather-sans">
-          <span className="text-gray-300 text-sm font-merriweather-sans">
+          <span className="text-gray-300 text-xs sm:text-sm font-merriweather-sans">
             or call us directly
             <Link
               rel="noopener noreferrer"
-              className="ml-3 underline-link hover:text-gradient transition-all duration-300 font-merriweather-sans"
+              className="text-sm sm:text-base ml-3 underline-link hover:text-gradient transition-all duration-300 font-merriweather-sans"
               to="tel:+977015423900"
               target="_blank"
             >
@@ -55,7 +56,7 @@ const Summary = ({ poster, video, quote, link }) => {
           </span>
           <Link
             rel="noopener noreferrer"
-            className="underline-link hover:text-gradient transition-all duration-300 font-merriweather-sans"
+            className="text-sm sm:text-base underline-link hover:text-gradient transition-all duration-300 font-merriweather-sans"
             to="mailto:info@hotelhimalaya.com"
             target="_blank"
           >

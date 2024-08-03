@@ -11,9 +11,9 @@ import {
 const PromotionsComponent = ({ promotionsImages, enquiryFormFields }) => {
   return (
     <>
-      <div className="grid grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
         {promotionsImages.map((promotion) => (
-          <div key={promotion.id} className="aspect-square size-full">
+          <div key={promotion.id} className="size-full">
             <LightGallery
               plugins={[lgZoom, lgVideo, lgThumbnail, lgFullscreen]}
               mode="lg-fade"
@@ -33,7 +33,9 @@ const PromotionsComponent = ({ promotionsImages, enquiryFormFields }) => {
             </LightGallery>
             <div className="flex items-center justify-between gap-4 py-6">
               <div className="space-y-4">
-                <h4 className="text-xl font-medium">{promotion.label}</h4>
+                <h4 className="text-base sm:text-lg xl:text-xl font-bold md:font-medium">
+                  {promotion.label}
+                </h4>
                 <span className="text-sm">Get 3 for the price of 2</span>
               </div>
 
