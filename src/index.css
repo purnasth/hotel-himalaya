@@ -60,6 +60,10 @@
 }
 
 @layer components {
+  .hover-outline {
+    @apply outline outline-2 outline-offset-0 outline-gold/0 hover:outline-gold hover:outline-offset-2 focus:outline-offset-2 focus:outline-gold transition-all duration-200 ease-linear;
+  }
+
   .hero-slider-button {
     /* @apply absolute top-1/2 -translate-y-1/2 rounded-full p-3 border bg-black/20 text-white cursor-pointer group-hover:scale-100 scale-0 transition-all duration-1000; */
     @apply absolute top-1/2 -translate-y-1/2 text-xl p-3 rounded-full outline outline-2 outline-offset-0 outline-gold text-gold hover:text-black bg-black/30 hover:bg-gold group-hover:scale-100 scale-0 hover:outline-gold hover:outline-offset-2 transition-all duration-500 ease-linear;
@@ -70,16 +74,13 @@
   }
 
   .stay-slider-button {
-    @apply absolute top-1/2 rounded-full py-1 px-5 bg-gradient text-xl cursor-pointer transition-all duration-1000;
+    @apply absolute top-1/2 rounded-full py-1 px-5 bg-gradient text-xl cursor-pointer transition-all duration-1000 hover-outline;
   }
 
   .hall-slider-button {
     @apply absolute bottom-1/2 bg-gradient py-1 px-5 rounded-full hover-outline cursor-pointer text-lg transition-all duration-200 ease-linear;
   }
 
-  .hover-outline {
-    @apply outline outline-2 outline-offset-0 outline-gold/0 hover:outline-gold hover:outline-offset-2 focus:outline-offset-2 focus:outline-gold transition-all duration-200 ease-linear;
-  }
 
   .text-gradient {
     /* background: radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #fdb931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);

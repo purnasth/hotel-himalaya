@@ -53,7 +53,7 @@ const AccordianContact = ({ accordiansContact }) => {
                   </div>
                   <Link
                     to={item.href}
-                    className="bg-gradient px-6 py-2 rounded-full hover-outline flex items-center justify-center gap-2"
+                    className="bg-gradient px-4 py-1 sm:px-6 md:py-2 rounded-full hover-outline flex items-center justify-center gap-2 text-xs sm:text-sm md:text-base"
                   >
                     {item.buttonLabel}
                   </Link>

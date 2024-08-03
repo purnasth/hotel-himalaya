@@ -11,9 +11,9 @@ import {
 const PromotionsComponent = ({ promotionsImages, enquiryFormFields }) => {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
         {promotionsImages.map((promotion) => (
-          <div key={promotion.id} className="aspect-square size-full">
+          <div key={promotion.id} className="size-full">
             <LightGallery
               plugins={[lgZoom, lgVideo, lgThumbnail, lgFullscreen]}
               mode="lg-fade"

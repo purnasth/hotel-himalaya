@@ -34,7 +34,7 @@ const ContactForm = ({
       <div
         className={`bg-goldLight/20 ${paddingEnquiry} ${paddingContact} border border-gold`}
       >
-        <p className={`text-lg mb-12 ${hiddenEnquiry}`}>
+        <p className={`text-sm md:text-lg mb-6 md:mb-12 ${hiddenEnquiry}`}>
           Can't find the contact and information you're looking for? Write to us
           via this quick form.
         </p>
@@ -44,11 +44,11 @@ const ContactForm = ({
         >
           {contactFormFields.map((field) => (
             <div key={field.id} className="relative w-full md:w-1/2">
-              <ul className="py-8 flex flex-col gap-4">
+              <ul className="py-2 md:py-8 flex flex-col">
                 <li className="w-full pr-2">
                   <label
                     htmlFor={field.id}
-                    className={`text-base text-black/80  `}
+                    className={`text-sm md:text-base text-black/80  `}
                   >
                     {field.label}
                   </label>
@@ -59,7 +59,7 @@ const ContactForm = ({
                       name={field.id}
                       rows="2"
                       // placeholder={field.placeholder}
-                      className={`text-xl w-full lg:w-[200%] mt-2 py-2 border-b border-black/30 focus:outline-none focus:border-gold bg-transparent text-black ${
+                      className={`text-xl w-full lg:w-[200%] md:mt-2 py-1 sm:py-2 border-b border-black/30 focus:outline-none focus:border-gold bg-transparent text-black rounded-none ${
                         errors[field.id] ? "border-red-600" : ""
                       }`}
                     ></textarea>
@@ -70,7 +70,7 @@ const ContactForm = ({
                       id={field.id}
                       name={field.id}
                       // placeholder={field.placeholder}
-                      className={`text-xl w-full mt-2 py-2 border-b border-black/20 focus:outline-none focus:border-gold bg-transparent text-black ${
+                      className={`text-base md:text-xl w-full md:mt-2 py-1 sm:py-2 border-b border-black/20 focus:outline-none focus:border-gold bg-transparent text-black rounded-none ${
                         errors[field.id] ? "border-red-600" : ""
                       }`}
                     />
@@ -78,7 +78,7 @@ const ContactForm = ({
                 </li>
               </ul>
               {errors[field.id] && (
-                <span className="select-none pointer-events-none absolute left-0 bottom-12 text-red-500 text-sm">
+                <span className="select-none pointer-events-none absolute left-0 bottom-4 md:bottom-12 text-red-500 text-sm">
                   {errors[field.id].message}*
                 </span>
               )}
@@ -87,7 +87,7 @@ const ContactForm = ({
           <div className="w-full mt-4 group">
             <button
               type="submit"
-              className={`w-full bg-gradient px-6 py-4 rounded-full hover-outline text-lg ${
+              className={`w-full bg-gradient py-2 md:py-4 rounded-full hover-outline text-lg ${
                 isSubmitting ? "opacity-75 cursor-not-allowed" : ""
               }`}
               disabled={isSubmitting}

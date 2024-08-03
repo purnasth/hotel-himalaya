@@ -24,17 +24,17 @@ const EnquiryReview = ({ data }) => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 mt-16 md:mt-32">
-          <div className="col-span-1 sticky top-20 overflow-y-auto max-h-screen order-2 xl:order-1">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 mt-12 md:mt-32">
+          <div className="col-span-1 sticky top-20 md:max-h-screen md:overflow-y-auto order-2 xl:order-1">
             <div className="border border-gold p-2">
-              <ContactForm hiddenEnquiry="hidden" paddingEnquiry="p-8" />
+              <ContactForm hiddenEnquiry="hidden" paddingEnquiry="p-4 md:p-8" />
             </div>
           </div>
           <div className="col-span-1 order-1 xl:order-2">
             {contents.map((content) => (
               <div
                 key={content.id}
-                className="bg-gold/10 border border-gold/50 p-8 mb-16 shadow-md"
+                className="bg-gold/10 border border-gold/50 p-4 md:p-8 mb-10 md:mb-16 shadow-md"
               >
                 <p className="text-justify text-gray-900">
                   {content.description}

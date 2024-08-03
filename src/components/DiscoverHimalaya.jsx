@@ -12,7 +12,7 @@ const DiscoverHimalaya = ({ data }) => {
 
   return (
     <>
-      <div className="grid grid-cols-1 lg:grid-cols-3 content-center gap-y-12 lg:gap-16 mt-28 lg:p-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 content-center gap-y-12 lg:gap-16 mt-20 md:mt-28 lg:p-8">
         <div className="col-span-1 content-center w-full">
           <h3 className="text-xl md:text-2xl lg:text-3xl md:leading-normal lg:leading-snug xl:leading-relaxed">
             {title}

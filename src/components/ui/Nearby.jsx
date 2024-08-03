@@ -41,16 +41,20 @@ function Nearby({ data: nearbyLocations }) {
           {nearbyLocations.map((location) => (
             <li
               key={location.name}
-              className={`md:mx-4 my-2 cursor-pointer px-4 py-3 rounded-lg border hover:bg-goldLight transition-all duration-300 ease-linear ${
+              className={`md:mx-4 my-2 cursor-pointer px-2 py-1 sm:px-4 sm:py-3 rounded-lg border hover:bg-goldLight transition-all duration-300 ease-linear ${
                 selectedLocation === location ? "bg-goldLight text-black" : ""
               }`}
               onClick={() => handleLocationClick(location)}
             >
-              <span className="text-base">{location.name}</span>
-              <span className="ml-2">- {location.distance}</span>
+              <span className="text-xs md:text-sm font-semibold">
+                {location.name}
+              </span>
+              <span className="text-xs md:text-sm ml-2">
+                - {location.distance}
+              </span>
               <br />
               <button
-                className="text-blue-600"
+                className="text-sm text-blue-600"
                 onClick={(e) => {
                   e.stopPropagation();
                   handleLocationClick(location);
