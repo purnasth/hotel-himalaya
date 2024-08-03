@@ -3,11 +3,11 @@ import { IconRenderer } from "../constants/data";
 
 const Amenities = ({ amenities }) => {
   return (
-    <div className="mt-40">
-      <div className="text-center space-y-6 px-24">
-        <h3 className="text-3xl leading-snug mb-20">Hall Amenities</h3>
-      </div>
-      <div className="grid grid-cols-4 gap-12">
+    <div className="mt-24 md:mt-40">
+      <h3 className="text-center text-2xl xl:text-3xl leading-snug xl:leading-snug mb-20">
+        Hall Amenities
+      </h3>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
         {amenities.map((amenity, index) => (
           <div
             key={index}
@@ -17,7 +17,7 @@ const Amenities = ({ amenities }) => {
               iconName={amenity.icon}
               className="text-3xl text-gold"
             />
-            <span>{amenity.title}</span>
+            <span className="text-sm md:text-base">{amenity.title}</span>
           </div>
         ))}
       </div>
