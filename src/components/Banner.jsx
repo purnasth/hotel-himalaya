@@ -8,7 +8,7 @@ const Banner = ({ banner, title, description, page, video }) => {
         <VideoPlayer
           poster={banner}
           video={video}
-          videoClassName="h-[110vh] w-full object-cover z-10"
+          videoClassName="w-full h-80 sm:h-[50vh] sm:min-h-96 lg:h-[36rem] xl:h-[110vh] object-cover z-10"
         />
       ) : (
         <img
