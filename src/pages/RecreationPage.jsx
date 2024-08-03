@@ -33,7 +33,7 @@ const RecreationPage = ({ data }) => {
         <div className="">
           <div className="md:container text-center mb-0 sm:mb-8 md:mb-12">
             <span className="text-xs md:text-base uppercase">{slogan}</span>
-            <h5 className="text-base sm:tex-tg md:text-xl xl:text-2xl leading-snug xl:leading-snug text-justify xl:text-center mt-6 mb-12">
+            <h5 className="text-base sm:text-lg md:text-xl xl:text-2xl leading-snug xl:leading-snug text-justify xl:text-center mt-6 mb-12">
               {page_description}
             </h5>
           </div>
