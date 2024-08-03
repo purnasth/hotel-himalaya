@@ -28,10 +28,10 @@ const DinePage = ({ data }) => {
         page="Dine"
       />
       <main id="dine">
-        <div className="container">
-          <div className="text-center mb-24">
-            <span className="uppercase">{slogan}</span>
-            <h5 className="text-2xl text-center leading-snug mt-6 mb-12">
+        <div className="">
+          <div className="md:container text-center mb-16 md:mb-24">
+            <span className="text-xs md:text-base uppercase">{slogan}</span>
+            <h5 className="text-base sm:tex-tg md:text-xl lg:text-2xl xl:text-3xl leading-snug xl:leading-snug text-justify xl:text-center mt-6 mb-12">
               {page_description}
             </h5>
           </div>
