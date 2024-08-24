@@ -13,14 +13,15 @@ const EnquiryReview = ({ data }) => {
         <div className="md:container mt-12">
           <div className="text-center space-y-3 md:space-y-6 px-3 md:px-24 mb-12 md:mb-24">
             <span className="text-xs md:text-base uppercase">
-              Making 10,000+ happy faces
+              Read their stories, ask your own
             </span>
             <h3 className="text-2xl sm:text-2xl md:text-4xl lg:text-5xl leading-snug lg:leading-snug">
               Reviews & Enquiry
             </h3>
             <p className="text-sm text-justify md:text-base md:text-center max-w-lg mx-auto">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
-              aperiam accusantium sed doloremque molestias nisi.
+              Read what our guests have to say and feel free to ask us anything.
+              Your feedback and inquiries help us create the perfect experience
+              for you.
             </p>
           </div>
         </div>

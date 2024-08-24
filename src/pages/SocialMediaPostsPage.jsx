@@ -17,14 +17,14 @@ const SocialMediaPostsPage = ({ data }) => {
         <div className="md:container my-12">
           <div className="text-center space-y-4 md:space-y-4 px-2 sm:px-12">
             <span className="text-xs md:text-base uppercase">
-              Making 10,000+ happy faces
+              Stay updated, stay engaged
             </span>
             <h3 className="text-2xl sm:text-2xl md:text-4xl lg:text-5xl leading-snug lg:leading-snug">
               Social Media Posts
             </h3>
             <p className="text-sm text-justify md:text-base md:text-center max-w-lg mx-auto">
-              Comfortable accommodation directly in the hotel with extensive
-              Wellness and exceptional gastronomy.
+              Catch up on our latest updates and join the conversation. Follow
+              us on social media for more exciting news and events.
             </p>
           </div>
         </div>

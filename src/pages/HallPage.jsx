@@ -27,7 +27,7 @@ const HallPage = ({ data }) => {
         banner={banner}
         // video={video}
         title={title}
-        description={description}
+        description={subtitle}
         page="Events"
       />
       <main className="px-4 md:px-12 xl:px-4">
