@@ -50,7 +50,7 @@
   } */
 
   main {
-    @apply py-20 px-4 sm:py-28 md:px-12 md:py-[7.5rem] lg:py-[9rem] relative z-10;
+    @apply py-12 px-4 sm:py-24 md:px-12 md:py-[7.5rem] lg:py-[9rem] relative z-10;
   }
 
   img {
