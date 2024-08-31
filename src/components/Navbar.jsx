@@ -57,7 +57,8 @@ const Navbar = () => {
                 <span className="hidden sm:block ml-6">Menu</span>
               </button>
               <Link
-                to="https://hotelhimalaya.com//result.php?hotel_code=q7x6fU"
+                // to="https://hotelhimalaya.com//result.php?hotel_code=q7x6fU"
+                to="https://hotelhimalaya.com/reservation"
                 target="_blank"
                 className="py-2 px-2 sm:px-5 rounded-full flex items-center gap-2 bg-goldDark text-goldLight outline outline-2 outline-goldLight pointer-events-auto hover-outline"
               >
