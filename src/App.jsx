@@ -35,8 +35,8 @@ const App = () => {
   return (
     <>
       <Router>
-        <Navbar />
         <RouterToTop />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />

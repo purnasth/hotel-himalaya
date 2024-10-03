@@ -75,7 +75,7 @@ const AboutPage = ({ data }) => {
 
         <div className="md:container mt-20 md:mt-32 text-center">
           <div className="md:px-12 space-y-6 max-w-5xl mx-auto">
-            <span class="uppercase">Awards</span>
+            <span className="uppercase">Awards</span>
             <h6 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl leading-snug lg:leading-snug">
               37<sup>th</sup> years of passion, dedication, and unforgettable
               experiences!

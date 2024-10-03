@@ -4,7 +4,7 @@ import { Navigation } from "../constants/data";
 const Footer = () => {
   return (
     <>
-      <Navigation mainClassName="z-30 h-auto 2xl:h-auto" isFooter={true} />
+      <Navigation mainClassName="z-30 h-screen" isFooter={true} />
     </>
   );
 };

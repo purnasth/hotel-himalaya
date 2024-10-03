@@ -16,10 +16,10 @@ const Navigation = ({ data, mainClassName, isFooter, toggleMenu }) => {
 
   return (
     <main
-      className={`${mainClassName} p-6 md:px-12 md:pt-24 xl:py-28 2xl:py-32 2xl:pb-10 bg-gradient`}
+      className={`${mainClassName} py-6 bg-gradient flex md:items-center justify-center`}
     >
-      <div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+      <div className="w-full h-auto">
+        <div className="mt-0 md:mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
           <div
             className={`${
               isFooter ? "hidden md:block" : ""
@@ -126,7 +126,7 @@ const Navigation = ({ data, mainClassName, isFooter, toggleMenu }) => {
                 <h4 className="text-lg md:text-xl font-semibold md:font-medium">
                   Hospitality Partners
                 </h4>
-                <ul className="mt-6 mb-10 flex items-center justify-center gap-10">
+                <ul className="mt-6 flex items-center justify-center gap-10">
                   {data.hospitalityPartners?.map((partner, index) => (
                     <li
                       key={index}

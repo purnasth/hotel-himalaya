@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import {
   withDataFetching,
   Banner,
@@ -18,6 +18,24 @@ const StayPage = ({ data }) => {
     video,
     exely,
   } = data;
+
+  const location = useLocation();
+
+  useEffect(() => {
+    const scrollToHash = () => {
+      if (location.hash) {
+        const elementId = location.hash.substring(1);
+        const element = document.getElementById(elementId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    };
+
+    const timeoutId = setTimeout(scrollToHash, 200);
+
+    return () => clearTimeout(timeoutId);
+  }, [location, roomsCategories]);
 
   return (
     <>
@@ -38,7 +56,6 @@ const StayPage = ({ data }) => {
             </h3>
           </div>
         </div>
-        {/* <div className="container space-y-32"> */}
         <div className="space-y-16 md:space-y-32">
           {roomsCategories.map((room) => (
             <PackageComponent

@@ -11,7 +11,7 @@
 //           <div key={index} className="w-1/3 px-2 flex-shrink-0">
 //             <div className="">
 //               <img
-//                 src={item.image}
+//                 src={item.src}
 //                 alt={item.title}
 //                 className="w-full h-96 object-cover shadow-lg"
 //               />
@@ -26,6 +26,7 @@
 // };
 
 // export default RoomSlider;
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { IconRenderer } from "../../constants/data";
@@ -34,18 +35,21 @@ const RoomSlider = ({ items, currentIndex }) => {
   return (
     <div className="relative w-full overflow-hidden">
       <div
-        to={`/stay`}
         className="flex transition-transform duration-500"
         style={{
           transform: `translateX(-${(currentIndex * 100) / items.length}%)`,
         }}
       >
         {items.concat(items).map((item, index) => {
-          const { image, title, subtitle, amenities, details } = item;
+          const { id, image, title, subtitle, amenities, details } = item;
           const startingPrice = details["Starting Price"]?.value || "";
 
           return (
-            <div key={index} className="w-full lg:w-1/3 px-2 flex-shrink-0">
+            <Link
+              key={index}
+              to={`/stay#${id}`}
+              className="w-full lg:w-1/3 px-2 flex-shrink-0"
+            >
               <div className="relative group cursor-pointer overflow-hidden">
                 <div className="absolute inset-0 size-full outline outline-1 outline-white group-hover:outline-white/20 -outline-offset-[10px] group-hover:-outline-offset-[30px] z-10  transition-all duration-500 ease-linear" />
                 <img
@@ -79,7 +83,7 @@ const RoomSlider = ({ items, currentIndex }) => {
                   </span>
                 </div>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>

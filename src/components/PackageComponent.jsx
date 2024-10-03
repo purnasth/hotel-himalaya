@@ -4,14 +4,14 @@ import { Slider, IconRenderer } from "../constants/data";
 import { Link } from "react-router-dom";
 
 const PackageComponent = ({ content, exelyRoom }) => {
-  const { title, description, image, details, amenities } = content;
+  const { id, title, description, image, details, amenities } = content;
 
   return (
-    <section className="mt-16 md:mt-20 xl:px-24">
+    <section id={id} className="mt-16 md:mt-20 xl:px-24">
       {image && (
         <Slider
           slides={image.map((img) => ({ url: img.src, alt: img.alt }))}
-          containerClassName="w-full h-72 sm:h-96 md:h-[30rem] lg:h-[32rem] xl:h-[95vh]"
+          containerClassName="w-full h-72 sm:h-96 md:h-[30rem] lg:h-[32rem] xl:h-screen"
           buttonClassName="stay-slider-button hover-outline"
           imgClassName="outline outline-1 outline-white -outline-offset-[12px] group-hover:outline-offset-0 w-full h-full object-cover absolute inset-0 transition-all duration-[2s]"
           trueClassName="opacity-100"

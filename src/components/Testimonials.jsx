@@ -22,7 +22,7 @@ const Testimonials = ({ data }) => {
         </div>
         <TestimonialFilter contents={limitedContents} />
       </div>
-      <div class="text-center mt-10 md:mt-16 mb-4">
+      <div className="text-center mt-10 md:mt-16 mb-4">
         <Link
           to={routePage}
           className="text-black bg-gradient px-8 py-2 rounded-full hover-outline"
