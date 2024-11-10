@@ -1,0 +1,108 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Hotel",
+  "name": "Hotel Himalaya",
+  "description": "A beautiful quaint hotel located a little bit away from the heart of Kathmandu. A little bit pricy compared to the other options nearby but is definitely worth it. The hotel has a nice pool and a lounge area as well. Perhaps the best thing about the hotel is the customer service. The staff were extremely polite, cordial and helpful during my visit.",
+  "url": "https://hotelhimalaya.com/",
+  "image": "https://hotelhimalaya.com/logo.svg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Patan, Lalitpur",
+    "addressLocality": "Kathmandu",
+    "addressRegion": "Bagmati",
+    "postalCode": "44600",
+    "addressCountry": "NP"
+  },
+  "telephone": "+977-1-5523900",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "450"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Purna Shrestha"
+      },
+      "datePublished": "2024-10-15",
+      "reviewBody": "A beautiful quaint hotel located a little bit away from the heart of Kathmandu. A little bit pricy compared to the other options nearby but is definitely worth it. The hotel has a nice pool and a lounge area as well. Perhaps the best thing about the hotel is the customer service. The staff were extremely polite, cordial and helpful during my visit.",
+      "name": "Wonderful stay with excellent service",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Karla B"
+      },
+      "datePublished": "2024-09-25",
+      "reviewBody": "Me and my husband stayed 3 nights at Hotel Himalaya. Great location! Just 5 min walk to Patan Durban Square. The deluxe room was big with a super comfortable bed. Great laundry service available. Breakfast buffet was delicious. Dinner restaurant was great!!! Service was 100 points. The only 'bad' thing was that the wifi was only available at the lobby, not in the room.",
+      "name": "Great location and comfy rooms",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4",
+        "bestRating": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Tim"
+      },
+      "datePublished": "2024-09-10",
+      "reviewBody": "The location is excellent for tourist visits to Kathmandu. That is, it is a relaxing place away from the noise of tourist locations but easy access to touring. Going out for tour days and returning in the afternoon to relax and refresh is better than stays in tourist places.",
+      "name": "Perfect location for relaxation",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.5",
+        "bestRating": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Yogesh"
+      },
+      "datePublished": "2024-08-15",
+      "reviewBody": "Himalaya Hotel is my most favoured place to stay when I arrive at Kathmandu for various reasons. First, it's one of the cleanest properties around, with great ambience - including clean rooms, toilets, and swimming pool. Secondly, the staff is extremely polite and helpful. They are always so homecoming and supportive. They will talk to you and connect on a personal level - be it the security staff at the gate or restaurant staff or reception. Food is excellent, the breakfast has a lot of varieties.",
+      "name": "Home away from home",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      }
+    }
+  ],
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Free Wi-Fi",
+      "value": "true"
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Swimming Pool",
+      "value": "true"
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Spa Services",
+      "value": "true"
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Fitness Center",
+      "value": "true"
+    }
+  ],
+  "checkinTime": "14:00",
+  "checkoutTime": "12:00"
+}
